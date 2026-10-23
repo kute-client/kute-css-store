@@ -3,103 +3,119 @@
     "id": "arkham",
     "name": "Arkham",
     "author": "-deusVult",
-    "file": "Arkham/Arkham.css"
+    "file": "Arkham/Arkham.css",
+    "preview": "Arkham/preview.png"
   },
   {
     "id": "blacklune",
     "name": "BlackLune",
     "author": "Unknown & Skal",
-    "file": "BlackLune/BlackLune.css"
+    "file": "BlackLune/BlackLune.css",
+    "preview": "BlackLune/preview.png"
   },
   {
     "id": "brutal",
     "name": "Brutal",
     "author": "-deusVult",
-    "file": "Brutal/Brutal.css"
+    "file": "Brutal/Brutal.css",
+    "preview": "Brutal/preview.png"
   },
   {
     "id": "extra_clean_v3",
     "name": "EXTRA CLEAN v3",
     "author": "thaddeuz",
-    "file": "EXTRA_CLEAN_v3/EXTRA_CLEAN_v3.css"
+    "file": "EXTRA_CLEAN_v3/EXTRA_CLEAN_v3.css",
+    "preview": "EXTRA_CLEAN_v3/preview.png"
   },
   {
     "id": "glass_v1",
     "name": "Glass v1",
     "author": "-deusVult",
-    "file": "Glass_v1/Glass_v1.css"
+    "file": "Glass_v1/Glass_v1.css",
+    "preview": "Glass_v1/preview.png"
   },
   {
     "id": "lemonfish_hud",
     "name": "LEMONFISH CSS - IN-GAME HUD ONLY",
     "author": "tae",
-    "file": "lemonfish-hud/lemonfish-hud.css"
+    "file": "lemonfish-hud/lemonfish-hud.css",
+    "preview": "lemonfish-hud/preview.png"
   },
   {
     "id": "mof1",
     "name": "mof1",
     "author": "epicX67",
-    "file": "mof1/mof1.css"
+    "file": "mof1/mof1.css",
+    "preview": "mof1/preview.png"
   },
   {
     "id": "mtz",
     "name": "MTZ CSS",
     "author": "Mashtoolz & AirFxrce",
-    "file": "MTZ/MTZ.css"
+    "file": "MTZ/MTZ.css",
+    "preview": "MTZ/preview.png"
   },
   {
     "id": "neonbar",
     "name": "NeonBar",
     "author": "NamekujiLSDs & JINXZ",
-    "file": "NeonBar/NeonBar.css"
+    "file": "NeonBar/NeonBar.css",
+    "preview": "NeonBar/preview.png"
   },
   {
     "id": "neonstorm",
     "name": "NeonStorm",
     "author": "NamekujiLSDs & JINXZ",
-    "file": "NeonStorm/NeonStorm.css"
+    "file": "NeonStorm/NeonStorm.css",
+    "preview": "NeonStorm/preview.png"
   },
   {
     "id": "nuke",
     "name": "Nuke",
     "author": "Skal",
-    "file": "Nuke/Nuke.css"
+    "file": "Nuke/Nuke.css",
+    "preview": "Nuke/preview.png"
   },
   {
     "id": "nuke_default",
     "name": "Nuke_default",
     "author": "Qwest500 & AnimeGirl47",
-    "file": "Nuke_default/Nuke_default.css"
+    "file": "Nuke_default/Nuke_default.css",
+    "preview": "Nuke_default/preview.png"
   },
   {
     "id": "nuke_reimagined",
     "name": "Nuke_reimagined",
     "author": "Skal & Liamoule",
     "file": "Nuke_reimagined/Nuke_reimagined.css",
-    "preview": "Nuke_reimagined/preview_1.png"
+    "preview": "Nuke_reimagined/preview.png"
   },
   {
     "id": "skals",
     "name": "Skals",
     "author": "Skal",
-    "file": "Skals/Skals.css"
+    "file": "Skals/Skals.css",
+    "preview": "Skals/preview.png"
   },
   {
     "id": "tae_og_2018_css",
     "name": "Krunker Classic",
     "author": "Tae & Rinkishimo",
-    "file": "tae_og_2018_css/tae_og_2018_css.css"
+    "file": "tae_og_2018_css/tae_og_2018_css.css",
+    "preview": "tae_og_2018_css/preview.png"
   },
   {
     "id": "xeno_xenon_old1",
     "name": "xeno_xenon_old1",
     "author": "DEADCELL & XenoXenon",
-    "file": "xeno_xenon_old1/xeno_xenon_old1.css"
+    "file": "xeno_xenon_old1/xeno_xenon_old1.css",
+    "preview": "xeno_xenon_old1/preview.png"
   },
   {
     "id": "xeno_xenon_old2",
     "name": "xeno_xenon_old2",
     "author": "DEADCELL",
-    "file": "xeno_xenon_old2/xeno_xenon_old2.css"
+    "file": "xeno_xenon_old2/xeno_xenon_old2.css",
+    "preview": "xeno_xenon_old2/preview.png"
   }
 ]
