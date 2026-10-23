@@ -6,10 +6,10 @@ IGN: びこ
 Site: https://whuuayu.github.io/krunker
 Source: https://github.com/whuuayu/lemonfish-css
 
-Trimmed build: only the in-game HUD (Section IV) is applied.
+Trimmed build (2026-10-23): only the in-game HUD (Section IV) is applied.
 All menu / popup / menu-window / loadout / chat / end-screen / spectate /
 comp / client changes from the original stylesheet are removed.
-The original code below is by tae and is used with credit per its license.
+The original code below is by tae and is used with credit under the GPL-3.0, see LICENSE in this folder.
 
 --Install Instructions--
     Save this file and load it in place of lemonfish.css.
