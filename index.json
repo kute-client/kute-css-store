@@ -1,27 +1,9 @@
 [
   {
-    "id": "39e_css",
-    "name": "39e css",
-    "author": "reizu & rinkishimo",
-    "file": "39e_css/39e_css.css"
-  },
-  {
     "id": "arkham",
     "name": "Arkham",
     "author": "-deusVult",
     "file": "Arkham/Arkham.css"
-  },
-  {
-    "id": "ausp",
-    "name": "ausp",
-    "author": "Unknown",
-    "file": "ausp/ausp.css"
-  },
-  {
-    "id": "bipolar",
-    "name": "Bipolar",
-    "author": "Unknown",
-    "file": "Bipolar/Bipolar.css"
   },
   {
     "id": "blacklune",
@@ -36,12 +18,6 @@
     "file": "Brutal/Brutal.css"
   },
   {
-    "id": "comfynord",
-    "name": "Comfy Nord",
-    "author": "iona",
-    "file": "ComfyNord/ComfyNord.css"
-  },
-  {
     "id": "extra_clean_v3",
     "name": "EXTRA CLEAN v3",
     "author": "thaddeuz",
@@ -52,12 +28,6 @@
     "name": "Glass v1",
     "author": "-deusVult",
     "file": "Glass_v1/Glass_v1.css"
-  },
-  {
-    "id": "gr2n",
-    "name": "gr2n",
-    "author": "Unknown",
-    "file": "gr2n/gr2n.css"
   },
   {
     "id": "lemonfish_hud",
@@ -109,24 +79,6 @@
     "preview": "Nuke_reimagined/preview_1.png"
   },
   {
-    "id": "old_panda",
-    "name": "Old_Panda",
-    "author": "Unknown",
-    "file": "Old_Panda/Old_Panda.css"
-  },
-  {
-    "id": "omori",
-    "name": "Omori",
-    "author": "Unknown",
-    "file": "Omori/Omori.css"
-  },
-  {
-    "id": "pandarium",
-    "name": "Pandarium",
-    "author": "Unknown",
-    "file": "Pandarium/Pandarium.css"
-  },
-  {
     "id": "skals",
     "name": "Skals",
     "author": "Skal",
@@ -139,36 +91,6 @@
     "file": "tae_og_2018_css/tae_og_2018_css.css"
   },
   {
-    "id": "titanboi_old",
-    "name": "titanboi_old",
-    "author": "Unknown",
-    "file": "titanboi_old/titanboi_old.css"
-  },
-  {
-    "id": "uwu_quake",
-    "name": "uwu quake css",
-    "author": "reizu & rinkishimo",
-    "file": "uwu_quake/uwu_quake.css"
-  },
-  {
-    "id": "v7oid",
-    "name": "V7oid",
-    "author": "Unknown",
-    "file": "V7oid/V7oid.css"
-  },
-  {
-    "id": "vi5la",
-    "name": "Vi5la",
-    "author": "Unknown",
-    "file": "Vi5la/Vi5la.css"
-  },
-  {
-    "id": "water2noname",
-    "name": "water2noname",
-    "author": "sealfr0",
-    "file": "water2noname/water2noname.css"
-  },
-  {
     "id": "xeno_xenon_old1",
     "name": "xeno_xenon_old1",
     "author": "DEADCELL & XenoXenon",
@@ -179,17 +101,5 @@
     "name": "xeno_xenon_old2",
     "author": "DEADCELL",
     "file": "xeno_xenon_old2/xeno_xenon_old2.css"
-  },
-  {
-    "id": "yoko_1",
-    "name": "Yoko_1",
-    "author": "Unknown",
-    "file": "Yoko_1/Yoko_1.css"
-  },
-  {
-    "id": "ztest",
-    "name": "zTest",
-    "author": "Unknown",
-    "file": "zTest/zTest.css"
   }
 ]
