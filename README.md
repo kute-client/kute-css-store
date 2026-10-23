@@ -28,41 +28,158 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 ## Themes and sources
 
-| Theme | Author(s) | Source | License |
-|---|---|---|---|
-| [39e css](39e_css/39e_css.css) | reizu (original), rinkishimo (fixes) | Discord (rinkishimo: `discontinuation`) | none stated |
-| [Arkham](Arkham/Arkham.css) | -deusVult | [deusVult69/krunker-css-arkham](https://github.com/deusVult69/krunker-css-arkham) | none stated |
-| [ausp](ausp/ausp.css) | Unknown | Discord | none stated |
-| [Bipolar](Bipolar/Bipolar.css) | Unknown | Discord | none stated |
-| [BlackLune](BlackLune/BlackLune.css) | Unknown, Skal | Discord | none stated |
-| [Brutal](Brutal/Brutal.css) | -deusVult | [deusVult69/krunker-css-brutal](https://github.com/deusVult69/krunker-css-brutal) | none stated |
-| [Comfy Nord](ComfyNord/ComfyNord.css) | iona (`eeona`), edits by goobs (`urname2162`) | [iona.quest](https://iona.quest) | none stated |
-| [Cookies CSS](Cookies_CSS/Cookies_CSS.css) | Unknown | Discord | none stated |
-| [EXTRA CLEAN v3](EXTRA_CLEAN_v3/EXTRA_CLEAN_v3.css) | thaddeuz | [youtube.com/@thaddeuz_](https://www.youtube.com/@thaddeuz_) | redistribution with credit, per the author's note in the file |
-| [Glass v1](Glass_v1/Glass_v1.css) | -deusVult | [deusVult69/krunker-glass-css](https://github.com/deusVult69/krunker-glass-css) | none stated |
-| [gr2n](gr2n/gr2n.css) | Unknown | Discord | none stated |
-| [Lemonfish (HUD only)](lemonfish-hud/lemonfish-hud.css) | tae (`whuuayu`), trimmed to the in-game HUD | [whuuayu/lemonfish-css](https://github.com/whuuayu/lemonfish-css) | GPL-3.0 |
-| [mof1](mof1/mof1.css) | epicX67 (MOF1) | [MOF1/krunker_css](https://github.com/MOF1/krunker_css) | GPL-3.0 |
-| [MTZ CSS](MTZ/MTZ.css) | Mashtoolz, updated by AirFxrce | [Water client community CSS](https://github.com/OneInsightCoder/Water) | none stated |
-| [NeonBar](NeonBar/NeonBar.css) | NamekujiLSDs (original), rewritten by JINXZ | Discord | none stated |
-| [NeonStorm](NeonStorm/NeonStorm.css) | NamekujiLSDs (original), rewritten by JINXZ | Discord | none stated |
-| [Nuke](Nuke/Nuke.css) | Skal ("Skal Dark") | [sleepclient-api](https://github.com/CoderZ90/sleepclient-api/blob/main/css/skalDark.css) | none stated |
-| [Nuke_default](Nuke_default/Nuke_default.css) | Qwest500, AnimeGirl47 | [r/KrunkerIO](https://www.reddit.com/r/KrunkerIO/comments/14omg1u/finished_mostly_the_css_remake/) | none stated |
-| [Nuke_reimagined](Nuke_reimagined/Nuke_reimagined.css) | Skal, Liamoule (based on Skal Dark) | this repository | none stated |
-| [Old_Panda](Old_Panda/Old_Panda.css) | Unknown | Discord | none stated |
-| [Omori](Omori/Omori.css) | Unknown | Discord | none stated |
-| [Pandarium](Pandarium/Pandarium.css) | Unknown | Discord | none stated |
-| [Skals](Skals/Skals.css) | Skal | Discord | none stated |
-| [Krunker Classic](tae_og_2018_css/tae_og_2018_css.css) | tae (`whuuayu`), 2026 fixes by Rinkishimo | [whuuayu/krunker-classic-css](https://github.com/whuuayu/krunker-classic-css) | none stated |
-| [titanboi_old](titanboi_old/titanboi_old.css) | Unknown | Discord | none stated |
-| [uwu quake css](uwu_quake/uwu_quake.css) | rinkishimo, based on work by reizu | Discord (rinkishimo: `discontinuation`) | none stated |
-| [V7oid](V7oid/V7oid.css) | Unknown | Discord | none stated |
-| [Vi5la](Vi5la/Vi5la.css) | Unknown | Discord | none stated |
-| [water2noname](water2noname/water2noname.css) | sealfr0 | Discord | none stated |
-| [xeno_xenon_old1](xeno_xenon_old1/xeno_xenon_old1.css) | DEADCELL, edits by XenoXenon | Discord | none stated |
-| [xeno_xenon_old2](xeno_xenon_old2/xeno_xenon_old2.css) | DEADCELL | Discord | none stated |
-| [Yoko_1](Yoko_1/Yoko_1.css) | Unknown | Discord | none stated |
-| [zTest](zTest/zTest.css) | Unknown | Discord | none stated |
+<p align="center"><img src="Arkham/preview.png" alt="Arkham preview" width="100%"></p>
+<h3 align="center"><a href="Arkham/Arkham.css">Arkham</a></h3>
+
+<p align="center">By -deusVult</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/deusVult69/krunker-css-arkham">deusVult69/krunker-css-arkham</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="BlackLune/preview.png" alt="BlackLune preview" width="100%"></p>
+<h3 align="center"><a href="BlackLune/BlackLune.css">BlackLune</a></h3>
+
+<p align="center">By Unknown, Skal</p>
+
+<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Brutal/preview.png" alt="Brutal preview" width="100%"></p>
+<h3 align="center"><a href="Brutal/Brutal.css">Brutal</a></h3>
+
+<p align="center">By -deusVult</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/deusVult69/krunker-css-brutal">deusVult69/krunker-css-brutal</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="EXTRA_CLEAN_v3/preview.png" alt="EXTRA CLEAN v3 preview" width="100%"></p>
+<h3 align="center"><a href="EXTRA_CLEAN_v3/EXTRA_CLEAN_v3.css">EXTRA CLEAN v3</a></h3>
+
+<p align="center">By thaddeuz</p>
+
+<p align="center"><b>Source:</b> <a href="https://www.youtube.com/@thaddeuz_">youtube.com/@thaddeuz_</a><br><b>License:</b> redistribution with credit, per the author's note in the file</p>
+
+<hr>
+
+<p align="center"><img src="Glass_v1/preview.png" alt="Glass v1 preview" width="100%"></p>
+<h3 align="center"><a href="Glass_v1/Glass_v1.css">Glass v1</a></h3>
+
+<p align="center">By -deusVult</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/deusVult69/krunker-glass-css">deusVult69/krunker-glass-css</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="lemonfish-hud/preview.png" alt="Lemonfish (HUD only) preview" width="100%"></p>
+<h3 align="center"><a href="lemonfish-hud/lemonfish-hud.css">Lemonfish (HUD only)</a></h3>
+
+<p align="center">By tae (<code>whuuayu</code>), trimmed to the in-game HUD</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/lemonfish-css">whuuayu/lemonfish-css</a><br><b>License:</b> <a href="lemonfish-hud/LICENSE">GPL-3.0</a></p>
+
+<hr>
+
+<p align="center"><img src="mof1/preview.png" alt="mof1 preview" width="100%"></p>
+<h3 align="center"><a href="mof1/mof1.css">mof1</a></h3>
+
+<p align="center">By epicX67 (MOF1)</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/MOF1/krunker_css">MOF1/krunker_css</a><br><b>License:</b> <a href="mof1/LICENSE">GPL-3.0</a></p>
+
+<hr>
+
+<p align="center"><img src="MTZ/preview.png" alt="MTZ CSS preview" width="100%"></p>
+<h3 align="center"><a href="MTZ/MTZ.css">MTZ CSS</a></h3>
+
+<p align="center">By Mashtoolz, updated by AirFxrce</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/OneInsightCoder/Water">Water client community CSS</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="NeonBar/preview.png" alt="NeonBar preview" width="100%"></p>
+<h3 align="center"><a href="NeonBar/NeonBar.css">NeonBar</a></h3>
+
+<p align="center">By NamekujiLSDs (original), rewritten by JINXZ</p>
+
+<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="NeonStorm/preview.png" alt="NeonStorm preview" width="100%"></p>
+<h3 align="center"><a href="NeonStorm/NeonStorm.css">NeonStorm</a></h3>
+
+<p align="center">By NamekujiLSDs (original), rewritten by JINXZ</p>
+
+<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Nuke/preview.png" alt="Nuke preview" width="100%"></p>
+<h3 align="center"><a href="Nuke/Nuke.css">Nuke</a></h3>
+
+<p align="center">By Skal ("Skal Dark")</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/CoderZ90/sleepclient-api/blob/main/css/skalDark.css">sleepclient-api</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Nuke_default/preview.png" alt="Nuke_default preview" width="100%"></p>
+<h3 align="center"><a href="Nuke_default/Nuke_default.css">Nuke_default</a></h3>
+
+<p align="center">By Qwest500, AnimeGirl47</p>
+
+<p align="center"><b>Source:</b> <a href="https://www.reddit.com/r/KrunkerIO/comments/14omg1u/finished_mostly_the_css_remake/">r/KrunkerIO</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Nuke_reimagined/preview.png" alt="Nuke_reimagined preview" width="100%"></p>
+<h3 align="center"><a href="Nuke_reimagined/Nuke_reimagined.css">Nuke_reimagined</a></h3>
+
+<p align="center">By Skal, Liamoule (based on Skal Dark)</p>
+
+<p align="center"><b>Source:</b> this repository<br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Skals/preview.png" alt="Skals preview" width="100%"></p>
+<h3 align="center"><a href="Skals/Skals.css">Skals</a></h3>
+
+<p align="center">By Skal</p>
+
+<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="tae_og_2018_css/preview.png" alt="Krunker Classic preview" width="100%"></p>
+<h3 align="center"><a href="tae_og_2018_css/tae_og_2018_css.css">Krunker Classic</a></h3>
+
+<p align="center">By tae (<code>whuuayu</code>), 2026 fixes by Rinkishimo</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/krunker-classic-css">whuuayu/krunker-classic-css</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="xeno_xenon_old1/preview.png" alt="xeno_xenon_old1 preview" width="100%"></p>
+<h3 align="center"><a href="xeno_xenon_old1/xeno_xenon_old1.css">xeno_xenon_old1</a></h3>
+
+<p align="center">By DEADCELL, edits by XenoXenon</p>
+
+<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="xeno_xenon_old2/preview.png" alt="xeno_xenon_old2 preview" width="100%"></p>
+<h3 align="center"><a href="xeno_xenon_old2/xeno_xenon_old2.css">xeno_xenon_old2</a></h3>
+
+<p align="center">By DEADCELL</p>
+
+<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+
+<hr>
 
 Fonts and images that a theme loads from other sites belong to their respective owners.
 
