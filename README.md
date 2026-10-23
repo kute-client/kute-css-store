@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  KSS (Kute Style System) is a community-driven collection of custom CSS for Krunker, designed to integrate with <a href="https://github.com/NullDev/Kute">Kute client</a>.
+  Kute CSS Store is a community-driven collection of custom CSS for Krunker, designed to integrate with <a href="https://github.com/NullDev/Kute">Kute client</a>.
 </p>
 
 <hr>
