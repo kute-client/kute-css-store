@@ -1,0 +1,201 @@
+[
+  {
+    "id": "39e_css",
+    "name": "39e css",
+    "author": "reizu & rinkishimo",
+    "file": "39e_css/39e_css.css"
+  },
+  {
+    "id": "arkham",
+    "name": "Arkham",
+    "author": "-deusVult",
+    "file": "Arkham/Arkham.css"
+  },
+  {
+    "id": "ausp",
+    "name": "ausp",
+    "author": "Unknown",
+    "file": "ausp/ausp.css"
+  },
+  {
+    "id": "bipolar",
+    "name": "Bipolar",
+    "author": "Unknown",
+    "file": "Bipolar/Bipolar.css"
+  },
+  {
+    "id": "blacklune",
+    "name": "BlackLune",
+    "author": "Unknown & Skal",
+    "file": "BlackLune/BlackLune.css"
+  },
+  {
+    "id": "brutal",
+    "name": "Brutal",
+    "author": "-deusVult",
+    "file": "Brutal/Brutal.css"
+  },
+  {
+    "id": "comfynord",
+    "name": "Comfy Nord",
+    "author": "iona",
+    "file": "ComfyNord/ComfyNord.css"
+  },
+  {
+    "id": "cookies_css",
+    "name": "Cookies CSS",
+    "author": "Unknown",
+    "file": "Cookies_CSS/Cookies_CSS.css"
+  },
+  {
+    "id": "extra_clean_v3",
+    "name": "EXTRA CLEAN v3",
+    "author": "thaddeuz",
+    "file": "EXTRA_CLEAN_v3/EXTRA_CLEAN_v3.css"
+  },
+  {
+    "id": "glass_v1",
+    "name": "Glass v1",
+    "author": "-deusVult",
+    "file": "Glass_v1/Glass_v1.css"
+  },
+  {
+    "id": "gr2n",
+    "name": "gr2n",
+    "author": "Unknown",
+    "file": "gr2n/gr2n.css"
+  },
+  {
+    "id": "lemonfish_hud",
+    "name": "LEMONFISH CSS - IN-GAME HUD ONLY",
+    "author": "tae",
+    "file": "lemonfish-hud/lemonfish-hud.css"
+  },
+  {
+    "id": "mof1",
+    "name": "mof1",
+    "author": "epicX67",
+    "file": "mof1/mof1.css"
+  },
+  {
+    "id": "mtz",
+    "name": "MTZ CSS",
+    "author": "AirFxrce",
+    "file": "MTZ/MTZ.css"
+  },
+  {
+    "id": "neonbar",
+    "name": "NeonBar",
+    "author": "NamekujiLSDs & JINXZ",
+    "file": "NeonBar/NeonBar.css"
+  },
+  {
+    "id": "neonstorm",
+    "name": "NeonStorm",
+    "author": "NamekujiLSDs & JINXZ",
+    "file": "NeonStorm/NeonStorm.css"
+  },
+  {
+    "id": "nuke",
+    "name": "Nuke",
+    "author": "Unknown",
+    "file": "Nuke/Nuke.css"
+  },
+  {
+    "id": "nuke_default",
+    "name": "Nuke_default",
+    "author": "Qwest500 & AnimeGirl47",
+    "file": "Nuke_default/Nuke_default.css"
+  },
+  {
+    "id": "nuke_reimagined",
+    "name": "Nuke_reimagined",
+    "author": "Skal & Liamoule",
+    "file": "Nuke_reimagined/Nuke_reimagined.css",
+    "preview": "Nuke_reimagined/preview_1.png"
+  },
+  {
+    "id": "old_panda",
+    "name": "Old_Panda",
+    "author": "Unknown",
+    "file": "Old_Panda/Old_Panda.css"
+  },
+  {
+    "id": "omori",
+    "name": "Omori",
+    "author": "Unknown",
+    "file": "Omori/Omori.css"
+  },
+  {
+    "id": "pandarium",
+    "name": "Pandarium",
+    "author": "Unknown",
+    "file": "Pandarium/Pandarium.css"
+  },
+  {
+    "id": "skals",
+    "name": "Skals",
+    "author": "Unknown",
+    "file": "Skals/Skals.css"
+  },
+  {
+    "id": "tae_og_2018_css",
+    "name": "Krunker Classic",
+    "author": "Tae & Rinkishimo",
+    "file": "tae_og_2018_css/tae_og_2018_css.css"
+  },
+  {
+    "id": "titanboi_old",
+    "name": "titanboi_old",
+    "author": "Unknown",
+    "file": "titanboi_old/titanboi_old.css"
+  },
+  {
+    "id": "uwu_quake",
+    "name": "uwu quake css",
+    "author": "reizu & rinkishimo",
+    "file": "uwu_quake/uwu_quake.css"
+  },
+  {
+    "id": "v7oid",
+    "name": "V7oid",
+    "author": "Unknown",
+    "file": "V7oid/V7oid.css"
+  },
+  {
+    "id": "vi5la",
+    "name": "Vi5la",
+    "author": "Unknown",
+    "file": "Vi5la/Vi5la.css"
+  },
+  {
+    "id": "water2noname",
+    "name": "water2noname",
+    "author": "sealfr0",
+    "file": "water2noname/water2noname.css"
+  },
+  {
+    "id": "xeno_xenon_old1",
+    "name": "xeno_xenon_old1",
+    "author": "DEADCELL & XenoXenon",
+    "file": "xeno_xenon_old1/xeno_xenon_old1.css"
+  },
+  {
+    "id": "xeno_xenon_old2",
+    "name": "xeno_xenon_old2",
+    "author": "DEADCELL",
+    "file": "xeno_xenon_old2/xeno_xenon_old2.css"
+  },
+  {
+    "id": "yoko_1",
+    "name": "Yoko_1",
+    "author": "Unknown",
+    "file": "Yoko_1/Yoko_1.css"
+  },
+  {
+    "id": "ztest",
+    "name": "zTest",
+    "author": "Unknown",
+    "file": "zTest/zTest.css"
+  }
+]

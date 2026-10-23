@@ -1,0 +1,1035 @@
+/* Game Font */
+:root {
+  --Name:"IGN";
+  --WaterMark:"WaterMark";
+  --information: '   Panda Lover   ';
+  --weapcolor: #000000;
+  --ingame-bg: #0000004a;
+  --img: url(https://cdn.discordapp.com/attachments/980045758311059456/1289001638438240297/Panda_Flower.png?ex=66f73bd3&is=66f5ea53&hm=9b8e34be7db19e792bdb68861825a9eaf06e392e682c2d7306d309d57e228c86&);
+  --bgimg: url(https://cdn.discordapp.com/attachments/1066716767285682229/1067161902792327379/1247647.jpg?ex=66f116b8&is=66efc538&hm=8ce4f1627e12c022f073b3890f5efb36dcf8e30625c6ad4f846690285a5e248b&);
+  --div-grey: rgb(255 255 255 / 0%);
+  --div-black: rgb(255 255 255 / 0%);
+  --main-color: #5B3C8B;
+}
+@font-face {
+  font-family: name;
+  src: url(https://fonts.gstatic.com/s/nunito/v20/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmdTQ3jw.woff2);
+}
+
+
+/* Removal */
+#hudClassIcon,
+#gameNameHolder {
+  display: none;
+}
+#ammoIcon,
+#challIcon,
+#timerIcon,
+#mainLogo,
+#gameLogo {
+display: none !important;
+}
+#aHolder,
+#clientExit,
+#rankedSoonTm,
+#newsHolder,
+#youNewDiv,
+#onetrust-consent-sdk,
+.weapKey,
+.imageButton,
+#editorBtnM,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+.krSocial,
+#mailCount,
+#voiceDisplay,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+#loadEditrBtn,
+.settingsBtn[onclick="openOneTrust()"],
+.menuSocialB,
+.setSugBox2,
+#mainLogo,
+#termsInfo :not(div[onClick*="Window(35)"]),
+.menuItemTitle,
+#weapDisplay,
+#menuWindow::-webkit-scrollbar,
+#maxHP,
+#loadTipsHolder,
+#loadInfoLHolder,
+#loadInfoRHolder,
+#curGameInfo,
+#reloadMsg {
+display: none !important;
+}
+.voiceOff:after {
+  display: none !important;
+}
+#recTimer {
+  display: none !important;
+}
+#chatSwitch:after {
+  display: none !important;
+}
+/* Reload prompt */
+
+#reloadMsg {
+bottom: calc(30% - 200px);
+background-color: transparent !important;
+border: none;
+color: red;
+font-size: 0;
+}
+
+#reloadMsg::before {
+content: '! 自闭症患者 !';
+position: center;
+align-items: center;
+font-size: 26px;
+}
+
+
+
+
+/* Timer Styling */
+#timerHolder.topLeftOld {
+  text-align: left!important;
+  margin-right: 10px;
+  margin-bottom: 10px!important;
+  border-radius: 4px;
+  vertical-align: top!important;
+  width: unset!important;
+  background-color: rgb(20 20 20 / 0%);
+  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important;
+}
+
+#timerInner.topLeftOld {
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 3px;
+  background-color: rgb(108 108 108 / 0%);
+  display: inline-block;
+}
+
+#timerVal.topLeftOld {
+  padding-left: 10px;
+  font-size: 50px!important;
+  margin-bottom: 81px !important;
+  text-shadow: unset!important;
+}
+
+#timerIcon.topLeftOld {
+  display: none;
+}
+
+/* Match Info Styling */
+
+#clientWatermark::before {
+  display: none !important;
+}
+
+#clientWatermark::after {
+  display: none !important;
+}
+#matchInfo.topLeftOld {
+font-size: 0px!important;
+}
+#matchInfo.topLeftOld:after {
+  content: var(--WaterMark);
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color));
+}
+#teamScores {
+  margin-top: 10px;
+}
+#loadingBg{
+  background-image: var(--bgimg) !important;
+  width:105%;
+  height:105%;
+  z-index: 2 !important;
+}
+
+
+
+/* Bottom Left Chat Box */
+
+#chatList{
+  background-color: rgba(0,0,0,.0);
+  color: #000000!important;
+}
+#chatInputHolder{
+  position:relative;
+  border: 0px solid rgba(0,0,0,.0);
+  background-color: rgba(0, 0, 0, 0);
+  right: 18% !important;
+}   
+
+.greyInlineInnerMid {
+  margin: 3px;
+  background-color: rgba(41, 41, 41, 0.5) !important;
+  padding: 5px;
+}
+
+#chatInput{
+      color: white;
+      border: transparent;
+      background-color: transparent;
+      font-size: 15px !important;
+      width: 200%;
+}    
+
+.greyInlineInnerMid {
+  width: 140%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+.chatMsg[style*="color:#fc03ec"] {
+color: #8a8a8a !important;
+text-shadow: 2px 4px 6px rgb(30, 30, 30);
+
+}
+.chatMsg [style*="color:#eb5656"] {
+color: #8a8a8a !important;
+text-shadow: 2px 4px 6px rgb(30, 30, 30) !important;
+}
+
+.chatMsg [style*="color:#9eeb56"] {
+color: #ffffff99 !important;
+text-shadow: 2px 4px 6px rgb(30, 30, 30) !important;
+}
+
+
+
+/* Bottom Left Health Styling */
+#bottomLeftHealth {
+  color: rgb(255, 255, 255);
+  background: transparent;
+  background-color: transparent;
+  position: fixed;
+  bottom: 60px;
+  left: 140px;
+  font-size: 35px;
+  text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+
+#bottomLeftTeamType {
+  display: none;
+}
+#bottomLeftTeamName {
+  display: none;
+}
+#bottomLeftChallIcon {
+  display: none;
+}
+
+/* Instructions Styling */
+#instructions {
+  position: fixed;
+  top: 48%;
+  font-size: 0px;
+  animation: none
+}
+
+#instructions:after {
+  font-size: 32px;
+  color: white;
+  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color));
+  content: var(--information);
+  animation: grow .8s infinite alternate
+}
+
+
+/* End Table Name Styling */
+.endTableN[style="color:#fff"]{
+font-size: 0px;
+}
+.endTableN[style="color:#fff"]:before {
+content: var(--Name);
+font-size: 25px;
+}
+.endTableN[style="color:rgba(255,255,255,0.6)"] {
+color: rgb(255, 255, 255) !important;
+text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+/* Menu Account Username Styling */
+#menuAccountUsername {
+  font-size: 0;
+}
+
+#menuAccountUsername::before {
+  content: var(--Name);
+  font-size: 19px !important;
+  vertical-align: middle;
+  color:white !important;
+}
+
+/* Menu Item Container Styling */
+#mLevelCont {
+  background-color: transparent;
+}
+
+.headerBarLeft{
+  background-color: var(--main-color) !important;
+}
+
+#menuKRCount,  #menuJNKCount{
+  color: white;
+}
+
+[style="color:#fbc02d"] {
+  color: white !important;
+}
+
+.material-icons {
+  color: white !important;
+}
+
+.headerBarRight{
+  background-color: #5c3c8b00 !important;
+}
+
+#menuItemContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: rgb(0 0 0 / 0%);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+}
+
+.menuItem .menuItemTitle {
+  display: none !important;
+}
+
+.menBtnIcn {
+  font-size: 75px!important;
+}
+
+.progressBarInner {
+  height: 100%;
+  background-image: linear-gradient(to right,#fff,#fff,94%,white);
+  transition: width 1s ease-in-out;
+  border-radius: 3px;
+}
+#streamContainer {
+  display: none;
+}
+#termsInfo {
+  display: none;
+}
+#aHolder {
+  display: none !important;
+}
+#topRightAdHolder {
+    display: none !important;
+}
+#seasonLabel {
+  display: none !important;
+}
+img#editorBtnM {
+  display: none;
+}
+
+.menuSocialB {
+  display: none;
+}
+
+.verticalSeparator {
+  height: 0;
+}
+
+#itemSearchH {
+  background-color: transparent;
+}
+
+#itemSearch{
+  background-color: #484747;
+  border: none;
+}
+
+#selectorContainer {
+  background-color: var(--ingame-bg);
+}
+
+#homeStoreAd {
+  display: none;
+}
+
+#updateAd {
+  display: none !important;
+}
+
+.youNewDiv {
+    display: none;
+}
+
+/* Bottom Right Menu */
+#menuClassIcn, #menuClassSubtext, #menuClassName{
+  display: none !important;
+}
+
+
+#customizeButton{
+  position: fixed;
+  background-color: transparent !important;
+  border: 4px solid rgba(255, 255, 255, 0) !important;
+  height: 400px !important;
+  right: 5%;
+  bottom: 1%;
+  color: rgba(255, 255, 255, 0) !important;
+}
+
+#customizeButton .material-icons {
+  display: none;
+}
+
+.bigShadowT {
+  text-shadow: 1px 1px 1px transparent !important;
+}
+
+
+/* Menu Window Styling */
+#menuWindow.dark {
+  background-color: var(--main-color);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: -3px -2px 8px rgb(195 195 195 / 0%);
+}
+
+/* Settings Header Styling */
+.settingsHeader {
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 999999999;
+  background-color: #00000000;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+.material-icons-outlined {
+  color: white !important;
+}
+
+/* Set Head Styling */
+.setHed {
+  border: 4px solid rgb(0 0 0 / 0%);
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: rgb(115 115 115 / 52%);
+  margin-top: 40px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* Instruction Holder Styling */
+#instructionHolder {
+  backdrop-filter:blur(4px);
+}
+
+/* Health Bar Segment Styling */
+:root {
+  --hpBarWidth: 150%;
+}
+#bottomLeftHealthBar {
+  background: 0px rgba(0,0,0,.2);
+  column-gap: 0px;
+  padding: 0;
+  /*  outline: 2px solid #0006; */
+  box-shadow: 5px 5px 0 rgba(0,0,0,.3);
+  border-radius: 6px;
+  width: var(--hpBarWidth);
+}
+
+.nHealthBarSeg {
+  box-shadow: 0 0 black;
+  height: 40px;
+}
+
+.nHealthBarSeg:first-child .nHpBSeg{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.nHealthBarSeg:last-child .nHpBSeg {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.nHpBSeg {
+  border-radius: 0px;
+}
+.nHealthBarSeg {
+  background: 0;
+  margin-left: -1px;
+}
+#bottomLeftPlayerMid {
+  position: fixed;
+  bottom: 20px;
+  left: 140px;
+}
+#bottomLeftChallIcon {
+  display: none;
+}
+#bottomLeftPlayerMid {
+  width: var(--hpBar
+  Width);
+}
+
+#bottomLeftChallIcon {
+  display: none;
+}
+
+/* Weapon Item Styling */
+.weapItem {
+  position: absolute;
+  filter: drop-shadow(2px 2px var(--weapcolor)) drop-shadow(-2px -2px var(--weapcolor)) drop-shadow(-2px 2px var(--weapcolor)) drop-shadow(2px -2px var(--weapcolor)) drop-shadow(4px 4px 0px var(--weapcolor));
+  opacity: 0 !important;
+  transition-duration: 0.25s;
+  height: 0;
+  width: 500px;
+  position: fixed !important;
+  bottom: 2%;
+  right: calc(50% - 60px) !important;
+  opacity: 0 !important;
+  color: #fff;
+  background-color: rgb(20 20 20 / 0%);
+}
+
+.weapIcon {
+  height: 55%;
+  width: 55%;
+}
+
+#weapDisplay {
+  position: fixed;
+  right: 50% !important;
+}
+
+.weapItem[style*="1"] {
+  opacity: 1 !important;
+  height: 80px;
+}
+
+.weapSkin {
+  display: none !important;
+}
+
+.weapItemInner {
+  color: rgba(255, 255, 255, .7);
+  background-color: rgb(108 108 108 / 0%);
+}
+
+.weapSkin {
+  background-color: rgb(20 20 20 / 0%);
+  color: #ffffffcf;
+  display: none;
+}
+
+.weapKey {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  background-color: rgb(0 0 0 / 0%);
+  display: none;
+}
+
+.weapStreakHolder {
+  background-color: rgb(20 20 20 / 0%);
+  color: #fff;
+}
+
+.weapStreakInner {
+  color: rgb(255 255 255);
+  background-color: rgb(108 108 108 / 0%);
+  display: none;
+}
+
+
+/* Bottom Left Player Styling */
+#bottomLeftPlayer {
+  border-radius: 9px;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-grid;
+  grid-template-columns: auto 200px auto;
+  position: relative; /* Ensure it has a stacking context */
+  z-index: 5; /* Ensure it has a lower stacking order */
+}
+
+#bottomLeftPlayerLeft {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  background-color: rgba(255, 0, 0, 0);
+  margin: 3px;
+  border-radius: 6px;
+}
+
+
+#bottomLeftPlayerRight {
+  padding: 3px;
+  padding-right: 7px;
+  padding-left: 9px;
+  background-color: rgb(108 108 108 / 0%);
+  margin: 3px;
+  display: grid;
+  align-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#bottomLeftClassImg {
+  border-radius: 5px !important;
+  content: var(--img);
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 110px;
+  height: 110px;
+  visibility: visible !important;
+}
+
+/* Ammo Holder Styling */
+#ammoHolder {
+  border-radius: 4px;
+  background-color: rgb(20 20 20 / 0%) !important;
+  display: inline-block;
+  font-size: 76px;
+  letter-spacing: -2px;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: url(../img/blank_2.png);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#ammoVal {
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 70px !important;
+  filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color));
+}
+
+#ammoMax {
+  display: none;
+}
+#ammoIcon {
+  display: none;
+}
+
+/* LeaderBoard Name*/
+
+.leaderNameM {
+font-size: 0px;
+}
+
+#leaderboardHolder, .greyInlineInnerMid, #leaderContainer {
+ background-color: transparent;
+}
+   
+.leaderNameM::before {
+font-size: 24px;
+content: var(--Name);
+font-family: name;
+color: #ffffff;
+position: sticky;
+filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color));
+}
+
+.leaderNameM span {
+ font-size: 17px;
+ background-image: linear-gradient(to top, #ffffff, #ffffff);
+ animation: gradient-border 1.3s linear infinite;
+ background-size: 400% 100%;
+ color: transparent !important;
+ -webkit-background-clip: text;
+ filter: drop-shadow(0 0 1px var(--main-color)) drop-shadow(0 0 2px var(--main-color)) drop-shadow(0 0 6px var(--main-color));
+}
+
+.leaderName {
+ color: #ff0000;
+ text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+.leaderNameF {
+ color: rgb(255, 255, 255);
+ text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+#leaderDisplay {
+border-radius: 2px;
+background-color: var(--ingame-bg);
+}
+
+/* General Styling */
+.greyInner,
+.greyInlineInner,
+.greyInlineInnerMid {
+  margin: 3px;
+  background-color: rgb(108 108 108 / 0%);
+  padding: 5px;
+}
+.buttonO {
+  border: 4px solid #ffffff !important;
+}
+
+.buttonP,
+.buttonR,
+.buttonPI,
+.buttonG {
+  border: 4px solid #ffffff !important;
+}
+
+#policeButton {
+  border: 4px solid #ffffff !important;
+}
+
+#mapInfoHld {
+  border-bottom: 5px solid #ffffff;
+}
+
+/* fps, ping Shit */
+
+#menuFPSDisplay, #menuFPS, #menuPingDisplay, #menuPingText {
+  font-size: 12px !important;
+  color: #ffffff !important;
+  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important;
+}
+#menuPingIcon, #menuRegionLabel, #spectButton [style="font-size:15px;color:rgba(255,255,255,.6)"], #fpsDisplay, #pingDisplay, #menuTimer {
+  color: #ffffff !important;
+  filter: drop-shadow(0 0 5px var(--main-color))drop-shadow(0 0 10px var(--main-color)) !important;
+}
+#ingameFPS, #pingText{
+  color:white !important;
+}
+#fpsDisplay {
+  position: fixed !important;
+  top: 23% !important;
+  left: 1%;
+}  
+#pingDisplay {
+  position: fixed !important;
+  top: 26% !important;
+  left: 1%;
+}
+
+
+/* Spectate Shit */
+#spectButton, .switchsml, .specBtn{
+  position: absolute !important;
+  left: 96% !important;
+  top: 6% !important;
+}
+
+input:checked+.sliderSml {
+  background-color: #73061C;
+}
+
+/* CLASS PICKER */
+#aHolder,
+#onetrust-consent-sdk {
+    display: none !important;
+}
+
+#hiddenClasses {
+    display       : flex !important;
+    flex-direction: row;
+    position      : fixed;
+    left          : 50%;
+    bottom        : 10px;
+    transform     : translateX(-50%);
+    margin-right  : 10px;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/Assault.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px !important;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker1[onclick="selectClass(1)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/Sniper.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker2[onclick="selectClass(2)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/SMG.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker3[onclick="selectClass(3)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/LMG.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker4[onclick="selectClass(4)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/Shotgun.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker4[onclick="selectClass(4)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/rev.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/semi.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker7[onclick="selectClass(7)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/rocketeer.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker8[onclick="selectClass(8)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/uzi.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker8[onclick="selectClass(8)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+
+#menuClassPicker11[onclick="selectClass(11)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/bowman.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker11[onclick="selectClass(11)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
+    display        : block;
+    width          : 60px;
+    height         : 60px;
+    content        : url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/famas.png');
+    pointer-events : auto;
+    image-rendering: pixelated;
+    margin-right   : 10px;
+    padding        : 5px;
+    border-radius  : 10px;
+}
+
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+
+/* Assault */
+img[src="https://assets.krunker.io/textures/classes/icon_0.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/Assault.png');
+}
+/* Sniper */
+img[src="https://assets.krunker.io/textures/classes/icon_1.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/Sniper.png');
+}
+/* Run N Gun */
+img[src="https://assets.krunker.io/textures/classes/icon_2.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/SMG.png');
+}
+/* Srayn N Pray */
+img[src="https://assets.krunker.io/textures/classes/icon_3.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/LMG.png');
+}
+/* Vince */
+img[src="https://assets.krunker.io/textures/classes/icon_4.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/Shotgun.png');
+}
+/* Detective */
+img[src="https://assets.krunker.io/textures/classes/icon_5.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/rev.png');
+}
+/* Marksman */
+img[src="https://assets.krunker.io/textures/classes/icon_6.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/semi.png');
+}
+/* Rocketeer */
+img[src="https://assets.krunker.io/textures/classes/icon_7.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/rocketeer.png');
+}
+/* Agent / ninja ;) */
+img[src="https://assets.krunker.io/textures/classes/icon_8.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/uzi.png');
+}
+/* Runner */
+img[src="https://assets.krunker.io/textures/classes/icon_9.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/Runner.png');
+}
+/* Deagler */
+img[src="https://assets.krunker.io/textures/classes/icon_10.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/deagler.png');
+}
+/* Bowman */
+img[src="https://assets.krunker.io/textures/classes/icon_11.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/bowman.png');
+}
+/* Commando */
+img[src="https://assets.krunker.io/textures/classes/icon_12.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/famas.png');
+}
+/* Trooper */
+img[src="https://assets.krunker.io/textures/classes/icon_13.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/blaster.png');
+}
+/* Surviror */
+img[src="https://assets.krunker.io/textures/classes/icon_14.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/survivor.png');
+}
+/* Infiltrator */
+img[src="https://assets.krunker.io/textures/classes/icon_15.png?build=52xhevJNgeGecufFFR9kAfbi6THg5Jk2"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icpns/main/chargeRifle.png');
+}
+/* EndGame Icon */
+/* Defeat */
+img[src="https://krunker.io/img/def.png"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icons/refs/heads/main/def.png') !important;
+}
+/* Victory */
+img[src="https://krunker.io/img/vic.png"] {
+  content: url('https://raw.githubusercontent.com/HeroNight67/custom_css_Icons/refs/heads/main/vic.png') !important;
+}

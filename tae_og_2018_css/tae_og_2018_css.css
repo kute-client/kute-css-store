@@ -1,0 +1,499 @@
+/* WHOLE CSS MADE BY TAE NOT TO STEAL CREDIT, I JUST FIXED THE 2026 STUFF - MINIMAL.
+
+/*
+Krunker Classic
+CSS by tae / fix by Rinkishimo
+
+IGN(s): びこ / Rinkishimo
+Site(s): https://whuuayu.github.io/krunker / https://e-z.bio/stupid
+
+--Install Instructions--
+    Right Click This Page and Click "Save Page As..."
+
+--Changelog and License Info--
+    https://github.com/whuuayu/krunker-classic-css
+
+If you want to push an update or your name on the CSS, please consider donating <3
+*/
+
+/*The URL below is used for automatically updating the CSS, YOU DO NOT NEED TO TOUCH IT*/
+
+@import url(https://whuuayu.github.io/krunker-classic-css/classic.css);
+
+/*Make Edits Below*/
+
+/* Client Edits */
+
+div#PC7WaterMark2 {
+    display: none !important;
+}
+
+div#tcStringBtn {
+    display: none !important;
+}
+
+#PC7WaterMark1, #matchInfo {
+    display: none;
+}
+
+#PC7WaterMark,#PC7WaterMark1,#PC7WaterMark2{display:none!important;visibility:hidden!important}
+
+.toastify {
+  background: #000000 !important;
+  box-shadow: none;
+  font-size: 0px;
+}
+.toastify::after {
+  content: "<3";
+  font-size: 1vh;
+}
+
+#nukeCounter {
+    background-color: rgb(20 20 20 / 0%) !important;
+    text-shadow: 3px 3px black !important;
+}
+
+a {
+	color: #6c23ff;
+}
+
+.button.lgn[onclick*="openDiscord"] {
+  display: none !important;
+}
+
+.button.buttonG.lgn {
+    display: none;
+}
+
+.button.buttonP.lgn::after {
+  content: "idk";
+  color: white;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+div#PC7TwitchLink {
+    display: none;
+}
+
+/* Pic */
+
+#profilePicM {
+    border: 4px solid Black;
+    content: url(https://files.catbox.moe/shjbky.png);
+    background-color: transparent;
+    filter: none;
+    filter: drop-shadow(0px 0px 5px black);
+}
+#menuMiniProfilePic, #profilePicM {
+    content: url("https://files.catbox.moe/shjbky.png");
+    border-radius: 1rem;
+}
+
+.endTablePfp {
+    content: url("https://files.catbox.moe/shjbky.png");
+}
+
+/* FPS & Ping */
+
+#fpsDisplay{
+    color: transparent;
+}
+
+#pingDisplay {
+    color: transparent;
+}
+
+#pingDisplay, #fpsDisplay {
+    text-align: left
+}
+
+#pingText::after {
+    content: url('https://i.imgur.com/a8lrnOx.png')!important;
+    image-rendering: optimizequality;
+    filter: blur(1px);
+    color: #9eeb56;
+    margin-left: 6px;
+}
+
+/* New Hiders */
+
+.moreKrunkerClient.svelte-19783yx{
+    display:  none !important;
+}
+
+div#gameAnnouncementEl {
+    display: none !important;
+}
+
+#signupRewardsButton {
+    display: none !important;
+}
+
+div#mailCount {
+    display: none !important;
+}
+
+.sign-up-bonuses.svelte-l68grp {
+    display: none !important;
+}
+
+.signup-rewards-header.svelte-ofayft {
+    display: none !important;
+}
+
+.signup-rewards-content.svelte-ofayft {
+    display: none !important;
+}
+
+div#doubleXPAd {
+    display: none;
+}
+
+div#doubleXPHolder {
+    display: none !important;
+}
+
+.endTableN span, .leaderNameM span, .leaderName span, .leaderNameF span, div.newLeaderNameM span {
+    display: none
+}
+
+.streams-overlay.svelte-9szequ.closed {
+    display: none;
+}
+
+/* Comp */
+
+.compSwpTmB, #compBtnLst, #compClassPHolder, .compPLstIcn {
+    border-radius: 0px;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.compMenBtnS {
+    background-color: transparent !important;
+    width: 76px;
+    height: 86px;
+    border-radius: 0px;
+    border: none
+}
+
+#cmpDatBox, .compTScrB, .compPlWepsL, .cmpTmHed, .compPlWepsR   {
+display: none !important;
+}
+
+.compClassPItm {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.compClassPCnt {
+    bottom: -35px;
+    right: 20px;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+#compTimBox {
+    position: absolute;
+    width: 100%;
+    bottom: 9px;
+    text-align: center;
+    color: rgb(255 255 255);
+    font-size: 18px;
+}
+
+#instructionHolder {
+    backdrop-filter: grayscale(1);
+}
+
+#popupContent {
+    display: none !important;
+}
+
+#claimPop {
+    display: none !important;
+}
+
+/*Some Tags For Sharp Shooter And Deposit, Etc.*/
+
+#krTagHolder, #giftTagHolder, #powerUpHolder {
+    background-color: transparent !important;
+}
+
+#krTagHolder {
+    right: calc(100% - 999px);
+    bottom: 1450px;
+}
+
+.killStreakItem, .killStreakItemInner {
+    background-color: transparent!important;
+}
+
+/*some tags for sharp shooter and deposit, etc.*/
+
+#krTagHolder, #giftTagHolder, #powerUpHolder {
+    background-color: transparent !important;
+}
+
+#krTagHolder {
+    right: calc(100% - 999px);
+    bottom: 1450px;
+}
+
+.killStreakItem, .killStreakItemInner {
+    background-color: transparent!important;
+}
+
+/* DEATH UI*/
+.death-row-left,
+.death-row-right,
+.death-stats,
+.death-row-center,
+.death-row-class-level,
+.death-row-user-stat,
+.death-row-bottom-bg {
+    display: none !important;
+}
+
+#uiBase.onDeathScrn #chatHolder {
+    animation: none;
+    left: 15px;
+    bottom: 130px;
+}
+
+.death-ui-bottom,
+.death-ui-bottom-empty {
+    background: rgba(0, 0, 0, 0%);
+    backdrop-filter: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: unset;
+}
+
+.death-row-user-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5;
+}
+
+.death-row-user-text::before {
+    content: "Killed by:";
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+
+.death-row-bottom {
+    height: 145px;
+    width: 370px;
+    position: relative;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    filter: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    gap: 20px;
+    margin-left: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.death-row-class-img {
+    height: 90px;
+    width: 90px;
+    content: var(--deathpic);
+    border-radius: 2px;
+    image-rendering: auto;
+    bottom: -2px;
+}
+
+.death-column:nth-child(4) .death-row-bottom {
+    display: none;
+}
+
+.death-row-center-self:not(:first-child) {
+    display: none;
+}
+
+.death-row-center-self {
+    font-size: 0!important;
+    filter: none;
+}
+
+.death-row-center-self::after {
+    content: url('https://files.catbox.moe/shjbky.png');
+    margin-top: -150px;
+    filter: invert(1);
+}
+
+---
+
+/* new again */
+
+.streams-overlay.svelte-1ceimmu.closed {
+    display: none !important;
+}
+
+.menuItemRankedLabel {
+    display: none;
+}
+
+.signup-rewards-header.svelte-1v6b0qm {
+    display: none !important;
+}
+
+.signup-rewards-content.svelte-1v6b0qm {
+    display: none !important;
+}
+
+/* new hiders */
+
+.webpush-container.svelte-plhl9v.not-expanded {
+    display: none;
+}
+
+/* new again */
+
+.streams-overlay.svelte-1ceimmu.closed {
+    display: none !important;
+}
+
+.menuItemRankedLabel {
+    display: none;
+}
+
+.signup-rewards-header.svelte-1v6b0qm {
+    display: none !important;
+}
+
+.signup-rewards-content.svelte-1v6b0qm {
+    display: none !important;
+}
+
+div#menuItemShopOffersLabel {
+    display: none;
+}
+
+.main-menu-button-container.svelte-f3amho {
+    display: none !important;
+}
+
+.icon-button.svelte-wmukcv {
+    display: none !important;
+}
+
+.streams-overlay.svelte-1ij11km.closed {
+    display: none !important;
+}
+
+.streams-overlay.svelte-1ij11km.small {
+    display: none !important;
+}
+
+div#homeStoreAd {
+    display: none!important;
+}
+
+.webpush-container.svelte-plhl9v {
+    display: none !important;
+}
+
+.webpush-container.svelte-plhl9v.not-expanded {
+    display: none;
+}
+
+.ranked-matchmaking-status {
+    display: none !important
+}
+
+#instructions {
+      animation: none
+}
+
+div#gameAnnouncementEl {
+    display: none !important;
+}
+
+#signupRewardsButton {
+    display: none !important;
+}
+
+.moreKrunkerClient.svelte-19783yx{
+    display:  none !important;
+}
+
+.sign-up-bonuses.svelte-l68grp {
+    display: none !important;
+}
+
+.signup-rewards-header.svelte-ofayft {
+    display: none !important;
+}
+
+.signup-rewards-content.svelte-ofayft {
+    display: none !important;
+}
+
+div#doubleXPAd {
+    display: none;
+}
+
+div#doubleXPHolder {
+    display: none !important;
+}
+
+/*some tags for sharp shooter and deposit, etc.*/
+
+#krTagHolder, #giftTagHolder, #powerUpHolder {
+    background-color: transparent !important;
+}
+
+#krTagHolder {
+    right: calc(100% - 999px);
+    bottom: 1450px;
+}
+
+.killStreakItem, .killStreakItemInner {
+    background-color: transparent!important;
+}
+
+#menuBtnRanked {
+    border:none !important;
+}
+
+#menuAccountUsername {
+    border:none !important;
+}
+
+div#doubleXPButton {
+    display: none !important;
+}
+
+.guest-earned-collect.svelte-jfoynh {
+    display: none !important;
+}

@@ -1,0 +1,375 @@
+/* (extra clean v3) thaddeuz css by https://www.youtube.com/@thaddeuz_ */
+/* Please credit me if you want to redistribute this code as part of your code. */
+
+/* Updated 31 December 2023 */
+
+:root {
+    --div-grey: transparent;
+    --div-black: transparent;
+}
+  
+   /* font */
+
+@font-face {
+      font-family: gamefont;
+      src: url(https://dl.dropboxusercontent.com/scl/fi/msn19ofgvofwm12oqt182/Montserrat-Regular.ttf?rlkey=2q0iowy5xlg5db9v7pxyfcvqc&dl=0);
+}
+
+/* menu css */
+
+   /* bottom hover cred shotzz */
+
+#subLogoButtons {
+      position: absolute !important;
+      display: flex !important;
+      flex-direction: row !important;
+      transform: translateY(210px);
+      left: calc(50% - 250px) !important;
+      transition: 1.8s !important
+}
+
+#subLogoButtons::before {
+      content: '';
+      border-left: 1000px solid #ff000000 !important;
+      border-bottom: 240px solid #ff000000 !important;
+      border-right: 1000px solid #ff000000 !important;
+      position: absolute !important;
+      bottom: 60px !important;
+      right: -600px !important;
+      pointer-events: auto !important
+}
+
+#subLogoButtons:hover {
+      transform: translateY(0px);
+      transition: 0.5s !important
+}
+
+.button, .button:hover { 
+      background-color: transparent !important;
+      border: hidden ! important;
+}
+
+   /* top left */
+
+#mLevelCont,
+      .headerBarLeft,
+      .headerBarRight {
+      background-color: transparent;
+}
+
+#menuAccountUsername {
+      font-size  : 23px;
+      padding-top: 4px;
+      padding-left: 6px;
+}
+
+.verticalSeparator {
+      opacity:0
+}
+
+.progressBar {
+      height: 8px;
+      margin-top: -4px;
+      background-color: rgba(0, 0, 0, 0.15);
+}
+
+.progressBarInner {
+      background-image: linear-gradient(to right,#adadad, #ffffff);
+}
+
+#mailContainer {  
+      padding-bottom: 3px;
+}
+
+#mLevelContV {
+      font-size  : 60px;
+}
+
+.krInfo {
+      font-size: 20px !important;
+      position : fixed;
+      top      : 89px;
+      left     : 20px;
+}
+
+.junkInfo {
+      font-size: 20px !important;
+      position : fixed;
+      top      : 94px;
+      left     : 140px;
+}
+
+   /* left */
+
+.material-icons-outlined, span.material-symbols-outlined {
+      color: #fff !important
+}
+
+#menuItemContainer {
+      background: transparent
+}
+
+   /* hud class popup */
+
+#menuClassContainer:hover #classPreviewCanvas {
+      transform: unset !important;
+}
+
+#classPreviewCanvas {
+      transform: translateY(5000000px);
+      margin-bottom: -135px;
+      margin-right: -113px;
+}
+
+#customizeButton {
+      font-size: 700px!important;
+      opacity:0
+}
+
+   /* remove click to play animation */
+
+#instructions {
+      animation: none
+}
+
+   /* removal */
+#timerIcon, 
+#bottomLeftClassImg, 
+#bottomLeftHealth,
+#bottomLeftTeamHolder,
+#voiceIcon,
+#recTimer, 
+#bottomLeftChallIcon,
+#ammoMax,
+#ammoIcon,
+#weapHolder, 
+#matchInfo,
+#aHolder,
+.endAHolder,
+#topRightAdHolder, 
+#seasonLabel,
+#termsInfo,
+#streamContainer,
+#mapInfoHld,
+#mainLogo,
+#mainLogoFace,
+#tlInfHold,
+.menuSocialB,
+#policeButton,
+#menuMiniProfilePic,
+#menuClassSubtext,
+#menuClassName,
+#menuClassIcn,
+#customizeButton .material-icons,
+.menuItem .menuItemTitle,
+#chatSwitch,
+#editorBtnM,
+#matchInfo.topLeftOld {
+      display: none !important;
+}
+
+   /* health bar */
+
+#bottomLeftHealthBar {
+      width: 200px;
+      position: fixed;
+      left: calc(50% - 110px);
+      bottom: 25px;
+}
+
+.nHealthBarSeg {
+      height: 21px;
+      margin: 0 -3.88px;
+      background:transparent
+}
+
+   /* ammo - THANKS JITCHU */
+
+   #ammoHolder {
+      position: fixed;
+      top: calc(50% + 40px);
+      left: calc(50% - 40px);
+      transform: unset;
+      height: 8px;
+      margin: 0;
+      padding: 0;
+      width: 80px;
+      background-color: transparent!important;
+      background-image: linear-gradient(to right,rgb(255 255 255),rgb(255 255 255));
+}
+#ammoMax,
+#ammoIcon {
+      display: none !important;
+}
+  .greyInner {
+      background-color: #FFF0;
+}
+  #ammoVal {
+      -webkit-text-stroke: 4px #000;
+      text-shadow: 7px 7px black, 6px 6px black, 5px 5px black, 4px 4px black, 3px 3px black, 2px 2px black, 1px 1px #000;
+      font-size: 60px;
+      font-family: 'Montserrat', sans-serif!important;
+      font-weight: 700;
+      position: fixed;
+      bottom: 150px;
+      left: 520px;
+}
+  #ammoMax, #ammoIcon {
+      display: none;
+}
+  .greyInner {
+      background-color: #FFF0;
+}
+  #ammoVal {
+      -webkit-text-stroke: 4px #000;
+      text-shadow: 7px 7px black, 6px 6px black, 5px 5px black, 4px 4px black, 3px 3px black, 2px 2px black, 1px 1px #000;
+      font-size: 60px;
+      font-family: 'Montserrat', sans-serif!important;
+      font-weight: 700;
+      position: fixed;
+      bottom: 150px;
+      left: 520px;
+}
+#ammoVal {
+      font-size: 40px;
+      display: inline-block;
+      position: fixed;
+      left: calc(50% + 110px);
+      bottom: 22px;
+      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+   /* counters */
+
+#killsVal,#deathsVal,#streakVal,#myScoreVal,#kdVal {
+      color: white;
+      font-size: 30px;
+      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+#killsIcon,#deathsIcon,#streakIcon,#kdIcon {
+      width: 25px;
+      height: 25px;
+}
+
+   /* fps and ping */
+
+#menuFPSDisplay,#menuFPS,#ingameFPS,#fpsDisplay,
+#menuPingText,#menuPingDisplay .material-icons,#pingDisplay,#pingText {
+      color: rgb(255, 255, 255) !important;
+      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+  /* chat */
+
+#chatInput {
+      background-color: rgba(0, 0, 0, 0);
+      position:absolute;
+      left:0px;
+      border: 2px solid rgba(0,0,0,0);
+}
+
+#chatList {
+      background-color: rgba(0, 0, 0, 0);
+}
+
+.chatItem {
+      font-size: 18px;
+      max-width: 265px;
+      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+  
+.chatItem span[style="color:#fc03ec"] {
+      color: #eb8787 !important;
+}
+
+#uiBase.onGame #chatHolder {
+      bottom: 18px
+}
+
+  /* settings */
+
+.settName,.settNameSmall {
+      color: white !important;
+}
+
+#menuWindow.dark,
+.settingsHeader,
+.settingsBtn{
+      background-color: black;
+}
+
+input[type=color],
+.setHed {
+      border: 4px solid #c1a0ff;
+      background-color: black;
+}
+
+input:checked+.slider {
+      background-color: #c1a0ff
+}
+
+.leaderNameM span {
+      -webkit-animation: rainbow .5s linear infinite;
+      animation: rainbow .5s linear infinite
+}
+  
+  .endTableN span[style="color:#fff"]::after {
+      -webkit-animation: rainbow .5s linear infinite;
+      animation: rainbow .5s linear infinite
+}
+
+.endTableN[style="color:#fff"] {
+      visibility: visible;
+      font-size: 0 !important;
+}
+  
+  .endTableN[style="color:#fff"]::before { 
+      font-size: 20px !important;
+      visibility: visible;
+      content: "あかーあ" !important;
+      color: rgb(255, 255, 255);
+      text-transform: var(--text-transform);
+      font:italic
+}
+
+#menuKRCount:before {
+      content:'$';
+      color: #69cd4d
+}
+
+#aHolder,
+.endAHolder,
+#topRightAdHolder, 
+#seasonLabel,
+#termsInfo,
+#streamContainer,
+#tlInfHold,
+.menuSocialB,
+#editorBtnM {
+      display: none !important;
+}
+
+.leaderNameM {
+      visibility: hidden;
+      font-size: 0 !important;
+}
+  
+  .leaderNameM {
+      visibility: hidden;
+      font-size: 0 !important;
+}
+  
+  .leaderNameM::before { 
+      font-size: 20px !important;
+      visibility: visible;
+      content: "あかーあ";
+      color: rgb(255, 255, 255);
+      text-transform: var(--text-transform);
+      font:bolder
+      
+}
+
+#instructions {
+      animation: none
+}

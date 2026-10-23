@@ -1,0 +1,131 @@
+/* 
+---------------------
+| Krunker Glass v1 css
+| Author: -deusVult
+|
+| IGN: -deusVult
+| Github: https://github.com/deusVult69
+| Discord: hardypr0
+---------------------
+*/
+@import url(https://deusvult69.github.io/krunker-glass-css/glass-v1-anim.css);
+
+:root {
+	/* typography */
+	--font: 'DynaPuff', system-ui;
+	--font-logo: 'Pacifico', serif;
+
+	/* Adjust font size*/
+	--font-size: 20px;
+
+	/* colors */
+	--color-primary: #ff79ac;
+	--color-text-primary: #e7e7e7;
+
+	/* bg */
+	--color-bg-primary: #24292e;
+	--color-bg-special: transparent;
+
+	/* glass */
+	--glass-bg: #ffffff20;
+	--glass-blur: 10px;
+
+	/* pop */
+	--pop-blur: blur(10px);
+	--color-popup-shadow: 0 0 10px var(--color-primary);
+
+	/* buttons */
+	--btn-bg: transparent;
+	--btn-border: 2px solid var(--color-primary);
+
+	/* form */
+	--input-bg: var(--color-bg-primary);
+
+	/* other */
+	--border: 0;
+	/* You can turn on borders for main blocks, uncomment next line */
+	/* --border: 2px solid var(--color-primary); */
+	--radius: 20px;
+	--radius-sm: 10px;
+
+	--block-padding: 20px;
+
+	/* customization */
+	--logo-caption: 'Meow clan';
+
+	/* customize */
+	/* to apply these, uncomment blocks below  */
+	--ign: 'deus';
+	--clan-tag: '[m3ow]';
+	--clan-tag-color: linear-gradient(
+		90deg,
+		#ff0000,
+		#ff7300,
+		#fffb00,
+		#48ff00,
+		#00ffd5,
+		#002bff,
+		#7a00ff,
+		#ff00c8,
+		#ff0000
+	);
+}
+
+/* Uncommment all next blocks to use custom ign, clan tag, tag color */
+/* #menuAccountUsername,
+.endTableN[style="color:#fff"],
+.endTableN[style="color:#fff"] span,
+.newLeaderNameM,
+.newLeaderNameM span{
+	font-size: 0;
+	visibility: hidden;
+}
+#menuAccountUsername::before,
+.endTableN[style="color:#fff"]::before,
+.newLeaderNameM::before{
+	content: var(--ign);
+	visibility: visible;
+}
+#menuAccountUsername::before{
+	font-size: 1rem;
+}
+.endTableN[style="color:#fff"]::before,
+.endTableN[style="color:#fff"] span::before{
+	font-size: 1.25rem;
+}
+.newLeaderNameM::before,
+.newLeaderNameM span::after {
+	font-size: 0.9375rem;
+}
+
+.endTableN[style="color:#fff"] span::before,
+.newLeaderNameM span::after{
+	content: var(--clan-tag);
+	display: inline;
+
+	margin-left: 5px;
+	
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+
+	background: var(--clan-tag-color);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+	visibility: visible;
+
+  animation: rainbow 4s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+} */
+
+
+/* Add your edits below */

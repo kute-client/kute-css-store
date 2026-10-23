@@ -1,0 +1,602 @@
+/* Game Font */
+:root {
+    --Name: "IGN";
+    --WaterMark: "WaterMark";
+    --weapcolor: rgb(0, 0, 0);
+    --img: url(https://cdn.discordapp.com/attachments/980045758311059456/1245009083988180992/IMG_0024.png?ex=6676d490&is=66758310&hm=0cf0d934598fce9d5a0eeddece348052760d8625b042fb094cb6783ca43a536c&);
+    --div-grey: rgb(255 255 255 / 0%);
+    --div-black: rgb(255 255 255 / 0%);
+}
+
+
+
+/* Removal */
+#hudClassIcon,
+#gameNameHolder {
+    display: none;
+}
+#ammoIcon,
+#challIcon,
+#timerIcon,
+#mainLogo,
+#gameLogo,
+#curGameInfo > div {
+  display: none !important;
+}
+#aHolder,
+#clientExit,
+#rankedSoonTm,
+#newsHolder,
+#youNewDiv,
+#onetrust-consent-sdk,
+.weapKey,
+.imageButton,
+#editorBtnM,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+.krSocial,
+#mailCount,
+#voiceDisplay,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+#loadEditrBtn,
+.settingsBtn[onclick="openOneTrust()"],
+.menuSocialB,
+.setSugBox2,
+#mainLogo,
+#termsInfo :not(div[onClick*="Window(35)"]),
+.menuItemTitle,
+#weapDisplay,
+#menuWindow::-webkit-scrollbar,
+#maxHP,
+#loadTipsHolder,
+#loadInfoLHolder,
+#loadInfoRHolder,
+#curGameInfo {
+  display: none !important;
+}
+
+#reloadMsg {
+    border: transparent;
+    background: transparent;
+    font-size: 0;
+    top: 52%;
+}
+
+#reloadMsg::before {
+    content: "!";
+    font-size: 20px;
+    color: #fc0303;
+    text-shadow: 0 0 11px #000000;
+}
+.voiceOff:after {
+    display: none !important;
+  }
+  #recTimer {
+    display: none !important;
+  }
+
+/* Leaderboard Styling */
+#leaderboardHolder, .greyInlineInnerMid, #leaderContainer {
+    background-color: transparent;
+}
+
+/* Timer Styling */
+#timerHolder.topLeftOld {
+    text-align: left!important;
+    margin-right: 10px;
+    margin-bottom: 10px!important;
+    border-radius: 4px;
+    vertical-align: top!important;
+    width: unset!important;
+    background-color: rgb(20 20 20 / 0%);
+    text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+#timerInner.topLeftOld {
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 3px;
+    background-color: rgb(108 108 108 / 0%);
+    display: inline-block;
+}
+
+#timerVal.topLeftOld {
+    padding-left: 10px;
+    font-size: 50px!important;
+    margin-bottom: 81px !important;
+    text-shadow: unset!important;
+}
+
+#timerIcon.topLeftOld {
+    display: none;
+}
+
+/* Match Info Styling */
+
+#clientWatermark::before {
+    display: none !important;
+}
+
+#clientWatermark::after {
+    display: none !important;
+}
+#matchInfo.topLeftOld {
+    font-size: 0px!important;
+}
+
+#matchInfo.topLeftOld:after {
+    content: var(--WaterMark);
+    text-shadow: 2px 4px 6px rgb(30, 30, 30); 
+    color: white;
+    font-size: 30px;
+}
+
+/* Bottom Left Chat Box */
+
+#chatList{
+    background-color: rgba(0,0,0,.0);
+    color: #000000!important;
+}
+#chatInputHolder{
+     border: 0px solid rgba(0,0,0,.0);
+    background-color: rgba(0,0,0,.0);
+}    
+    
+    
+#chatInput{
+        background-color: transparent;
+        border: transparent;
+}    
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+/* Bottom Left Health Styling */
+#bottomLeftHealth {
+    background: transparent;
+    background-color: transparent;
+    position: fixed;
+    bottom: 60px;
+    left: 140px;
+    font-size: 20px;
+}
+
+#bottomLeftHealth:after {
+    background-color: transparent;
+    position: sticky;
+    bottom: 0px;
+    left: 160px;
+    font-size: 20px;
+    content: ' HP';
+    color: red;
+    text-shadow: 2px 4px 6px rgb(30, 30, 30) !important;
+    
+}
+
+#bottomLeftTeamType {
+    display: none;
+}
+  #bottomLeftTeamName {
+    display: none;
+}
+#bottomLeftChallIcon {
+    display: none;
+}
+
+/* Instructions Styling */
+#instructions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    color: rgb(255 255 255);
+    font-size: 32px;
+    animation: grow 1s infinite alternate;
+}
+
+/* End Table Name Styling */
+.endTableN[style="color:#fff"] {
+    font-size: 0px;
+}
+
+.endTableN[style="color:#fff"]:before {
+    content: var(--Name);
+    font-size: 15px;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Menu Account Username Styling */
+#menuAccountUsername {
+    font-size: 0;
+}
+
+#menuAccountUsername::before {
+    content: var(--Name);
+    font-size: 19px !important;
+    vertical-align: middle;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Menu Item Container Styling */
+#menuItemContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0 0 0 / 44%);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+.progressBarInner {
+    height: 100%;
+    background-image: linear-gradient(to right,#fff,#fff,94%,white);
+    transition: width 1s ease-in-out;
+    border-radius: 3px;
+}
+  #streamContainer {
+    display: none;
+  }
+  #termsInfo {
+    display: none;
+  }
+  #aHolder {
+    display: none !important;
+  }
+  #topRightAdHolder {
+      display: none !important;
+  }
+  #seasonLabel {
+    display: none !important;
+  }
+  img#editorBtnM {
+    display: none;
+  }
+
+  .menuSocialB {
+    display: none;
+  }
+
+  .verticalSeparator {
+    height: 0;
+  }
+
+  #homeStoreAd {
+    display: none;
+  }
+
+  #updateAd {
+    display: none !important;
+  }
+
+  .youNewDiv {
+      display: none;
+  }
+
+  
+
+/* Menu Window Styling */
+#menuWindow.dark {
+    background-color: #000000b0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: -3px -2px 8px rgb(195 195 195 / 0%);
+    backdrop-filter: blur(8px);
+}
+
+/* Settings Header Styling */
+.settingsHeader {
+    width: 100%;
+    padding-top: 19px;
+    padding-bottom: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 999999999;
+    background-color: #000;
+    padding-left: 20px;
+    margin-left: -20px;
+}
+
+.material-icons-outlined {
+    color: white !important;
+}
+
+/* Set Head Styling */
+.setHed {
+    border: 4px solid rgb(0 0 0 / 0%);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: rgb(115 115 115 / 52%);
+    margin-top: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/* Instruction Holder Styling */
+#instructionHolder {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(8px);
+}
+
+/* Health Bar Segment Styling */
+:root {
+    --hpBarWidth: 300px;
+  }
+  #bottomLeftHealthBar {
+    background: 0px rgba(0,0,0,.2);
+    column-gap: 0px;
+    padding: 0;
+    /*  outline: 2px solid #0006; */
+    box-shadow: 5px 5px 0 rgba(0,0,0,.3);
+    border-radius: 6px;
+  }
+  
+  .nHealthBarSeg {
+    box-shadow: 0 0 black;
+    height: 35px;
+  }
+  
+  .nHealthBarSeg:first-child .nHpBSeg{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  
+  .nHealthBarSeg:last-child .nHpBSeg {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .nHpBSeg {
+    border-radius: 0px;
+  }
+  .nHealthBarSeg {
+    background: 0;
+    margin-left: -1px;
+  }
+  #bottomLeftPlayerMid {
+    position: fixed;
+    bottom: 20px;
+    left: 140px;
+  }
+  #bottomLeftChallIcon {
+    display: none;
+  }
+  #bottomLeftPlayerMid {
+    width: var(--hpBarWidth);
+  }
+
+  #bottomLeftChallIcon {
+    display: none;
+  }
+
+/* Weapon Item Styling */
+.weapItem {
+    position: absolute;
+    filter: drop-shadow(2px 2px var(--weapcolor)) drop-shadow(-2px -2px var(--weapcolor)) drop-shadow(-2px 2px var(--weapcolor)) drop-shadow(2px -2px var(--weapcolor)) drop-shadow(4px 4px 0px var(--weapcolor));
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    height: 0;
+    width: 500px;
+    position: fixed !important;
+    bottom: 2%;
+    right: calc(50% - 60px) !important;
+    opacity: 0 !important;
+    color: #fff;
+    background-color: rgb(20 20 20 / 0%);
+}
+
+.weapIcon {
+    height: 55%;
+    width: 55%;
+}
+
+#weapDisplay {
+    position: fixed;
+    right: 50% !important;
+}
+
+.weapItem[style*="1"] {
+    opacity: 1 !important;
+    height: 80px;
+}
+
+.weapSkin {
+    display: none !important;
+}
+
+.weapItemInner {
+    color: rgba(255, 255, 255, .7);
+    background-color: rgb(108 108 108 / 0%);
+}
+
+.weapSkin {
+    background-color: rgb(20 20 20 / 0%);
+    color: #ffffffcf;
+    display: none;
+}
+
+.weapKey {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    background-color: rgb(0 0 0 / 0%);
+    display: none;
+}
+
+.weapStreakHolder {
+    background-color: rgb(20 20 20 / 0%);
+    color: #fff;
+}
+
+.weapStreakInner {
+    color: rgb(255 255 255);
+    background-color: rgb(108 108 108 / 0%);
+    display: none;
+}
+
+/* Center Leader Container Styling */
+.centerLeaderContainer {
+    text-align: left;
+    color: #fff;
+    border-radius: 4px;
+    background-color: rgb(20 20 20 / 0%);
+}
+
+.centerLeaderContainerInner {
+    margin: 3px;
+    background-color: rgb(0 0 0 / 0.3);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* Bottom Left Player Styling */
+#bottomLeftPlayer {
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0);
+    display: inline-grid;
+    grid-template-columns: auto 200px auto;
+    position: relative; /* Ensure it has a stacking context */
+    z-index: 5; /* Ensure it has a lower stacking order */
+}
+
+#bottomLeftPlayerLeft {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0);
+    margin: 3px;
+    border-radius: 6px;
+}
+
+
+#bottomLeftPlayerRight {
+    padding: 3px;
+    padding-right: 7px;
+    padding-left: 9px;
+    background-color: rgb(108 108 108 / 0%);
+    margin: 3px;
+    display: grid;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#bottomLeftClassImg {
+    border-radius: 5px !important;
+    content: var(--img);
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    width: 110px;
+    height: 110px;
+    visibility: visible !important;
+}
+
+/* Ammo Holder Styling */
+#ammoHolder {
+    border-radius: 4px;
+    background-color: rgb(20 20 20 / 0%) !important;
+    display: inline-block;
+    font-size: 76px;
+    letter-spacing: -2px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#ammoVal {
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 70px !important;
+    text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+#ammoMax {
+    display: none;
+}
+#ammoIcon {
+    display: none;
+}
+
+/* Leader Name Styling */
+  .leaderNameM {
+    font-size: 0px;
+   }
+   
+   .leaderNameM:before {
+    font-size: 18px;
+    content: var(--Name);
+    color: #ffffff;
+   }
+   
+   .leaderNameM span {
+     font-size: 20px;
+     background-image: linear-gradient(to top, #000000, #000000);
+     animation: gradient-border 1.3s linear infinite;
+     background-size: 400% 100%;
+     color: transparent !important;
+     -webkit-background-clip: text;
+   }
+
+
+/* General Styling */
+.greyInner,
+.greyInlineInner,
+.greyInlineInnerMid {
+    margin: 3px;
+    background-color: rgb(108 108 108 / 0%);
+    padding: 5px;
+}
+
+.buttonO {
+    border: 4px solid #ffffff !important;
+}
+
+.button {
+    background-color: rgb(0 0 0) !important;
+    border: hidden;
+}
+
+.buttonP,
+.buttonR,
+.buttonPI,
+.buttonG {
+    border: 4px solid #ffffff !important;
+}
+
+#policeButton {
+    border: 4px solid #ffffff !important;
+}
+
+#mapInfoHld {
+    border-bottom: 5px solid #ffffff;
+}

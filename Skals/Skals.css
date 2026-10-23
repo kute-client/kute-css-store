@@ -1,0 +1,1861 @@
+:root {
+	--div-grey      : transparent;
+	--div-shadow    : transparent;
+	--gradient      : linear-gradient(to bottom, #FF9BA6, #FF00FF, #ff009d, #ff0080);
+	--gradientxp    : linear-gradient(to left, #FF9BA6, #FF00FF, #ff009d, #ff0080);
+	--accent        : #FF9BA6 !important;
+	--accent2       : #FF00FF !important;
+	--blurs         : 0px 0px 5px #ff009db3 !important;
+	--blur          : 0px 0px 25px #ff009db3 !important;
+	--check-yes     : #FF00FF;
+	--check-no      : #ff0000;
+	--bg-color-1    : #ff008080;
+	--bg-color-2    : #ff009d80;
+	--bg-color-3    : #FF00FF80;
+	--menu-bg       : #FF9BA6;
+	--hpBarWidth    : 400px;
+	--ammohpFontSize: 80px;
+}
+
+@font-face {
+	font-family: gamefont;
+	src        : url(https://raw.githubusercontent.com/Le-skal/HIHIHAHA/main/Fonts/font2.ttf);
+}
+
+@import url(https://envyxyz.github.io/removal/removal.css);
+
+#leaderContainer,
+.weapItemInner,
+.weapItem,
+.greyInner,
+.greyInlineInner,
+.greyInlineInnerMid,
+#bottomLeftPlayerLeft,
+#bottomLeftHealthBar,
+#bottomLeftPlayerRight,
+#timerInner.topLeftOld,
+#mLevelCont,
+#killStreakHolder,
+#powerUpHolder,
+#giftTagHolder,
+#krTagHolder,
+.button,
+.settingsHeader,
+.settingsBtn,
+.clsStatImg,
+#selectorContainer,
+.hostToggle,
+.hostToggle:hover,
+.hostOpt,
+.hostOpt:hover,
+.optCheck,
+.optCheck:hover,
+.hostPresetBtn,
+.classCard,
+.classXPBar,
+.skinCard,
+#itemSearchH,
+.custBack,
+.winClose,
+.loadoutBtn,
+.inputGrey2,
+.clsStatXPBar,
+.sliderM,
+#bindsHeader,
+.openCollection,
+#settSearch,
+.bundleCrd,
+.crftRcpeCrd,
+.redVouchBtn,
+.chalRews,
+#confirmBtn,
+#confirmBtn:hover,
+#declineBtn,
+#declineBtn:hover,
+.compMenBtnS,
+.compSwpTmB,
+.compTScrB,
+#plySearch,
+#spinHistoryBtn,
+.punishButton,
+#chatInputHolder,
+#endTable,
+#clanDeclineAll,
+#clanDeclineAll:hover,
+.serverHeader,
+#hostMenuBtn,
+#tabHolder,
+#bottomLeftPlayer,
+#timerHolder.topLeftOld,
+.crStat,
+.instructionsHeader,
+.instructionsTabs,
+#twoFAbtn,
+.clanRolD,
+#kdLayout,
+.setHedS,
+.updDisN,
+.updDisN:hover,
+.subPassChg,
+.subPassChg:hover,
+.searchBtn,
+.voteHint,
+#speedRunReset,
+#defaultSettsInfo,
+.bundleItmBtn,
+div[style="padding:10px;background-color:rgba(0,0,0,0.6);border: 3px solid rgba(255, 255, 255, 0.4);margin-bottom:0px;margin-top:10px;padding-left:15px;font-size:18px"],
+div[style="padding:10px;background-color:rgba(0,0,0,0.4);border: 3px solid rgba(255, 255, 255, 0.4);margin-bottom:0px;margin-top:10px;padding-left:15px;font-size:18px"],
+#passCode,
+#rawMapData,
+.teamTotals,
+.takeActionBtn,
+.bundlPopSidH,
+.bundlPopBuyC,
+.tListN.inv,
+.tDecCheck,
+.tSubCheck,
+.tSearch,
+#tradeChatInput,
+.tradeChatItem,
+.endChalImg,
+.joinBtn,
+.accountInput,
+.statIcon,
+#leaderboardHolder {
+	background: transparent !important;
+}
+
+#chatSwitch,
+#voiceIcon,
+#recTimer,
+#mainLogoFace,
+.slider:before,
+.sliderSml:before,
+#seasonLabel,
+.weapStreakHolder,
+#aHolder {
+	display: none !important;
+}
+
+/* メインロゴ */
+
+
+#gameNameHolder {
+	position : fixed !important;
+	top      : auto !important;
+	left     : 0% !important;
+	bottom   : 460px !important;
+	transform: translateX(0%) !important;
+}
+
+#mainLogo {
+	position: fixed !important;
+	left    : -80px !important;
+	bottom  : 0px !important;
+	/* 画像のURLを指定 */
+	content : url(https://raw.githubusercontent.com/Le-skal/HIHIHAHA/refs/heads/main/img/pink_menu.png) !important;
+	width   : 500px;
+	/* 大きさ変更 */
+	height  : auto;
+
+}
+
+
+/* ミニプロフィール画像 */
+
+
+#menuMiniProfilePic {
+	/* 画像のURLを指定 */
+	content      : url(https://raw.githubusercontent.com/Le-skal/HIHIHAHA/refs/heads/main/img/pink_mini.jpg);
+	filter       : brightness(1);
+	border-radius: 0;
+	width        : 30px;
+	/* 大きさ変更 */
+	height       : auto;
+}
+
+
+/* プロフィール画像 */
+
+
+#profilePicM {
+	/* 画像のURLを指定 */
+	content      : url(https://raw.githubusercontent.com/Le-skal/HIHIHAHA/refs/heads/main/img/pink_profile.webp);
+	filter       : brightness(1);
+	border-radius: 0;
+	border       : none;
+	filter       : drop-shadow(3px 3px var(--accent));
+	/* 影の追加 */
+}
+
+.progressBarInner,
+.xpBarB,
+.clsStatXPBarC,
+.clsXPBarC,
+.chalXPBarC,
+.xpEndBarB,
+.xpEndBPBarB,
+#trustPrgHD {
+	background-image: var(--gradientxp);
+	color           : transparent !important;
+}
+
+input:checked+.optCheck,
+.slider,
+input[type=number],
+.chalCard,
+.endTablePfp,
+.folPfp,
+#specStats,
+#specTimer,
+#voteToKick,
+#networkLag,
+.matchVote {
+	background-color: rgba(0, 0, 0, 0.623);
+	box-shadow      : var(--blur), 0px 0px 5px var(--accent) !important;
+}
+
+
+.endCard,
+.killStreakItem {
+	background-color: var(--accent);
+}
+
+/*✅アニメーション*/
+
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+		/* 0%の位置で translateY(0) にする */
+	}
+
+	25% {
+		transform: translateY(-5px);
+		/* 25% の位置で上に 5px 移動 */
+	}
+
+	75% {
+		transform: translateY(5px);
+		/* 75% の位置で下に 5px 移動 */
+	}
+}
+
+
+/*メニューUI*/
+
+
+/*✅消す*/
+
+
+/* タイムライン情報とマップ情報を非表示 */
+
+
+#tlInfHold,
+#mapInfoHld {
+	display: none !important;
+}
+
+
+/* 特定のクラス名が付与された要素を非表示 */
+
+
+.youNewDiv {
+	display: none !important;
+}
+
+
+/* インストラクションを非表示 */
+
+
+/* Instructions Styling */
+#instructions {
+	position : fixed;
+	top      : 48%;
+	font-size: 0px;
+	animation: none
+}
+
+#instructions:after {
+	font-size  : 32px;
+	color      : white;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+	content    : "Panda Lover's";
+	animation  : grow .8s infinite alternate
+}
+
+
+/* インストラクションアップデートの背景を透明に */
+
+
+#instructionsUpdate {
+	background-color: transparent;
+}
+
+
+/* ヘッダー右部分、ストア広告、各種広告、利用規約情報を非表示 */
+
+
+#headerRight,
+#homeStoreAd,
+#aContainer,
+#topRightAdHolder,
+#streamContainer,
+#homeStoreAd,
+#bundlePop,
+#termsInfo {
+	display: none !important;
+}
+
+
+/* 警察ボタンを非表示 */
+
+
+#policeButton {
+	display: none;
+}
+
+
+/* メニューのクラスアイコンを非表示 */
+
+
+#menuClassIcn {
+	display: none;
+}
+
+
+/* メニューのクラス名タグ、サブテキスト、クラス名を非表示 */
+
+
+#menuClassNameTag,
+#menuClassSubtext,
+#menuClassName {
+	display: none;
+}
+
+
+/* カスタマイズボタンのマテリアルアイコンを非表示 */
+
+
+#customizeButton>.material-icons {
+	display: none;
+}
+
+
+/* メニューボタンアイコンを非表示 */
+
+
+.menBtnIcn {
+	display: none !important;
+}
+
+
+
+/*✅左上*/
+
+
+#signedInHeaderBar.headerBarLeft.headerBar {
+	width : 1000px;
+	height: auto;
+}
+
+
+/*背景*/
+
+
+.headerBarLeft,
+#mLevelCont {
+	background-color: transparent;
+}
+
+
+/*名前、数字*/
+
+
+#menuAccountUsername,
+#menuKRCount,
+#menuJNKCount {
+	font-size  : 25px;
+	text-shadow: 2px 2px 0px #000;
+	color      : var(--accent);
+}
+
+#mLevelContV {
+	font-size  : 50px;
+	text-shadow: 3px 3px 0px #000;
+	color      : var(--accent);
+}
+
+
+/*画像*/
+
+
+#menuKRCount span,
+#menuJNKCount span,
+#mailIcon {
+	filter: brightness(0) drop-shadow(1px 1px var(--accent));
+}
+
+#mailIcon {
+	filter   : brightness(0) drop-shadow(2px 2px var(--accent));
+	transform: none;
+}
+
+
+/*レベルバー色(中)*/
+
+
+
+
+
+/*レベルバー色(外)*/
+
+
+#menuLvlHold.progressBar {
+	background-color: var(--accent);
+	border-radius   : 0;
+}
+
+
+/*✅右上*/
+
+
+/* サブロゴボタン全体のスタイル設定 */
+
+
+#subLogoButtons {
+	bottom        : unset;
+	top           : 10px;
+	left          : unset;
+	right         : 40px;
+	transform     : none;
+	display       : flex;
+	flex-direction: column;
+	margin-top    : 20px;
+	align-items   : flex-end;
+}
+
+
+/* サブロゴボタン内の各ボタンのスタイル設定 */
+
+
+#subLogoButtons>.button {
+	width           : fit-content;
+	align-items     : baseline;
+	flex-grow       : unset;
+	transform       : none;
+	background-color: transparent;
+	border          : none !important;
+	font-size       : 50px !important;
+	padding         : 0 !important;
+	height          : auto;
+	margin-top      : 20px;
+	margin-right    : 0;
+	margin-left     : 0;
+	text-align      : right;
+	text-shadow     : 2px 2px 0px #000;
+	color           : var(--accent);
+	transition      : color 0.2s ease;
+	/* カーソルホバー時に色が変化するアニメーション設定 */
+}
+
+
+/* サブロゴボタンホバー時のスタイル設定 */
+
+
+#subLogoButtons>.button:hover {
+	color: rgba(0, 0, 0, 0) !important;
+	/* カーソルホバー時、色を透明にする */
+}
+
+
+/*✅右下*/
+
+
+/* メニューアイテムコンテナ全体に関するスタイル設定 */
+
+
+#menuItemContainer {
+	width           : unset;
+	height          : 480px;
+	background-color: transparent;
+	right           : 30px;
+	bottom          : 40px;
+	top             : unset;
+	justify-content : space-between;
+	align-items     : flex-end;
+}
+
+
+/* メニューアイテムに関するスタイル設定 */
+
+
+.menuItem {
+	align-items          : baseline;
+	flex-grow            : unset;
+	background-size      : 200% 100%;
+	background-repeat    : no-repeat;
+	background-position-x: calc(100% - 1px);
+	width                : fit-content;
+}
+
+
+/* メニューアイテムタイトルに関するスタイル設定 */
+
+
+.menuItem .menuItemTitle {
+	color         : var(--accent);
+	margin        : 0;
+	font-size     : 35px !important;
+	text-transform: uppercase;
+	mix-blend-mode: exclusion;
+	padding       : 0 12px;
+	transition    : color 0.2s ease;
+	/* カーソルホバー時に色が変化するアニメーション設定 */
+	text-shadow   : 2px 2px 0px #000;
+}
+
+
+/* メニューアイテムタイトルホバー時のスタイル設定 */
+
+
+.menuItem .menuItemTitle:hover {
+	color: rgba(0, 0, 0, 0) !important;
+	/* カーソルホバー時、色を透明にする */
+}
+
+
+/*✅真ん中下*/
+
+
+/* メニュークラスコンテナ全体に関するスタイル設定 */
+
+
+#menuClassContainer {
+	right         : unset;
+	left          : unset;
+	position      : fixed;
+	display       : flex;
+	flex-direction: row;
+}
+
+
+/* プレイヤーの見た目に関するスタイル設定 */
+
+
+
+#classPreviewCanvas {
+	position     : fixed;
+	width        : 500px !important;
+	height       : auto !important;
+	bottom       : 0.5% !important;
+	right        : 20% !important;
+	filter       : drop-shadow(-3px -1px 0px #000) drop-shadow(3px -1px 0px #000) drop-shadow(0px 3px 0px #000) drop-shadow(3px 3px var(--accent));
+	margin-bottom: unset !important;
+}
+
+
+/* カスタマイズボタンに関するスタイル設定 */
+
+
+/* #customizeButton {
+	position: fixed;
+	font-size: 0% !important;
+	border   : black !important; 
+	height   : 300px !important;
+	width: 250px !important;
+	bottom   : 0% !important;
+	right: 20% !important;
+}  */
+#customizeButton {
+	content            : " ";
+	width              : 250px;
+	height             : 300px;
+	display            : block;
+	font-size          : 0px !important;
+	background-color   : transparent;
+	position           : fixed;
+	bottom             : 0% !important;
+	right              : 20% !important;
+	background-image   : url(https://i.ibb.co/Jnfdy8W/image.png);
+	background-size    : 520px;
+	background-position: calc(100% - 150px) calc(100%);
+	background-repeat  : no-repeat;
+	visibility         : visible !important;
+	border             : none !important;
+}
+
+#customizeButton::before {
+	content       : "CSS BY SKAL";
+	font-size     : 18px;
+	text-shadow   : none;
+	top           : 0.5%;
+	right         : 10px;
+	position      : fixed !important;
+	pointer-events: none;
+	opacity       : 30%;
+}
+
+#customizeButton:active,
+#customizeButton:hover {
+	-webkit-transform: none !important;
+	transform        : none;
+}
+
+/*✅スペクテイターボタン*/
+
+
+#uiBase.onMenu #spectButton {
+	align-items: center !important;
+	position   : fixed;
+	top        : 1%;
+	left       : calc(50% - 50px);
+	transform  : unset;
+	z-index    : 2;
+	color      : rgba(255, 255, 255, 0.5);
+	font-size  : 24px !important;
+}
+
+#spectButton span {
+	font-size  : 0px !important;
+	color      : transparent;
+	align-items: center !important
+}
+
+#spectButton:after {
+	position   : fixed;
+	align-items: center !important;
+	left       : calc(50% - 25px);
+	top        : 0%;
+	font-size  : 24px !important;
+	font-weight: bold;
+	content    : "ฅʕ•ᴥ•ʔ";
+	color      : var(--accent2);
+}
+
+
+input:checked+.sliderSml,
+input[type=color] {
+	background-color: var(--accent);
+	box-shadow      : var(--blur), 0px 0px 5px var(--accent);
+}
+
+.switchsml {
+	width : 100px;
+	height: 28px;
+}
+
+
+
+
+
+
+
+
+#uiBase.onGame #chatInputHolder {
+	opacity         : 0;
+	transition-delay: 0ms;
+}
+
+#uiBase.onGame #chatInputHolder:focus-within {
+	opacity         : 1;
+	transition-delay: 0ms;
+}
+
+#chatList {
+	background-color: transparent;
+	width           : 410px;
+}
+
+#chatList::-webkit-scrollbar {
+	display: none;
+}
+
+#chatInputHolder {
+	border          : none;
+	padding         : 0;
+	background-color: transparent;
+}
+
+
+#chatSwitch {
+	position           : absolute;
+	right              : 12px;
+	bottom             : 8px;
+	margin             : 0;
+	font-size          : 0;
+	transition-duration: 0.25s;
+}
+
+#chatInputHolder:hover #chatSwitch {
+	font-size: 36px;
+}
+
+#chatInput {
+	margin             : 0;
+	width              : 100%;
+	padding            : 0;
+	padding-bottom     : 0;
+	font-size          : 0;
+	box-shadow         : inset 0 -4px rgba(0, 0, 0, 0.25);
+	border             : none;
+	background-color   : var(--accent);
+	border-radius      : 12px;
+	transition-duration: 0.25s;
+	font-size          : 0px;
+	width              : 410px;
+}
+
+#chatInput:focus {
+	padding       : 8px 12px;
+	padding-bottom: 12px;
+	font-size     : 18px;
+}
+
+.chatItem {
+	font-size  : 18px;
+	margin-left: 12px;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+}
+
+.chatMsg {
+	color: white;
+}
+
+.chatMsg[style*="color"] {
+	color      : var(--accent) !important;
+	text-shadow: white 4px 0px 0px, white 3.87565px 0.989616px 0px, white 3.51033px 1.9177px 0px, white 2.92676px 2.72656px 0px, white 2.16121px 3.36588px 0px, white 1.26129px 3.79594px 0px, white 0.282949px 3.98998px 0px, white -0.712984px 3.93594px 0px, white -1.66459px 3.63719px 0px, white -2.51269px 3.11229px 0px, white -3.20457px 2.39389px 0px, white -3.69721px 1.52664px 0px, white -3.95997px 0.56448px 0px, white -3.97652px -0.432781px 0px, white -3.74583px -1.40313px 0px, white -3.28224px -2.28625px 0px, white -2.61457px -3.02721px 0px, white -1.78435px -3.57996px 0px, white -0.843183px -3.91012px 0px, white 0.150409px -3.99717px 0px, white 1.13465px -3.8357px 0px, white 2.04834px -3.43574px 0px, white 2.83468px -2.82216px 0px, white 3.44477px -2.03312px 0px, white 3.84068px -1.11766px 0px, white 3.9978px -0.132717px 0px;
+}
+
+.chatMsg span {
+	color: white !important;
+}
+
+.chatMsg span[style="color:#eb5656"] {
+	color      : var(--accent) !important;
+	text-shadow: white 4px 0px 0px, white 3.87565px 0.989616px 0px, white 3.51033px 1.9177px 0px, white 2.92676px 2.72656px 0px, white 2.16121px 3.36588px 0px, white 1.26129px 3.79594px 0px, white 0.282949px 3.98998px 0px, white -0.712984px 3.93594px 0px, white -1.66459px 3.63719px 0px, white -2.51269px 3.11229px 0px, white -3.20457px 2.39389px 0px, white -3.69721px 1.52664px 0px, white -3.95997px 0.56448px 0px, white -3.97652px -0.432781px 0px, white -3.74583px -1.40313px 0px, white -3.28224px -2.28625px 0px, white -2.61457px -3.02721px 0px, white -1.78435px -3.57996px 0px, white -0.843183px -3.91012px 0px, white 0.150409px -3.99717px 0px, white 1.13465px -3.8357px 0px, white 2.04834px -3.43574px 0px, white 2.83468px -2.82216px 0px, white 3.44477px -2.03312px 0px, white 3.84068px -1.11766px 0px, white 3.9978px -0.132717px 0px;
+}
+
+#voiceDisplay {
+	border          : none;
+	background-color: transparent;
+}
+
+#voiceIcon.voiceOff {
+	font-size: 0 !important;
+}
+
+#recTimer {
+	display: none;
+}
+
+.weaponChatIcon {
+	margin-right: 12px !important;
+	margin-left : 12px;
+	transform   : unset;
+	width       : 28px;
+}
+
+.chatMsg img {
+	opacity: 1 !important;
+	filter : drop-shadow(2px 2px var(--accent)) drop-shadow(-2px -2px var(--accent)) drop-shadow(-2px 2px var(--accent)) drop-shadow(2px -2px var(--accent));
+}
+
+.weaponChatIcon[src*="icon_1"] {
+	content: url(https://api.iconify.design/mdi/target.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_2"] {
+	content: url(https://api.iconify.design/mdi/menu.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_3"],
+.weaponChatIcon[src*="icon_11"],
+.weaponChatIcon[src*="icon_17"] {
+	content: url(https://api.iconify.design/mdi/pistol.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_4"] {
+	content: url(https://api.iconify.design/mdi/chevron-triple-up.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_5"] {
+	content: url(https://api.iconify.design/mdi/dice-6.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_6"] {
+	content: url(https://api.iconify.design/mdi/dots-grid.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_7"] {
+	content: url(https://api.iconify.design/mdi/reorder-vertical.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_8"] {
+	content: url(https://api.iconify.design/mdi/bullseye.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_9"] {
+	content: url(https://api.iconify.design/mdi/rocket-launch.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_10"] {
+	content: url(https://api.iconify.design/mdi/scatter-plot.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_12"],
+.weaponChatIcon[src*="icon_13"] {
+	content: url(https://api.iconify.design/mdi/battery-high.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_14"] {
+	content: url(https://api.iconify.design/mdi/bow-arrow.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_15"] {
+	content: url(https://api.iconify.design/mdi/dots-vertical.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_16"] {
+	content: url(https://api.iconify.design/mdi/transfer-up.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_18"] {
+	content: url(https://api.iconify.design/mdi/bomb.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_19"] {
+	content: url(https://api.iconify.design/mdi/lightning-bolt.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_20"] {
+	content: url(https://api.iconify.design/mdi/hammer-wrench.svg?color=white);
+}
+
+.weaponChatIcon[src*="icon_22"] {
+	content            : url(https://api.iconify.design/mdi/gun.svg?color=white);
+	background         : url(https://api.iconify.design/mdi/magazine-pistol.svg?color=white&flip=horizontal);
+	background-size    : 16px;
+	background-repeat  : no-repeat;
+	background-position: 12px 8px;
+}
+
+.weaponChatIcon[src*="melee"] {
+	content: url(https://api.iconify.design/mdi/knife-military.svg?color=white) !important;
+}
+
+.fistChatIcon {
+	content     : url(https://api.iconify.design/mdi/boxing-glove.svg?color=white) !important;
+	width       : 28px;
+	margin-right: 12px;
+	margin-left : 12px;
+}
+
+
+
+
+.endTableN[style*="#fff"] span {
+	background-image       : var(--gradient) !important;
+	color                  : transparent !important;
+	-webkit-background-clip: text;
+	text-shadow            : var(--blur);
+}
+
+.endTableN[style*="rgba(255,255,255,0.6)"] {
+	color      : var(--accent) !important;
+	text-shadow: none !important;
+}
+
+.compTScrB,
+#specGameInfo,
+#endTable td span[style="color:#F8C55C"],
+.teamTotalN1,
+.teamTotalN0,
+.fundsVal span {
+	color: var(--accent) !important;
+}
+
+
+.greyInlineInner {
+	display: none;
+}
+
+#chatHolder {
+	position: fixed !important;
+	left    : 1% !important;
+}
+
+.greyInlineInner {
+	display: none;
+}
+
+
+.compTScrB,
+#specGameInfo,
+#endTable td span[style="color:#F8C55C"],
+.teamTotalN1,
+.teamTotalN0,
+.fundsVal span {
+	color: var(--accent) !important;
+}
+
+
+
+
+/* Menu window */
+
+.carousel {
+	display: none;
+}
+
+.settingsHeader,
+#itemSearchH,
+.serverHeader {
+	background     : transparent;
+	backdrop-filter: blur(5px) brightness(0.75);
+}
+
+#menuWindow.dark {
+	background     : linear-gradient(var(--bg-color-2), var(--bg-color-1));
+	border-radius  : unset;
+	border         : solid var(--accent) 5px;
+	box-shadow     : var(--blur), 0px 0px 5px var(--accent);
+	backdrop-filter: blur(5px);
+}
+
+div#windowHolder[style="display: block;"] {
+	transform : unset;
+	transition: .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+div#windowHolder[style="display: none;"] {
+	display   : block !important;
+	transform : translateY(100%) scale(0);
+	transition: .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#windowHolder.popupWin {
+	background: transparent;
+}
+
+.setHed {
+	background: transparent !important;
+	border    : unset;
+}
+
+.setHed,
+.setBodH {
+	background   : transparent;
+	margin-bottom: unset !important;
+	margin-top   : unset !important;
+	margin       : unset !important;
+}
+
+.settName,
+.setHed,
+.settNameSmall,
+.setHed span {
+	color      : white !important;
+	text-shadow: 0 0 5px black;
+}
+
+.settName,
+.settNameSmall {
+	border-bottom: unset;
+}
+
+.settingTab {
+	background: linear-gradient(transparent, rgba(0, 0, 0, .3));
+}
+
+.setSugBox2 {
+	display: none;
+}
+
+.setBodH {
+	width        : calc(100% - 100px);
+	margin-left  : 30px !important;
+	padding-left : 30px;
+	border-left  : 4px solid #fff;
+	border-radius: unset;
+}
+
+.switch {
+	height       : 34px;
+	width        : 34px;
+	border       : solid 4px white;
+	border-radius: 100px;
+}
+
+.slider {
+	border-radius: 100px;
+	top          : 4px;
+	left         : 4px;
+	height       : 26px;
+	width        : 26px;
+}
+
+.slider {
+	transform : unset;
+	background: var(--check-no);
+}
+
+input:checked+.slider {
+	transform : unset;
+	background: var(--check-yes);
+}
+
+.sliderM::-webkit-slider-thumb {
+	background   : var(--accent);
+	box-shadow   : var(--blur), 0px 0px 5px var(--accent);
+	border-radius: 100px;
+	border       : 3px var(--accent) solid;
+	width        : 20px;
+	height       : 20px;
+}
+
+.sliderM {
+	height    : 8px;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)) !important;
+}
+
+input:checked+.advancedSlider {
+	background-color: var(--accent);
+}
+
+.bigMFeatHold {
+	display: none !important;
+}
+
+.selectorItem {
+	background  : var(--bg-color-2);
+	border-color: var(--accent) !important;
+	border      : solid 5px;
+}
+
+.selectorItem:hover {
+	background: var(--bg-color-3);
+}
+
+.selectedItem {
+	background   : var(--bg-color-1);
+	border-radius: 5px;
+	box-shadow   : var(--blur), 0px 0px 5px var(--accent);
+}
+
+#selectorContainer {
+	background: transparent;
+}
+
+.skinCard:hover,
+.noBtnCard:hover,
+.contCanSelect:hover {
+	box-shadow: var(--blur), 0px 0px 5px var(--accent);
+	border    : 4px solid white;
+}
+
+.custContainer {
+	padding: unset;
+	border : solid 4px #fff6;
+}
+
+.classCard {
+	background : transparent;
+	border     : 3px solid #0000 !important;
+	margin-left: unset;
+}
+
+.classCard:hover {
+	filter: drop-shadow(0 0 5px var(--accent));
+	border: 3px #fff solid !important;
+}
+
+input[type=color] {
+	border-color: black;
+}
+
+
+
+
+
+.classXPBar,
+.classHP,
+.classWeap {
+	display: none;
+}
+
+.classCard {
+	height: 65px;
+	width : 65px;
+}
+
+.classLvl {
+	color     : white !important;
+	opacity   : 0;
+	transition: opacity 0.5s;
+}
+
+
+.classImgC {
+	transition: filter 0.5s, transform 0.5s;
+}
+
+.classCard:hover .classWeap,
+.classCard:hover .classLvl {
+	opacity   : 1;
+	transition: opacity 0.5s;
+}
+
+#selectorContainer {
+	background-color: transparent;
+}
+
+.selectedItem {
+	border       : none !important;
+	border-radius: 0px;
+}
+
+
+
+
+#hiddenClasses {
+	display       : flex !important;
+	flex-direction: row;
+	position      : fixed;
+	left          : 480px;
+	bottom        : 0;
+	height        : 116px;
+	width         : 0;
+	z-index       : 12;
+	overflow      : hidden;
+	align-items   : center;
+	pointer-events: all;
+	color         : #fff;
+	transition    : 0.4s;
+}
+
+#hiddenClasses:hover {
+	width: 660px;
+	color: transparent;
+}
+
+#hiddenClasses::after {
+	position      : fixed;
+	content       : "chevron_right";
+	font-family   : 'Material Icons';
+	font-size     : 48px;
+	line-height   : 120px;
+	pointer-events: all;
+	left          : 450px;
+	bottom        : -12px;
+}
+
+#hiddenClasses div {
+	display        : block;
+	width          : 64px;
+	height         : 64px;
+	pointer-events : auto;
+	image-rendering: pixelated;
+	margin-left    : 10px;
+	object-fit     : cover;
+}
+
+#hiddenClasses div:hover {
+	cursor: pointer;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_0.png?build=uLz7w);
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker1[onclick="selectClass(1)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_1.png?build=uLz7w);
+}
+
+#menuClassPicker1[onclick="selectClass(1)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker2[onclick="selectClass(2)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_2.png?build=uLz7w);
+}
+
+#menuClassPicker2[onclick="selectClass(2)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker3[onclick="selectClass(3)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_3.png?build=uLz7w);
+}
+
+#menuClassPicker3[onclick="selectClass(3)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker4[onclick="selectClass(4)"] {
+	display: none;
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_5.png?build=uLz7w);
+}
+
+#menuClassPicker5[onclick="selectClass(5)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_6.png?build=uLz7w);
+}
+
+#menuClassPicker6[onclick="selectClass(6)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker7[onclick="selectClass(7)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_7.png?build=uLz7w);
+}
+
+#menuClassPicker7[onclick="selectClass(7)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker8[onclick="selectClass(8)"] {
+	display: none;
+	;
+}
+
+#menuClassPicker9[onclick="selectClass(9)"] {
+	display: none;
+}
+
+#menuClassPicker10[onclick="selectClass(10)"] {
+	display: none;
+}
+
+#menuClassPicker11[onclick="selectClass(11)"] {
+	display: none;
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
+	content: url(https://assets.krunker.io/textures/classes/icon_12.png?build=uLz7w);
+}
+
+#menuClassPicker12[onclick="selectClass(12)"]:hover {
+	filter: drop-shadow(0 0 5px var(--accent2));
+}
+
+#menuClassPicker13[onclick="selectClass(13)"] {
+	display: none;
+}
+
+#menuClassPicker14[onclick="selectClass(14)"] {
+	display: none;
+}
+
+
+
+
+/*game*/
+.killStreakItem {
+	position: fixed;
+	width   : 100px;
+	height  : 100px;
+	bottom  : 130px;
+	right   : 1%;
+}
+
+#ammoHolder {
+	position        : fixed;
+	background-color: transparent;
+	background-image: linear-gradient(to right, white, white);
+	transform       : unset;
+	width           : 50px;
+	height          : 4px;
+	top             : calc(50% + 35px);
+	left            : calc(50% - 25px);
+	padding         : 0;
+	padding-top     : 0;
+	padding-left    : 0;
+	border-radius   : 0;
+}
+
+#ammoVal {
+	position        : fixed !important;
+	background-color: transparent;
+	left            : calc(50.5% + var(--hpBarWidth)/2);
+	bottom          : 1% !important;
+	font-size       : 75px;
+	color           : white !important;
+	text-shadow     : var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+	letter-spacing  : 2px;
+}
+
+#ammoMax,
+#ammoIcon {
+	display: none !important;
+}
+
+#timerVal.topLeftOld {
+	font-size  : 60px !important;
+	color      : white !important;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px !important;
+}
+
+#timerHolder.topLeftOld {
+	background-color: transparent;
+}
+
+#timerIcon.topLeftOld {
+	display: none !important;
+}
+
+/* health */
+#bottomLeftClassImg {
+	content : url(https://raw.githubusercontent.com/Le-skal/HIHIHAHA/refs/heads/main/img/pink_bar.png);
+	position: fixed;
+	right   : calc(50% + var(--hpBarWidth)/2);
+	bottom  : 0% !important;
+	width   : 250px;
+	height  : auto;
+}
+
+#bottomLeftPlayer {
+	background-color: transparent;
+}
+
+#bottomLeftPlayerRight {
+	background-color: transparent;
+}
+
+#bottomLeftHealthBar {
+	background   : 0px rgba(0, 0, 0, .2);
+	column-gap   : 0px;
+	padding      : 0;
+	/*  outline  : 2px solid #0006; */
+	box-shadow   : 5px 5px 0 rgba(0, 0, 0, .3);
+	border-radius: 6px;
+}
+
+#bottomLeftChallIcon {
+	display: none;
+}
+
+.nHealthBarSeg {
+	box-shadow: 0 0 black;
+	height    : 32px;
+}
+
+#bottomLeftTeamType {
+	display: none;
+}
+
+#bottomLeftTeamName {
+	display: none;
+}
+
+.nHealthBarSeg:first-child .nHpBSeg {
+	border-top-left-radius   : 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.nHealthBarSeg:last-child .nHpBSeg {
+	border-bottom-right-radius: 6px;
+	border-top-right-radius   : 6px;
+}
+
+.nHpBSeg {
+	border-radius   : 0px;
+	background-color: var(--accent) !important;
+}
+
+.nHealthBarSeg {
+	background : 0;
+	margin-left: -1px;
+	height     : 40px;
+}
+
+#bottomLeftPlayerMid {
+	position: fixed;
+	bottom  : 2%;
+	left    : calc(50% - var(--hpBarWidth) / 2);
+}
+
+#bottomLeftChallIcon {
+	display: none;
+}
+
+#bottomLeftPlayerMid {
+	width: var(--hpBarWidth);
+}
+
+#bottomLeftHealth {
+	position   : fixed;
+	left       : calc(50% - var(--hpBarWidth)/2);
+	bottom     : calc(3% + 35px);
+	font-size  : 40px;
+	color      : white !important;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+}
+
+/* Reload prompt */
+
+#reloadMsg {
+	bottom          : calc(30% - 200px);
+	background-color: transparent !important;
+	border          : none;
+	color           : var(--accent);
+	font-size       : 0;
+}
+
+#reloadMsg::before {
+	content    : '! 自闭症患者 !';
+	position   : center;
+	align-items: center;
+	font-size  : 26px;
+}
+
+/* Match Info Styling */
+
+
+#matchInfo.topLeftOld {
+	font-size: 0px !important;
+}
+
+#matchInfo.topLeftOld:after {
+	position   : fixed;
+	content    : "uwu";
+	color      : white !important;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px !important;
+	font-size  : 20px;
+	left       : 30px;
+	top        : 140px;
+}
+
+div#PC7WaterMark2,
+#clientWatermark,
+#clientWatermark::before,
+#clientWatermark::after {
+	display: none !important;
+}
+
+
+
+#roundsDisplay {
+	display: none !important;
+}
+
+/* fps, ping Shit */
+
+#menuFPSDisplay,
+#menuFPS,
+#menuPingDisplay,
+#menuPingText {
+	font-size  : 12px !important;
+	color      : var(--accent2) !important;
+	text-shadow: 0 0 10px var(--accent) !important;
+}
+
+#menuPingIcon,
+#menuRegionLabel,
+#spectButton [style="font-size:15px;color:rgba(255,255,255,.6)"],
+#fpsDisplay,
+#pingDisplay {
+	color      : var(--accent2) !important;
+	text-shadow: 0 0 10px var(--accent) !important;
+}
+
+#menuTimer {
+	z-index    : 99;
+	color      : white;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+}
+
+#ingameFPS,
+#pingText {
+	color: var(--accent) !important;
+}
+
+/*score*/
+#teamScores {
+	background-color: transparent;
+}
+
+.tScoreC.you {
+	background-color: var(--accent);
+}
+
+.tScoreC {
+	background-color: var(--accent2);
+}
+
+.tScoreT,
+.tScoreM {
+	color      : white;
+	text-shadow: 2px 4px 6px rgb(30, 30, 30);
+}
+
+.tScoreF.you {
+	color: var(--accent);
+}
+
+.tScoreF {
+	color: var(--accent2);
+}
+
+
+
+.weapIcon {
+	margin   : 0 !important;
+	height   : 64px;
+	width    : 64px;
+	position : fixed;
+	left     : 50%;
+	bottom   : 75px;
+	transform: translateX(-50%);
+	filter   : drop-shadow(2px 2px var(--accent)) drop-shadow(-2px -2px var(--accent)) drop-shadow(-2px 2px var(--accent)) drop-shadow(2px -2px var(--accent));
+}
+
+.weapKey,
+.weapSkin {
+	display: none;
+}
+
+.weapItem[style*=".5"] {
+	opacity: 0 !important;
+}
+
+.weapIcon[src*="icon_1"] {
+	content: url(https://api.iconify.design/mdi/target.svg?color=white);
+}
+
+.weapIcon[src*="icon_2"] {
+	content: url(https://api.iconify.design/mdi/menu.svg?color=white);
+}
+
+.weapIcon[src*="icon_3"],
+.weapIcon[src*="icon_11"],
+.weapIcon[src*="icon_17"] {
+	content: url(https://api.iconify.design/mdi/pistol.svg?color=white);
+}
+
+.weapIcon[src*="icon_4"] {
+	content: url(https://api.iconify.design/mdi/chevron-triple-up.svg?color=white);
+}
+
+.weapIcon[src*="icon_5"] {
+	content: url(https://api.iconify.design/mdi/dice-6.svg?color=white);
+}
+
+.weapIcon[src*="icon_6"] {
+	content: url(https://api.iconify.design/mdi/dots-grid.svg?color=white);
+}
+
+.weapIcon[src*="icon_7"] {
+	content: url(https://api.iconify.design/mdi/reorder-vertical.svg?color=white);
+}
+
+.weapIcon[src*="icon_8"] {
+	content: url(https://api.iconify.design/mdi/bullseye.svg?color=white);
+}
+
+.weapIcon[src*="icon_9"] {
+	content: url(https://api.iconify.design/mdi/rocket-launch.svg?color=white);
+}
+
+.weapIcon[src*="icon_10"] {
+	content: url(https://api.iconify.design/mdi/scatter-plot.svg?color=white);
+}
+
+.weapIcon[src*="icon_12"],
+.weapIcon[src*="icon_13"] {
+	content: url(https://api.iconify.design/mdi/battery-high.svg?color=white);
+}
+
+.weapIcon[src*="icon_14"] {
+	content: url(https://api.iconify.design/mdi/bow-arrow.svg?color=white);
+}
+
+.weapIcon[src*="icon_15"] {
+	content: url(https://api.iconify.design/mdi/dots-vertical.svg?color=white);
+}
+
+.weapIcon[src*="icon_16"] {
+	content: url(https://api.iconify.design/mdi/transfer-up.svg?color=white);
+}
+
+.weapIcon[src*="icon_18"] {
+	content: url(https://api.iconify.design/mdi/bomb.svg?color=white);
+}
+
+.weapIcon[src*="icon_19"] {
+	content: url(https://api.iconify.design/mdi/lightning-bolt.svg?color=white);
+}
+
+.weapIcon[src*="icon_20"] {
+	content: url(https://api.iconify.design/mdi/hammer-wrench.svg?color=white);
+}
+
+.weapIcon[src*="icon_22"] {
+	content            : url(https://api.iconify.design/mdi/gun.svg?color=white);
+	background         : url(https://api.iconify.design/mdi/magazine-pistol.svg?color=white&flip=horizontal);
+	background-size    : 24px;
+	background-repeat  : no-repeat;
+	background-position: 20px 12px;
+}
+
+#weapIconMel {
+	content: url(https://api.iconify.design/mdi/knife-military.svg?color=white) !important;
+}
+
+#weapIconMel[src*="weapons/icon_0"] {
+	content: url(https://api.iconify.design/mdi/boxing-glove.svg?color=white) !important;
+}
+
+#leaderDisplay {
+	width           : 400px;
+	padding         : 0;
+	background-color: transparent;
+}
+
+.leaderItem {
+	font-size       : 18px;
+	text-shadow     : 0 4px rgba(0, 0, 0, 0.25);
+	background-color: var(--accent);
+	margin-bottom   : -1px;
+}
+
+.leaderItem img[src*="badge_3_2.png"] {
+	padding: 8px 0 !important;
+}
+
+.leaderItem:first-child {
+	margin-bottom: 8px;
+	box-shadow   : inset 0 -4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px !important;
+}
+
+.leaderItem:nth-child(2) {
+	border-radius: 12px 12px 0 0;
+}
+
+.leaderItem:last-child {
+	border-radius: 0 0 12px 12px;
+	box-shadow   : inset 0 -4px rgba(0, 0, 0, 0.25);
+}
+
+.leaderItem .material-icons {
+	padding     : 8px 0 !important;
+	margin-right: 8px;
+}
+
+.leaderCounter {
+	color         : white;
+	padding       : 8px 16px;
+	padding-right : 0;
+	padding-bottom: 12px;
+}
+
+.leaderName,
+.leaderNameM,
+.leaderNameF {
+	padding: 8px 0;
+	color  : white;
+}
+
+.leaderName::after {
+	content    : "mood_bad";
+	font-family: 'Material Icons';
+	position   : relative;
+	top        : 4px;
+	left       : 8px;
+}
+
+.leaderNameF::after {
+	content    : "mood";
+	font-family: 'Material Icons';
+	position   : relative;
+	top        : 4px;
+	left       : 8px;
+}
+
+.leaderItem:first-child {
+	margin-bottom: 8px;
+}
+
+.leaderScore {
+	padding: 8px 16px;
+	color  : white;
+}
+
+.leaderItem:first-child .leaderScore {
+	background-color: white;
+	border-radius   : 0 12px 12px 0;
+	color           : var(--accent);
+	box-shadow      : inset 0 -4px rgba(0, 0, 0, 0.25);
+	padding-bottom  : 12px;
+}
+
+.leaderItem .material-icons {
+	padding     : 8px 0;
+	margin-right: 8px;
+	color       : white !important;
+}
+
+.topRightCounters {
+	position       : fixed;
+	bottom         : 30px;
+	right          : 20px;
+	display        : flex;
+	justify-content: flex-end;
+	width          : fit-content !important;
+}
+
+.topRightCounters::before {
+	content         : " ";
+	width           : calc(100% - 180px);
+	height          : 12px;
+	position        : absolute;
+	bottom          : 1px;
+	right           : 180px;
+	border-radius   : 6px;
+	background-color: var(--accent);
+	box-shadow      : inset 0 -3px rgba(0, 0, 0, 0.25);
+}
+
+.topRightCounters::after {
+	content         : "STATS";
+	color           : white;
+	font-size       : 30px;
+	display         : inline-block;
+	padding         : 8px 16px;
+	padding-left    : 40px;
+	background-color: var(--accent);
+	border-radius   : 0 16px 16px 0;
+	box-shadow      : inset 0 -4px rgba(0, 0, 0, 0.25);
+	clip-path       : polygon(32px 0%, 100% 0%, 100% 100%, 0% 100%);
+	text-shadow     : 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.countIcon {
+	margin          : 0;
+	font-size       : 28px;
+	position        : relative;
+	background-color: transparent;
+	top             : 4px;
+	margin-bottom   : 24px;
+}
+
+.countIcon[style*="block"] {
+	display    : inline-flex !important;
+	align-items: center;
+}
+
+#killsVal,
+#deathsVal,
+#streakVal,
+#myScoreVal,
+#kdVal {
+	color      : white;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+}
+
+#killsIcon,
+#deathsIcon,
+#streakIcon,
+#kdIcon {
+	filter      : drop-shadow(2px 2px var(--accent)) drop-shadow(-2px -2px var(--accent)) drop-shadow(-2px 2px var(--accent)) drop-shadow(2px -2px var(--accent));
+	margin-right: 16px;
+}
+
+#killsIcon {
+	content: url(https://api.iconify.design/mdi/skull-scan.svg?color=white);
+}
+
+#deathsIcon {
+	content: url(https://api.iconify.design/mdi/skull.svg?color=white);
+}
+
+#streakIcon {
+	content: url(https://api.iconify.design/mdi/account-group.svg?color=white);
+}
+
+#kdIcon {
+	content: url(https://api.iconify.design/mdi/percent.svg?color=white);
+}
+
+.countIcon .material-icons {
+	margin-right: 16px;
+	color       : white !important;
+	text-shadow : var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+}
+
+#livesDisp {
+	color      : white !important;
+	text-shadow: var(--accent) 4px 0px 0px, var(--accent) 3.87565px 0.989616px 0px, var(--accent) 3.51033px 1.9177px 0px, var(--accent) 2.92676px 2.72656px 0px, var(--accent) 2.16121px 3.36588px 0px, var(--accent) 1.26129px 3.79594px 0px, var(--accent) 0.282949px 3.98998px 0px, var(--accent) -0.712984px 3.93594px 0px, var(--accent) -1.66459px 3.63719px 0px, var(--accent) -2.51269px 3.11229px 0px, var(--accent) -3.20457px 2.39389px 0px, var(--accent) -3.69721px 1.52664px 0px, var(--accent) -3.95997px 0.56448px 0px, var(--accent) -3.97652px -0.432781px 0px, var(--accent) -3.74583px -1.40313px 0px, var(--accent) -3.28224px -2.28625px 0px, var(--accent) -2.61457px -3.02721px 0px, var(--accent) -1.78435px -3.57996px 0px, var(--accent) -0.843183px -3.91012px 0px, var(--accent) 0.150409px -3.99717px 0px, var(--accent) 1.13465px -3.8357px 0px, var(--accent) 2.04834px -3.43574px 0px, var(--accent) 2.83468px -2.82216px 0px, var(--accent) 3.44477px -2.03312px 0px, var(--accent) 3.84068px -1.11766px 0px, var(--accent) 3.9978px -0.132717px 0px;
+}
+
+
+
+/* comp menu */
+
+#cmpDatBox {
+	display: none
+}
+
+#cmpLeavInfo {
+	display: none
+}
+
+#compInfBox {
+	top   : unset;
+	bottom: 10px
+}
+
+.compMenBtnS {
+	background-color: rgb(25 25 25) !important;
+	border          : 4px solid rgba(255 255 255 / .1);
+	transition      : all .1s ease-in-out
+}
+
+.compMenBtnS:hover,
+#cmpSpectBtn[style*="rgb(142, 199, 44)"]:hover {
+	border-color: rgba(255 255 255 / .75)
+}
+
+#cmpSpectBtn[style*="rgb(142, 199, 44)"] {
+	background-color: rgb(142, 199, 44) !important;
+	border          : 4px solid rgba(0 0 0 / .3)
+}
+
+#cmpSpectBtn[style*="rgb(142, 199, 44)"] .material-icons {
+	color: #1c1c1c !important
+}
+
+.compMenBtnS .material-icons {
+	margin-bottom: 17.5px !important
+}
+
+#compClassPHolder {
+	background-color: transparent
+}
+
+#compTScrsB {
+	top      : 50%;
+	left     : 50%;
+	width    : 1200px;
+	height   : 500px;
+	transform: scale(1) translate(-50%, -50%)
+}
+
+.compTScrB {
+	margin-top : 15.5px;
+	padding    : 165px 20px 165px 20px !important;
+	clip-path  : none !important;
+	width      : 75px;
+	height     : 100px;
+	text-shadow: -1px -1px 0 #1c1c1c, 1px -1px 0 #1c1c1c, -1px... (9 Ko restants)

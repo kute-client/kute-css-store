@@ -1,0 +1,404 @@
+/*
+	PUT ALL YOUR main.css CHANGES INTO HERE
+	This allows the main.css file to update without your changes breaking new additions
+ */
+
+/* Credits to Qwest500 and AnimeGirl47 :D */
+/* Fetched from https://www.reddit.com/r/KrunkerIO/comments/14omg1u/finished_mostly_the_css_remake/ */
+/* If you are the author(s) of this CSS and would like it removed, please contact a developer in our client discord: https://discord.gg/BxweEFyZFm */
+
+:root {
+   --div-grey: transparent;
+    --div-black: transparent;
+    --WaterMark: "issue";
+    --IGN: "Nuke"
+}
+     /* STRETCHED */
+#uiBase[style*=scale]{
+  height: 111.647058% !important;
+  width: 88.235294% !important;
+  transform: scale(1.133333, 0.90) !important;
+}
+/* Timer */
+#timerDisplay {
+   background-color: transparent;
+   text-align: fixed;
+   padding: 10px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-left: 20px
+}
+#timerVal {
+  font-size: 30px;
+}
+/* Weapon Styling */
+.weapItem {
+  background-color: rgb(255 255 255 / 0%);
+  margin-bottom: -10px;
+  border-radius: 0px;
+}
+
+.weapIcon {
+  width: 120px;
+  height: 60px;
+}
+
+.weapSkin {
+  background-color: rgb(255 255 255 / 0%);
+  font-size: 0px;
+}
+/* CHAT */
+#chatInputHolder {
+  background-color: rgb(0 0 0 / 40%);
+}
+
+#chatInputHolder {
+   width: 100%;
+}
+
+.greyInlineInner {
+  background-color: rgb(255 255 255 / 0%);
+}
+/* Bottom Left Player */
+#bottomLeftPlayer,
+#bottomLeftPlayerLeft,
+#bottomLeftPlayerRight,
+#bottomLeftTeamType,
+#bottomLeftTeamName,
+#bottomLeftTeamHolder,
+#bottomLeftChallIcon {
+  background-color: rgb(255 255 255 / 0%);
+}
+
+.nHealthBarSeg {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+#bottomLeftClassImg {
+  display: none;
+  background-color: transparent;
+}
+
+#bottomLeftHolder {
+  z-index: 10;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  text-align: left
+}
+
+
+.nHealthBarSeg {
+  width: 40px !important;
+  display: inline-block !important;
+  border-radius: 5px !important;
+  margin-right: 6px !important;
+  height: 48px !important;
+  background-color: rgba(0, 0, 0, .4) !important;
+}
+
+.nHpBSeg {
+  height: 48px !important;
+  border-radius: 5px !important;
+  -webkit-box-shadow: inset 0 -10px 0 0 rgba(0, 0, 0, .28) !important;
+  -moz-box-shadow: inset 0 -10px 0 0 rgba(0, 0, 0, .28) !important;
+  box-shadow: inset 0 -10px 0 0 rgba(0, 0, 0, .28) !important
+}
+
+#bottomLeftHealthBar {
+  display: flex;
+  padding: 9px;
+  column-gap: 3px;
+  background-color: rgb(108 108 108 / 0%);
+  bottom: 1%;
+  left: 0.5%;
+  position: fixed;
+}
+
+#bottomLeftHealth {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  will-change: transform;
+  position: fixed;
+  bottom: 80px;
+  left: 1%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+}
+
+/* Other Shii */
+#timerIcon,
+#voiceIcon,
+#bottomLeftTeamName,
+#bottomLeftTeamHolder,
+#bottomLeftChallIcon,
+#ammoMax, #ammoIcon,
+#voiceIcon,
+#recTimer,
+.weapKey,
+.weapStreakHolder {
+  display: none!important;
+}
+
+
+.chatMsg[style*="color:#fc03ec"] {
+color: #8a8a8a !important;
+}
+.chatMsg [style*="color:#eb5656"] {
+color: #8a8a8a !important;
+}
+.chatMsg [style*="color:#9eeb56"] {
+color: #ffffff99 !important;
+}
+#rankedSoonTm {
+display: none !important;
+}
+
+#aHolder {
+   display: none!important;
+}
+
+#aContainer {
+  display: none !important;
+  opacity: 0 !important;
+}
+#adCon {
+  display: none !important;
+}
+
+#streamContainer {
+  display: none !important;
+}
+
+#krDiscountAd {
+  display: none !important;
+}
+
+#aMerger {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+#endAHolderL, #endAHolderR {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.downloadClient {
+  display: none !important;
+}
+
+#newUserGuide {
+  display: none !important;
+}
+
+#ranked2x {
+  display: none !important;
+}
+
+#rankedBlog {
+  display: none !important;
+}
+
+#twitchDropsAd {
+  display: none !important;
+}
+
+#editorBtnM {
+  display: none !important;
+}
+
+#newsHolder {
+  display: none !important;
+}
+
+.adsbygoogle.adsbygoogle-noablate {
+  display: none !important;
+}
+
+#voiceDisplay {
+  display: none
+}
+
+#subLogoButtons {
+  bottom: 8px !important;
+}
+
+#killCard {
+  border-radius: 10px;
+}
+/* In game menu adjustments */
+.weapKey {
+  color: #ffffff70 !important;
+}
+
+#pingText {
+  color: white !important;
+}
+
+#pingDisplay {
+  font-size: 0px;
+}
+
+#curGameInfo {
+  display: none;
+}
+
+#hudClassIcon {
+  display: none;
+}
+
+#curGameInfo {
+  display: flex !important;
+  visibility: hidden !important;
+}
+#curGameInfo::before {
+  visibility: visible;
+  content: 'Si_Comp';
+  color: #000000;
+}
+.chatItem {
+  border-radius: 0;
+  background-color: transparent !important;
+}
+
+#chatInput::placeholder {
+  background-color: transparent;
+  color: rgb(255 255 255 / 60%) !important;
+  text-transform: var(--text-transform);
+}
+#ammoDisplay {
+  background-color: transparent;
+}
+#ammoHolder {
+   position: fixed;
+      top: calc(50% + 35px);
+      left: calc(50% - 30px);
+      transform: unset;
+      height: 6px;
+      width: 50px;
+      background-color: transparent!important;
+      background-image: linear-gradient(to right,rgb(255 255 255),rgb(255 255 255))
+}
+#ammoVal {
+    font-size: 32px;
+    display: inline-block;
+    position: fixed;
+    right: calc(0% + 35px);
+    bottom: 30px;
+}
+#leaderDisplay {
+  background-color: transparent;
+}
+#mainLogo, #termsInfo, #mainLogoFace, #seasonLabel {
+  display: none;
+}
+.endAHolder,
+#topRightAdHolder, 
+#seasonLabel,
+#termsInfo,
+#streamContainer,
+#tlInfHold,
+.menuSocialB,
+#menuClassIcn,
+#menuClassSubtext,
+#mapInfoHld,
+#menuClassName,
+#editorBtnM {
+    display: none !important;
+}
+#customizeButton {
+height:500px;
+right:50px;
+bottom:-19%;
+opacity:0;
+background-color:#1900ff85;
+position: absolute 
+}
+#menuClassContainer{
+  right: -100px;
+}
+/* NEW MODIF BE CAREFUL */
+
+#subLogoButtons {
+    bottom: 90px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+.button, .button:hover { 
+    background-color: transparent !important;
+    border: hidden ! important;
+}
+
+#menuHolder {
+  filter: grayscale(100);
+}
+
+#matchInfo.topLeftOld {
+  font-size: 0px!important;
+}
+
+#matchInfo.topLeftOld:after {
+  content: var(--WaterMark);
+  color:black;
+  font-size: 20px;
+}
+
+#roundsDisplay{
+display: none !important;
+}
+
+#clientWatermark::before {
+  display: none !important;
+}
+#clientWatermark::after {
+  display: none !important;
+}
+
+#pingText::after {
+  font-size: 26px;
+  font-family: 'Material Icons';
+  content: "signal_cellular_alt" !important;
+  vertical-align: bottom;
+}
+
+.leaderName {
+  color: #6D7377;
+}
+
+.leaderNameF {
+  color: rgb(255, 255, 255);
+}
+
+.leaderNameM {
+  font-size: 0px;
+ }
+
+ .leaderNameM:before {
+  font-size: 20px;
+  content: var(--IGN);
+  color:#88D8C5;
+ }
+#menuAccountUsername{
+  font-size: 0px;
+}
+#menuAccountUsername::before {
+  content: var(--IGN);
+  font-size: 20px;
+}
+.endTableN[style="color:#fff"]{
+  font-size: 0px;
+}
+.endTableN[style="color:#fff"]:before {
+content: var(--IGN);
+font-size: 20px;
+color:#88D8C5;
+
+}

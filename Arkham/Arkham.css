@@ -1,0 +1,2981 @@
+/* 
+---------------------
+| Krunker Arkham game css
+| Author: -deusVult
+|
+| IGN: -deusVult
+| Github: https://github.com/deusVult69
+| Discord: hardypr0
+---------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+:root {
+	/* typography */
+	--font: 'Russo One', sans-serif;
+
+	/* Adjust font size*/
+	--font-size: 20px;
+
+	/* colors */
+	--color-primary: #000000;
+	--color-secondary: #ebebeb;
+	--color-accent: #fca705;
+
+	/* other */
+	--border: 5px solid var(--color-secondary);
+	--border-sm: 2px solid var(--color-secondary);
+
+	--rotation: -3deg;
+
+	/* customize */
+	--ign: 'deus';
+	--clan-tag: '[m3ow]';
+	--clan-tag-color: linear-gradient(90deg);
+
+	/* credits */
+	--author: 'by -deusVult';
+	/* toggler to hide/show css author */
+	/* 0 - hide, 1 - show */
+	--author-visibility: 1;
+}
+
+* {
+	font-family: var(--font);
+}
+
+html {
+	font-size: var(--font-size);
+}
+body {
+	font-size: 1rem;
+}
+
+/* #region fz fix */
+.termsBtn {
+	font-size: 1.375rem !important;
+}
+.newsItem {
+	font-size: 0.875rem !important;
+}
+#newsHolder {
+	font-size: 1rem !important;
+}
+#newsHed {
+	font-size: 1.125rem !important;
+}
+#newsStat {
+	font-size: 1.125rem !important;
+}
+.helpGuidOpn {
+	font-size: 0.9375rem !important;
+}
+#helpPText {
+	font-size: 1.875rem !important;
+}
+#helpPText2 {
+	font-size: 1.5625rem !important;
+}
+#homeStoreAdTx {
+	font-size: 1.0625rem !important;
+}
+.guideHeader {
+	font-size: 2.1875rem !important;
+}
+.guideInfoT {
+	font-size: 1.25rem !important;
+}
+.guideStep {
+	font-size: 1.375rem !important;
+}
+.guideStepV {
+	font-size: 1.25rem !important;
+}
+.guideFullTx {
+	font-size: 1.375rem !important;
+}
+#streamContainer {
+	font-size: 1rem !important;
+}
+.streamName {
+	font-size: 1rem !important;
+}
+.streamPartner {
+	font-size: 1.5rem !important;
+}
+.strmCat {
+	font-size: 1.25rem !important;
+}
+.strmLink {
+	font-size: 0.875rem !important;
+}
+.strmViews {
+	font-size: 0.6875rem !important;
+}
+.menuLink {
+	font-size: 1.375rem !important;
+}
+.terms {
+	font-size: 1.125rem !important;
+}
+#purchaseRespH {
+	font-size: 1.4375rem !important;
+}
+#purchaseSelector {
+	font-size: 1.75rem !important;
+}
+.pay-button {
+	font-size: 0.9375rem !important;
+}
+#xsollaPayB {
+	font-size: 0.9375rem !important;
+}
+.xpBarV {
+	font-size: 1rem !important;
+}
+#chalName {
+	font-size: 5rem !important;
+}
+.perkCnt {
+	font-size: 1.125rem !important;
+}
+.killStreakKey {
+	font-size: 0.75rem !important;
+}
+.killStreakCnt {
+	font-size: 0.75rem !important;
+}
+#centerLeaderDisplay {
+	font-size: 1.25rem !important;
+}
+.newLeaderItem {
+	font-size: 0.9375rem !important;
+}
+.statIcon {
+	font-size: 1.0625rem !important;
+}
+#recTimer {
+	font-size: 1.125rem !important;
+}
+#chatInputHolder {
+	font-size: 0.5625rem !important;
+}
+#chatInput {
+	font-size: 0.875rem !important;
+}
+/* NEW CHAT TABS */
+#chatSwitch {
+	font-size: 2.0625rem !important;
+}
+.chatItem {
+	font-size: 0.875rem !important;
+}
+.serverPing {
+	font-size: 2.3125rem !important;
+}
+#settSearch {
+	font-size: 1rem !important;
+}
+#gameMessage {
+	font-size: 1.375rem !important;
+}
+#roundsVal {
+	font-size: 1.8125rem !important;
+}
+#roundSub {
+	font-size: 1.1875rem !important;
+}
+.roundScrV {
+	font-size: 2.625rem !important;
+}
+#timerVal {
+	font-size: 0.9375rem !important;
+}
+#timerVal.topLeftOld {
+	font-size: 2rem !important;
+}
+#matchInfo {
+	font-size: 0.75rem !important;
+}
+#matchInfo.topLeftOld {
+	font-size: 0.9375rem !important;
+}
+#pingDisplay,
+#fpsDisplay,
+#ingressDisplay,
+#egressDisplay,
+#tickDisplay {
+	font-size: 0.875rem !important;
+}
+#pingText,
+#ingressPacketCount,
+#ingressDataSize,
+#egressPacketCount,
+#egressDataSize,
+#tickPacketCount {
+	font-size: 0.875rem !important;
+}
+#ingressPacketCount,
+#ingressDataSize,
+#egressPacketCount,
+#egressDataSize,
+#tickPacketCount {
+	font-size: 0.875rem !important;
+}
+.tScoreT {
+	font-size: 1.125rem !important;
+}
+.tScoreM {
+	font-size: 0.875rem !important;
+}
+.tScoreF {
+	font-size: 1.875rem !important;
+}
+#bottomLeftHealth {
+	font-size: 1.25rem !important;
+}
+.weapItem {
+	font-size: 1.0625rem !important;
+}
+.weapKey {
+	font-size: 0.875rem !important;
+}
+.weapSkin {
+	font-size: 0.625rem !important;
+}
+.weapStreakHolder {
+	font-size: 0.875rem !important;
+}
+.weapStreakInner {
+	font-size: 0.75rem !important;
+}
+.weapStreak {
+	font-size: 0.75rem !important;
+}
+#reloadMsg {
+	font-size: 1.5625rem !important;
+}
+#hiddenMsg {
+	font-size: 1.6875rem !important;
+}
+#interactMsg {
+	font-size: 1.5625rem !important;
+}
+#mobileUI #interactMsg {
+	font-size: 0.5625rem !important;
+}
+#propControlHolder {
+	font-size: 1.25rem !important;
+}
+#ammoHolder {
+	font-size: 1.8125rem !important;
+}
+#uiBase.onMenu #spectButton {
+	font-size: 1.125rem !important;
+}
+#instructions {
+	font-size: 3rem !important;
+}
+.c2pBtn {
+	font-size: 3.125rem !important;
+}
+.c2pBtnMid {
+	font-size: 3.125rem !important;
+}
+#instructionsUpdateCredit {
+	font-size: 1.4375rem !important;
+}
+#instructionsUpdate {
+	font-size: 2rem !important;
+}
+.instructionsHeader {
+	font-size: 1.875rem !important;
+}
+.instructionsTab {
+	font-size: 1rem !important;
+}
+th {
+	font-size: 1.375rem !important;
+}
+td {
+	font-size: 1.25rem !important;
+}
+.reportBut {
+	font-size: 2.5rem !important;
+}
+.followBut {
+	font-size: 0.875rem !important;
+}
+#endTimer {
+	font-size: 1.875rem !important;
+}
+#purchaseLabel {
+	font-size: 1.5625rem !important;
+}
+#spinKR {
+	font-size: 2.25rem !important;
+}
+#spinInfo {
+	font-size: 1.5625rem !important;
+}
+#spinCost {
+	font-size: 0rem !important;
+}
+#spinUI {
+	font-size: 1.125rem !important;
+}
+.smlInput {
+	font-size: 1.125rem !important;
+}
+.accountInput {
+	font-size: 1.375rem !important;
+}
+.mapActionB {
+	font-size: 1.5625rem !important;
+}
+.mapActionOvrl {
+	font-size: 0.75rem !important;
+}
+#compTimBox {
+	font-size: 1.6875rem !important;
+}
+.compTScrB {
+	font-size: 3.125rem !important;
+}
+#cmpDatBox {
+	font-size: 1.875rem !important;
+}
+#cmpDatSub {
+	font-size: 1.625rem !important;
+}
+.cmpClassLck {
+	font-size: 6.25rem !important;
+}
+.compClassPCnt {
+	font-size: 1.125rem !important;
+}
+.compPLstSt {
+	font-size: 1.5rem !important;
+}
+.cmpTmHed {
+	font-size: 3.25rem !important;
+}
+.compSwpTmB {
+	font-size: 1.625rem !important;
+}
+.compMenBtnS {
+	font-size: 1.625rem !important;
+}
+.hostHeader {
+	font-size: 1.875rem !important;
+}
+#hostCMapPickT {
+	font-size: 1.875rem !important;
+}
+#hostCMapInd {
+	font-size: 3.125rem !important;
+}
+#bigMFeatHBtn {
+	font-size: 1.3125rem !important;
+}
+#bigMFeatPBtn {
+	font-size: 1.3125rem !important;
+}
+.biMFeatInfH {
+	font-size: 1.0625rem !important;
+}
+.biMFeatInfB {
+	font-size: 1.3125rem !important;
+}
+#bigMFeatName {
+	font-size: 2.4375rem !important;
+}
+#bigMFeatDesc {
+	font-size: 1.25rem !important;
+}
+#mapList {
+	font-size: 1.5625rem !important;
+}
+.mapListCat {
+	font-size: 1.5625rem !important;
+}
+.mapListItem {
+	font-size: 1.0625rem !important;
+}
+.mapLICat {
+	font-size: 1.875rem !important;
+}
+.likdByFrnd {
+	font-size: 1rem !important;
+}
+.mapAgeD {
+	font-size: 0.8125rem !important;
+}
+.mapEdit {
+	font-size: 0.75rem !important;
+}
+.loadMoreD {
+	font-size: 1.5625rem !important;
+}
+.loadMoreW {
+	font-size: 1.5625rem !important;
+}
+.punishButton {
+	font-size: 0.9375rem !important;
+}
+.krIconHost {
+	font-size: 0.8125rem !important;
+}
+.krIcon {
+	font-size: 0.9375rem !important;
+}
+.hostPresetBtn {
+	font-size: 0.9375rem !important;
+}
+.serverHostOpH {
+	font-size: 1.875rem !important;
+}
+.serverHostOp {
+	font-size: 2.125rem !important;
+}
+.hostCBtn {
+	font-size: 1.875rem !important;
+}
+.serverCardInfo {
+	font-size: 1.25rem !important;
+}
+.loadoutBtn {
+	font-size: 0.9375rem !important;
+}
+#windowHeader {
+	font-size: 1.5625rem !important;
+}
+#requiresRestart {
+	font-size: 1.125rem !important;
+}
+#menuWindow {
+	font-size: 1.25rem !important;
+}
+.quickJoin {
+	font-size: 0.875rem !important;
+}
+.formInput {
+	font-size: 0.75rem !important;
+}
+#rawMapData {
+	font-size: 1.125rem !important;
+}
+.settText {
+	font-size: 1.375rem !important;
+}
+.contactsHeader {
+	font-size: 1.375rem !important;
+}
+.setHed {
+	font-size: 1.375rem !important;
+}
+.setHedS {
+	font-size: 1.375rem !important;
+}
+.settName,
+.settNameSmall {
+	font-size: 1.375rem !important;
+}
+#infoHolder {
+	font-size: 1.875rem !important;
+}
+#mapInfo {
+	font-size: 1.25rem !important;
+}
+#mapVote {
+	font-size: 1rem !important;
+}
+#matchInfoHolder {
+	font-size: 1.25rem !important;
+}
+.voteHint {
+	font-size: 0.75rem !important;
+}
+#specNames {
+	font-size: 1.5625rem !important;
+}
+#specStatsInner {
+	font-size: 0.9375rem !important;
+}
+#specSUS {
+	font-size: 1.4375rem !important;
+}
+#spectHPV {
+	font-size: 1rem !important;
+}
+.specPHead {
+	font-size: 1.125rem !important;
+}
+#specControlHolder {
+	font-size: 1.25rem !important;
+}
+.specControl {
+	font-size: 1rem !important;
+}
+#trustProgHD {
+	font-size: 0.8125rem !important;
+}
+#specKPDContr {
+	font-size: 1.875rem !important;
+}
+.specKPDContrI {
+	font-size: 1.375rem !important;
+}
+.sliderVal {
+	font-size: 1.125rem !important;
+}
+.inputGrey {
+	font-size: 1.125rem !important;
+}
+.inputGrey2 {
+	font-size: 0.9375rem !important;
+}
+#modLinks {
+	font-size: 1.375rem !important;
+}
+#modDropper p {
+	font-size: 1.375rem !important;
+}
+#seasonLabel {
+	font-size: 1.4375rem !important;
+}
+#gameName {
+	font-size: 7.25rem !important;
+}
+.mailObj {
+	font-size: 0.9375rem !important;
+}
+.unreadBtnM {
+	font-size: 0.75rem !important;
+}
+.mailFrom {
+	font-size: 1.125rem !important;
+}
+.followFrom {
+	font-size: 1.125rem !important;
+}
+.mailSubj {
+	font-size: 1rem !important;
+}
+.mailDate {
+	font-size: 0.9375rem !important;
+}
+#mailCount {
+	font-size: 0.625rem !important;
+}
+#mLevelContV {
+	font-size: 1.875rem !important;
+}
+#menuPingDisplay,
+#menuFPSDisplay {
+	font-size: 0.75rem !important;
+}
+#menuPingText {
+	font-size: 0.75rem !important;
+}
+#shopJnkDsp {
+	font-size: 1.4375rem !important;
+}
+/* .menBtnIcn {
+	font-size: 3.75rem !important;
+} */
+.clanRolD {
+	font-size: 0.9375rem !important;
+}
+#menuClassName {
+	font-size: 1.0625rem !important;
+}
+#menuClassSubtext {
+	font-size: 1.875rem !important;
+}
+#menuClassNameTag {
+	font-size: 1.1875rem !important;
+}
+.menuClassLevelBox {
+	font-size: 1.125rem !important;
+}
+.menuClassPlayerVerified {
+	font-size: 1.75rem !important;
+}
+.menuClassPlayerPartner {
+	font-size: 1.75rem !important;
+}
+.menuClassPlayerPremium {
+	font-size: 1.75rem !important;
+}
+#customizeButton {
+	font-size: 1.6875rem !important;
+}
+.kpdRepLvl {
+	font-size: 0.875rem !important;
+}
+.policeJoinB {
+	font-size: 0.8125rem !important;
+}
+.buttonCL {
+	font-size: 1.25rem !important;
+}
+.button.lgn {
+	font-size: 1.125rem !important;
+}
+.button {
+	font-size: 1.25rem !important;
+}
+.button.smallNoS,
+.button.small {
+	font-size: 1.375rem !important;
+}
+#spinInfoBtn.button {
+	font-size: 1.375rem !important;
+}
+.noBtnCard {
+	font-size: 1.25rem !important;
+}
+.classCard {
+	font-size: 1.5rem !important;
+}
+.className {
+	font-size: 1.125rem !important;
+}
+.classWeap {
+	font-size: 0.8125rem !important;
+}
+.classLvl {
+	font-size: 0.75rem !important;
+}
+.clsXPBarV {
+	font-size: 0.625rem !important;
+}
+.classHP {
+	font-size: 0.75rem !important;
+}
+.skinCard {
+	font-size: 1.25rem !important;
+}
+.skinCreator {
+	font-size: 0.875rem !important;
+}
+.skinRandom {
+	font-size: 3.125rem !important;
+}
+.itemOwn {
+	font-size: 0.75rem !important;
+}
+.itemSea {
+	font-size: 0.75rem !important;
+}
+.itemCnt[data-badge]:after {
+	font-size: 0.75rem !important;
+}
+.selctInfoBtn {
+	font-size: 0.75rem !important;
+}
+.selctDelBtn {
+	font-size: 0.75rem !important;
+}
+#returnHolder {
+	font-size: 1.5625rem !important;
+}
+.matchVoteMap {
+	font-size: 0.875rem !important;
+}
+.matchVoteMode {
+	font-size: 0.75rem !important;
+}
+.matchVoteModifier {
+	font-size: 0.9375rem !important;
+}
+.matchVoteTotal {
+	font-size: 1.125rem !important;
+}
+.shopCard {
+	font-size: 1.375rem !important;
+}
+.shopSale {
+	font-size: 0.75rem !important;
+}
+.hostMapName {
+	font-size: 0.875rem !important;
+}
+#spectateHUD {
+	font-size: 1.5625rem !important;
+}
+#specTimer {
+	font-size: 1.875rem !important;
+}
+#specGameInfo {
+	font-size: 1.0625rem !important;
+}
+.specPlayerName {
+	font-size: 0.625rem !important;
+}
+#specHeaderTm0 {
+	font-size: 1.6875rem !important;
+}
+#specScoreTm0 {
+	font-size: 1.6875rem !important;
+}
+#specNameTm0 {
+	font-size: 1.0625rem !important;
+}
+#specHeaderTm1 {
+	font-size: 1.6875rem !important;
+}
+#specScoreTm1 {
+	font-size: 1.6875rem !important;
+}
+#specNameTm1 {
+	font-size: 1.0625rem !important;
+}
+#specGMessage {
+	font-size: 0.75rem !important;
+}
+.teamTotals {
+	font-size: 1.25rem !important;
+}
+.teamWin0 {
+	font-size: 2rem !important;
+}
+.teamWin1 {
+	font-size: 2rem !important;
+}
+.teamTotalScore {
+	font-size: 1.25rem !important;
+}
+.teamTotalN0 {
+	font-size: 1.1875rem !important;
+}
+.teamTotalN1 {
+	font-size: 1.1875rem !important;
+}
+#networkLag {
+	font-size: 0.75rem !important;
+}
+#skinRewardHolder {
+	font-size: 0.75rem !important;
+}
+#voteToKick {
+	font-size: 0.75rem !important;
+}
+#voteToForfeit {
+	font-size: 0.75rem !important;
+}
+#settingsTabLayout {
+	font-size: 1rem !important;
+}
+.setSugBox2 {
+	font-size: 1.4375rem !important;
+}
+.setSugBox {
+	font-size: 1.4375rem !important;
+}
+.setSugInf {
+	font-size: 1.6875rem !important;
+}
+.settingsBtn {
+	font-size: 1.0625rem !important;
+}
+.settingTab {
+	font-size: 1.25rem !important;
+}
+.creatorCodeBtn {
+	font-size: 1.125rem !important;
+}
+.redVouchBtn {
+	font-size: 1rem !important;
+}
+#mdSrch {
+	font-size: 1.125rem !important;
+}
+#mpSrch {
+	font-size: 1.125rem !important;
+}
+#mpCat {
+	font-size: 1.125rem !important;
+}
+.searchBtn {
+	font-size: 1rem !important;
+}
+.newLeaderNoPlayers {
+	font-size: 0.875rem !important;
+}
+.killfeedItem {
+	font-size: 1.0625rem !important;
+}
+.challMapName {
+	font-size: 1.375rem !important;
+}
+.challMapPrg {
+	font-size: 1rem !important;
+}
+.challHeadrT {
+	font-size: 2.5rem !important;
+}
+.challHeadrS {
+	font-size: 3.125rem !important;
+}
+.challBackArr {
+	font-size: 3.75rem !important;
+}
+.challCrdMsg {
+	font-size: 1.875rem !important;
+}
+.chalCard {
+	font-size: 1.625rem !important;
+}
+.chalXPBarC {
+	font-size: 1rem !important;
+}
+.chalXPVal {
+	font-size: 1rem !important;
+}
+.chalRight {
+	font-size: 1.5625rem !important;
+}
+.chalExpr {
+	font-size: 1.375rem !important;
+}
+.chalRewV {
+	font-size: 1.125rem !important;
+}
+.changeText {
+	font-size: 1.125rem !important;
+}
+.endChalCard {
+	font-size: 1.5rem !important;
+}
+.endChalDesc {
+	font-size: 1rem !important;
+}
+.skinRewCard {
+	font-size: 1.5rem !important;
+}
+.skinRewRight {
+	font-size: 0.9375rem !important;
+}
+.skinRewDesc {
+	font-size: 1rem !important;
+}
+.crftNewRc {
+	font-size: 1.125rem !important;
+}
+.crftItmJnk {
+	font-size: 1.125rem !important;
+}
+.crftItmNm {
+	font-size: 1.125rem !important;
+}
+.crftReqCnt {
+	font-size: 0.8125rem !important;
+}
+.crftItmBtn {
+	font-size: 1rem !important;
+}
+.crftTim {
+	font-size: 1rem !important;
+}
+.crftLimAmnt {
+	font-size: 1.625rem !important;
+}
+.crftHammrIcn {
+	font-size: 6.875rem !important;
+}
+#crftHeaderName {
+	font-size: 2.375rem !important;
+}
+#crftHeaderDesc {
+	font-size: 0.875rem !important;
+}
+.hostToggle {
+	font-size: 0.9375rem !important;
+}
+#leaderboardHolder {
+	font-size: 1.4375rem !important;
+}
+.leaderItem {
+	font-size: 1.125rem !important;
+}
+.reqWLvl {
+	font-size: 1rem !important;
+}
+.reqWIcon {
+	font-size: 9.375rem !important;
+}
+.reqWTxt {
+	font-size: 0.875rem !important;
+}
+#referralHeader {
+	font-size: 1.875rem !important;
+}
+.spinVal {
+	font-size: 1.125rem !important;
+}
+.specVerified {
+	font-size: 1.75rem !important;
+}
+.specNum {
+	font-size: 0.75rem !important;
+}
+.hostOpt {
+	font-size: 0.875rem !important;
+}
+.optName {
+	font-size: 0.875rem !important;
+}
+.subPassChg {
+	font-size: 1.125rem !important;
+}
+#displayN {
+	font-size: 0.875rem !important;
+}
+.updDisN {
+	font-size: 0.9375rem !important;
+}
+.lnkTw {
+	font-size: 0.875rem !important;
+}
+#aliasRes {
+	font-size: 0.875rem !important;
+}
+.premiumSkinCol {
+	font-size: 2.625rem !important;
+}
+.registerToUnlockSkinColor {
+	font-size: 1.25rem !important;
+}
+#premTime {
+	font-size: 1.25rem !important;
+}
+#confirmBtn {
+	font-size: 1.125rem !important;
+}
+#declineBtn {
+	font-size: 1.125rem !important;
+}
+.tListN {
+	font-size: 0.9375rem !important;
+}
+.tItemN {
+	font-size: 0.5rem !important;
+}
+.tItemCnt {
+	font-size: 0.5rem !important;
+}
+.tItemInf {
+	font-size: 0.5rem !important;
+}
+.tSubHolder {
+	font-size: 0.875rem !important;
+}
+#tSubName {
+	font-size: 0.875rem !important;
+}
+#tDecName {
+	font-size: 0.875rem !important;
+}
+.estOfferVal {
+	font-size: 0.9375rem !important;
+}
+.plusOrMinus {
+	font-size: 2.9375rem !important;
+}
+.refAnot {
+	font-size: 1.125rem !important;
+}
+.bigMenTab {
+	font-size: 1.25rem !important;
+}
+.menuTabNew {
+	font-size: 0.9375rem !important;
+}
+#codeInput {
+	font-size: 1rem !important;
+}
+.creationAction {
+	font-size: 1.5rem !important;
+}
+.setToggle {
+	font-size: 1.125rem !important;
+}
+#serverSearch {
+	font-size: 1.125rem !important;
+}
+.plusOrMinus2 {
+	font-size: 2.9375rem !important;
+}
+.slide {
+	font-size: 1.25rem !important;
+}
+.slideName {
+	font-size: 1.4375rem !important;
+}
+.slidePlayers {
+	font-size: 0.9375rem !important;
+}
+.slidePlayers > span {
+	font-size: 1.875rem !important;
+}
+.slideTag {
+	font-size: 0.75rem !important;
+}
+.unknownModeIcon {
+	font-size: 2.1875rem !important;
+}
+.fundsVal {
+	font-size: 1.5625rem !important;
+}
+.crLabel {
+	font-size: 0.875rem !important;
+}
+.crVal {
+	font-size: 1.25rem !important;
+}
+.xpLvl {
+	font-size: 1.25rem !important;
+}
+.xpEndBarV {
+	font-size: 0.875rem !important;
+}
+.medalTxt {
+	font-size: 0.875rem !important;
+}
+.keyIcon {
+	font-size: 0.875rem !important;
+}
+.claimSubTxt {
+	font-size: 1.125rem !important;
+}
+#acpHeader {
+	font-size: 2.5rem !important;
+}
+#acpInfo {
+	font-size: 1.25rem !important;
+}
+.acpButton {
+	font-size: 1.5625rem !important;
+}
+.pfpAction {
+	font-size: 1.5625rem !important;
+}
+#tradeChatHolder {
+	font-size: 1.25rem !important;
+}
+#tradeChatInput {
+	font-size: 0.8125rem !important;
+}
+.tradeChatItem {
+	font-size: 0.6875rem !important;
+}
+.readAll {
+	font-size: 1rem !important;
+}
+#clanFundsIn {
+	font-size: 1.125rem !important;
+}
+.clanFndB {
+	font-size: 1.25rem !important;
+}
+#specKPD {
+	font-size: 3.0625rem !important;
+}
+.bonBAmnt {
+	font-size: 0.9375rem !important;
+}
+.partnerItem {
+	font-size: 1.125rem !important;
+}
+#partnerProg {
+	font-size: 1rem !important;
+}
+#partnerPrTx {
+	font-size: 1.0625rem !important;
+}
+#ctrtRes {
+	font-size: 1.0625rem !important;
+}
+#itemInfoBtn {
+	font-size: 1.3125rem !important;
+}
+.itemViewName {
+	font-size: 1.3125rem !important;
+}
+.itemViewSea {
+	font-size: 1.3125rem !important;
+}
+#mapFundsInp {
+	font-size: 1rem !important;
+}
+.mapFndB {
+	font-size: 1.25rem !important;
+}
+.mapsVotes {
+	font-size: 0.9375rem !important;
+}
+.premCard {
+	font-size: 1.25rem !important;
+}
+.premSale {
+	font-size: 0.625rem !important;
+}
+.premVal {
+	font-size: 0.875rem !important;
+}
+#speedRunReset {
+	font-size: 1.25rem !important;
+}
+#speedRunTimer {
+	font-size: 3.125rem !important;
+}
+.speedRunItem {
+	font-size: 1.25rem !important;
+}
+.speedRunITim {
+	font-size: 1.25rem !important;
+}
+.speedRunMs {
+	font-size: 1.875rem !important;
+}
+.speedRunChn {
+	font-size: 1.25rem !important;
+}
+#speedRunInfo {
+	font-size: 1.375rem !important;
+}
+.shopSideSpnNm {
+	font-size: 2.5rem !important;
+}
+.shopSideSpnKR {
+	font-size: 1.75rem !important;
+}
+#shopMainNav {
+	font-size: 1.4375rem !important;
+}
+#shopMainSubT {
+	font-size: 1.6875rem !important;
+}
+#shopMainHedr {
+	font-size: 3.125rem !important;
+}
+#shopPremHed {
+	font-size: 1.875rem !important;
+}
+#shopPremSub {
+	font-size: 1.25rem !important;
+}
+.bundlPopNam {
+	font-size: 2.25rem !important;
+}
+.bundlPopInfo {
+	font-size: 1.75rem !important;
+}
+.bundlPopInfo > li {
+	font-size: 0.9375rem !important;
+}
+.bundlPopSec {
+	font-size: 1.625rem !important;
+}
+.bundlPopCurncs {
+	font-size: 1.375rem !important;
+}
+.bundlStrTxt {
+	font-size: 1.375rem !important;
+}
+.bundlStrSub {
+	font-size: 1.3125rem !important;
+}
+.storeHeader {
+	font-size: 1.5625rem !important;
+}
+#plySearch {
+	font-size: 1.0625rem !important;
+}
+.custBackArr {
+	font-size: 2.5rem !important;
+}
+.takeActionBtn {
+	font-size: 0.9375rem !important;
+}
+.tSearch {
+	font-size: 1.0625rem !important;
+}
+.selectorLabel {
+	font-size: 1.25rem !important;
+}
+.selRandom {
+	font-size: 3.125rem !important;
+}
+.custItNm {
+	font-size: 1rem !important;
+}
+.settSmall {
+	font-size: 1.0625rem !important;
+}
+.settLabel {
+	font-size: 0.8125rem !important;
+}
+.custLabel {
+	font-size: 0.875rem !important;
+}
+.callRegion {
+	font-size: 1rem !important;
+}
+.lockedClassText {
+	font-size: 0.75rem !important;
+}
+.selctFavBtn {
+	font-size: 1.75rem !important;
+}
+#raidReleaseTimer {
+	font-size: 0.9375rem !important;
+}
+#raidReleaseTimer {
+	font-size: 0.9375rem !important;
+}
+.eventTimer {
+	font-size: 0.875rem !important;
+}
+#clanDeclineAll {
+	font-size: 1.1875rem !important;
+}
+#updateAdVersion {
+	font-size: 0.9375rem !important;
+}
+.viewAllUpdates {
+	font-size: 1.5rem !important;
+}
+#loadTipsHolder {
+	font-size: 1.4375rem !important;
+}
+#loadGamNm {
+	font-size: 1.4375rem !important;
+}
+#loadInfoRHolder {
+	font-size: 1.25rem !important;
+}
+#loadInfoLHolder {
+	font-size: 1.25rem !important;
+}
+#lC-cont {
+	font-size: 1.875rem !important;
+}
+.followBack {
+	font-size: 0.9375rem !important;
+}
+.pSt {
+	font-size: 0.75rem !important;
+}
+.pSt strong {
+	font-size: 0.75rem !important;
+}
+.sprayCnt {
+	font-size: 0.75rem !important;
+}
+.spinValL {
+	font-size: 1.125rem !important;
+}
+.joinBtn {
+	font-size: 1.375rem !important;
+}
+.imagePop {
+	font-size: 1.25rem !important;
+}
+.badgePop {
+	font-size: 1.25rem !important;
+}
+.imageNewPop {
+	font-size: 1.25rem !important;
+}
+.openCollection {
+	font-size: 1.75rem !important;
+}
+.imageListItem {
+	font-size: 1.0625rem !important;
+}
+.imageActionB {
+	font-size: 1.5625rem !important;
+}
+.imageActionE {
+	font-size: 1.5rem !important;
+}
+.imageActionOvrl {
+	font-size: 0.75rem !important;
+}
+.imageListHeader {
+	font-size: 1.875rem !important;
+}
+.imageListAdd {
+	font-size: 1.125rem !important;
+}
+.pubHed {
+	font-size: 1.375rem !important;
+}
+.propControl {
+	font-size: 1rem !important;
+}
+#promoCode {
+	font-size: 1.375rem !important;
+}
+.codeBtn {
+	font-size: 1.25rem !important;
+}
+.promoCard {
+	font-size: 1.375rem !important;
+}
+.promoValH {
+	font-size: 1.5rem !important;
+}
+.promoValL {
+	font-size: 1.3125rem !important;
+}
+.reportDC {
+	font-size: 1.125rem !important;
+}
+.disconnectPop {
+	font-size: 1.25rem !important;
+}
+.plusOrMinus3 {
+	font-size: 2.9375rem !important;
+}
+/* TOOLTIP */
+.tooltip {
+	font-size: 0.75rem !important;
+}
+.tooltip2 {
+	font-size: 1.0625rem !important;
+}
+#rankedSoonTm {
+	font-size: 1rem !important;
+}
+.badgeCard {
+	font-size: 1.625rem !important;
+}
+.badgeName {
+	font-size: 0.8125rem !important;
+}
+.badgeDesc {
+	font-size: 0.625rem !important;
+}
+#ingameTable th {
+	font-size: 1rem !important;
+}
+#ingameTable td {
+	font-size: 0.9375rem !important;
+}
+.lvlPopHed {
+	font-size: 2.5rem !important;
+}
+.lvlPopInfo {
+	font-size: 1.5625rem !important;
+}
+.lvlPopAct {
+	font-size: 1.875rem !important;
+}
+#mobileUI .killStreakCnt {
+	font-size: 0.5625rem !important;
+}
+#imagesTabLayout {
+	font-size: 1rem !important;
+}
+.imageTab {
+	font-size: 1.25rem !important;
+}
+.advancedSlider:after {
+	font-size: 0.875rem !important;
+}
+.advSlidBig:after {
+	font-size: 1.1875rem !important;
+}
+.quickPlayMapName {
+	font-size: 0.875rem !important;
+}
+.streakSelH {
+	font-size: 1.375rem !important;
+}
+.streakCard {
+	font-size: 1.25rem !important;
+}
+.streakActionOvrl {
+	font-size: 0.75rem !important;
+}
+.streakActionB {
+	font-size: 1.5625rem !important;
+}
+.winCloseArr {
+	font-size: 2.8125rem !important;
+}
+#spinHistoryBtn {
+	font-size: 1.375rem !important;
+}
+#spinHistoryPop {
+	font-size: 2rem !important;
+}
+.spinHistoryHeader {
+	font-size: 1.875rem !important;
+}
+.spinHistoryClear {
+	font-size: 1.125rem !important;
+}
+.spinHistoryWarning {
+	font-size: 0.875rem !important;
+}
+.spinInfoText {
+	font-size: 1rem !important;
+}
+li {
+	font-size: 0.75rem !important;
+}
+#spinEndTime {
+	font-size: 0.75rem !important;
+}
+.clsStatCard {
+	font-size: 1.625rem !important;
+}
+.clsStatWeap {
+	font-size: 0.625rem !important;
+}
+.clsStatName {
+	font-size: 0.8125rem !important;
+}
+.clsStatLvl {
+	font-size: 0.75rem !important;
+}
+.clsStatXPBarV {
+	font-size: 0.5625rem !important;
+}
+.pListPing {
+	font-size: 2.3125rem !important;
+}
+.pListVoice {
+	font-size: 2.3125rem !important;
+}
+.eventPopName {
+	font-size: 2.5rem !important;
+}
+.eventPopChallBtn {
+	font-size: 1.25rem !important;
+}
+.eventPopInfo {
+	font-size: 1.25rem !important;
+}
+.eventPopInfo > li {
+	font-size: 0.9375rem !important;
+}
+.eventPopSkinsH {
+	font-size: 1.25rem !important;
+}
+.eventPopEnd {
+	font-size: 1.25rem !important;
+}
+.serverTimeLeft {
+	font-size: 0.75rem !important;
+}
+.bpLevelNum {
+	font-size: 1rem !important;
+}
+.bpCardRarityLabel {
+	font-size: 0.75rem !important;
+}
+.bpBtn {
+	font-size: 0.875rem !important;
+}
+.bpSeasonH {
+	font-size: 2rem !important;
+}
+.bpSeasonTime {
+	font-size: 0.75rem !important;
+}
+.bpLevelText {
+	font-size: 1.375rem !important;
+}
+.bpXPText {
+	font-size: 0.75rem !important;
+}
+.bpMenuBtn {
+	font-size: 1.25rem !important;
+}
+.bpClaimLabel {
+	font-size: 0.9375rem !important;
+}
+.bpClaimB {
+	font-size: 0.75rem !important;
+}
+.bpUnlockBtn {
+	font-size: 1.875rem !important;
+}
+.bp-unlock-header {
+	font-size: 1.25rem !important;
+}
+.bp-unlock-panel {
+	font-size: 1.875rem !important;
+}
+.bp-unlock-plus {
+	font-size: 1.125rem !important;
+}
+.bp-unlock-text {
+	font-size: 0.9375rem !important;
+}
+.bp-unlock-plus-text {
+	font-size: 1.0625rem !important;
+}
+.bp-unlock-btn {
+	font-size: 1.5625rem !important;
+}
+.bp-generic-header {
+	font-size: 2.5rem !important;
+}
+.bp-generic-info {
+	font-size: 1.25rem !important;
+}
+.bp-generic-btn {
+	font-size: 1.5625rem !important;
+}
+.bp-generic-btn-small {
+	font-size: 1.5625rem !important;
+}
+#bp-skip-num {
+	font-size: 1.5625rem !important;
+}
+.clanSubmitBtn {
+	font-size: 1.125rem !important;
+}
+.shopAction {
+	font-size: 1.3125rem !important;
+}
+.shopActionOvrl {
+	font-size: 0.75rem !important;
+}
+.shopActions {
+	font-size: 1.3125rem !important;
+}
+.spinErrorPop {
+	font-size: 1.25rem !important;
+}
+.popHeader,
+.dropsPopHeader {
+	font-size: 1.875rem !important;
+}
+.charmErrorPop {
+	font-size: 1.25rem !important;
+}
+.ticketCount {
+	font-size: 0.75rem !important;
+}
+#roundMessage {
+	font-size: 1.375rem !important;
+}
+#endBPLvl {
+	font-size: 1.4375rem !important;
+}
+#endBPProgText {
+	font-size: 1.1875rem !important;
+}
+#endBPGained {
+	font-size: 1.1875rem !important;
+}
+#endBPNextText {
+	font-size: 0.75rem !important;
+}
+#endBPUnlock {
+	font-size: 0.75rem !important;
+}
+.spinHistoryStats {
+	font-size: 1.125rem !important;
+}
+.spinHistoryStatsPop {
+	font-size: 1.25rem !important;
+}
+.spinHistoryTime {
+	font-size: 0.75rem !important;
+}
+.muteUserBtn {
+	font-size: 2.125rem !important;
+}
+#kpdCalls > * td,
+#kpdCalls > * th {
+	font-size: 1rem !important;
+}
+.scrimHeader {
+	font-size: 1.75rem !important;
+}
+.scrimSub {
+	font-size: 0.875rem !important;
+}
+.scrimDesc {
+	font-size: 0.8125rem !important;
+}
+#specKPDTxt {
+	font-size: 1.875rem !important;
+}
+#specKPDTxt > div {
+	font-size: 0.9375rem !important;
+}
+.bundlCreatorText,
+.battlepassCreatorText {
+	font-size: 0.875rem !important;
+}
+#bundlCreatorCode,
+#premiumCreatorCode,
+#battlepassCreatorCode {
+	font-size: 1.125rem !important;
+}
+#bundlCreatorCodeBtn,
+#premiumCreatorCodeBtn,
+#battlepassCreatorCodeBtn {
+	font-size: 1.125rem !important;
+}
+#miniMapOverlay {
+	font-size: 1.5625rem !important;
+}
+.ticketCard {
+	font-size: 1.375rem !important;
+}
+.ticketText {
+	font-size: 0.9375rem !important;
+}
+.bundlPopBuyB,
+.bundlPopBuyS,
+.bundlPopBuyC {
+	font-size: 1.5rem !important;
+}
+.bundlPopBuyS {
+	font-size: 1.5rem !important;
+}
+.bundlPopBuyC {
+	font-size: 1.875rem !important;
+}
+.custClear {
+	font-size: 0.875rem !important;
+}
+.death-row-center,
+.death-row-center-bottom,
+.death-row-center-self {
+	font-size: 2.1875rem !important;
+}
+.death-row-center-bottom {
+	font-size: 1.5625rem !important;
+}
+.death-row-center-self {
+	font-size: 3.125rem !important;
+}
+.death-row-kills {
+	font-size: 2.1875rem !important;
+}
+.death-row-user {
+	font-size: 1.25rem !important;
+}
+.death-row-user-stat {
+	font-size: 0.75rem !important;
+}
+.death-row-class-level {
+	font-size: 0.75rem !important;
+}
+.death-stats-row {
+	font-size: 1.25rem !important;
+}
+.bundleItmNm {
+	font-size: 0.9375rem !important;
+}
+.bundleItmMore {
+	font-size: 0.9375rem !important;
+}
+.bundleItmBtn {
+	font-size: 1rem !important;
+}
+.bundleItmBtnT {
+	font-size: 1rem !important;
+}
+#doubleXPHolder {
+	font-size: 1.5625rem !important;
+}
+.dxp-btn {
+	font-size: 1.5625rem !important;
+}
+.dxp-header {
+	font-size: 2.5rem !important;
+}
+.dxp-info {
+	font-size: 1rem !important;
+}
+.dropsActive {
+	font-size: 1.625rem !important;
+}
+.custPremReq {
+	font-size: 0.75rem !important;
+}
+.shopSpinValL {
+	font-size: 1.875rem !important;
+}
+.shopSpinValH {
+	font-size: 2.375rem !important;
+}
+.rewItemN {
+	font-size: 0.625rem !important;
+}
+.rewItemCnt {
+	font-size: 0.625rem !important;
+}
+#bottomLeftTeamType {
+	font-size: 0.75rem !important;
+}
+#bottomLeftTeamName {
+	font-size: 1rem !important;
+}
+#voiceIcon {
+	font-size: 2.25rem !important;
+}
+#expertModeBtn {
+	font-size: 1.1875rem !important;
+}
+#topLeftAdHolder {
+	font-size: 1rem !important;
+}
+#topRightAdHolder {
+	font-size: 1rem !important;
+}
+.abTestsPop {
+	font-size: 1.25rem !important;
+}
+.ftueUnlockClasses {
+	font-size: 1.5rem !important;
+}
+.pHoldNotif {
+	font-size: 1.5625rem !important;
+}
+.accountTwitchInput {
+	font-size: 1.375rem !important;
+}
+/* inline-styles */
+.game-announcement.svelte-fawdim {
+	font-size: 0.875rem !important;
+}
+.game-announcement.svelte-fawdim:before {
+	font-size: 0.75rem !important;
+}
+.ranked-matchmaking-status.svelte-3k0h7w {
+	font-size: 1.25rem !important;
+}
+.guest-earned-collect__header.svelte-lh5h5y {
+	font-size: 0.8125rem !important;
+}
+.guest-earned-collect__reward-value.svelte-lh5h5y {
+	font-size: 1.75rem !important;
+}
+.guest-earned-collect__xp-icon.svelte-lh5h5y span.svelte-lh5h5y {
+	font-size: 0.625rem !important;
+}
+.button-text.svelte-lh5h5y {
+	font-size: 1rem !important;
+}
+.button-subtext.svelte-lh5h5y {
+	font-size: 0.6875rem !important;
+}
+.helpTxtHol.svelte-1g1yfcp {
+	font-size: 1rem !important;
+}
+.scoreText.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.timeRemaining.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.buttonText.svelte-1g1yfcp {
+	font-size: 1rem !important;
+}
+.buttonSubtext.svelte-1g1yfcp {
+	font-size: 0.6875rem !important;
+}
+.claimedText.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.guestText.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.dailySpinToolTip.svelte-1g1yfcp {
+	font-size: 0.8125rem !important;
+}
+.spin-type-info.svelte-1g1yfcp {
+	font-size: 0.75rem !important;
+}
+.spin-name.svelte-1g1yfcp {
+	font-size: 0.8125rem !important;
+}
+.spin-description.svelte-1g1yfcp {
+	font-size: 0.6875rem !important;
+}
+.menu-item.svelte-uheepa {
+	font-size: 1rem !important;
+}
+.region-indicator.svelte-uheepa {
+	font-size: 1rem !important;
+}
+button.svelte-uheepa {
+	font-size: 2.5rem !important;
+}
+.matchmaking-info.svelte-uheepa {
+	font-size: 1rem !important;
+}
+.status-icon.svelte-uheepa {
+	font-size: 1.625rem !important;
+}
+.start-button.svelte-uheepa {
+	font-size: 1.5rem !important;
+}
+.loading.svelte-154w931,
+.error.svelte-154w931 {
+	font-size: 1.125rem !important;
+}
+.season-banner.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.rank-name.svelte-154w931 {
+	font-size: 2rem !important;
+}
+.unranked-message.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.warning-text.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.quick-stat-value.svelte-154w931 {
+	font-size: 1.125rem !important;
+}
+.quick-stat-label.svelte-154w931 {
+	font-size: 0.75rem !important;
+}
+.description-container.svelte-154w931 p.svelte-154w931 {
+	font-size: 1rem !important;
+}
+.map-name.svelte-154w931 {
+	font-size: 0.875rem !important;
+}
+.emoji-icon.svelte-jxc66d {
+	font-size: 4rem !important;
+}
+.overlay-title.svelte-jxc66d {
+	font-size: 1.75rem !important;
+}
+.overlay-description.svelte-jxc66d {
+	font-size: 1rem !important;
+}
+.overlay-button.svelte-jxc66d {
+	font-size: 1.125rem !important;
+}
+
+/* inline-styles */
+#menuPingText {
+	font-size: 0.75rem !important;
+}
+.selRandom.blackShad {
+	font-size: 1.25rem !important;
+}
+.classHP span {
+	font-size: 0.75rem !important;
+}
+.setBodH b,
+.setBodH b span {
+	font-size: 1.625rem !important;
+}
+.bigMenTab.flex {
+	font-size: 1rem !important;
+}
+#shopHeader .bigMenTab {
+	font-size: 1rem !important;
+}
+#purchaseInfoTable
+	div[style='font-size:15px;text-align:center;margin-bottom:10px;margin-top:10px;color:#d4d4d4;'] {
+	font-size: 0.9375rem !important;
+}
+#purchaseInfoTable
+	div[style='color:#d4d4d4;font-size:16px;text-align:center;margin-bottom:10px;margin-top:10px;'] {
+	font-size: 1rem !important;
+}
+.vouchPop
+	div[style='color:rgba(255,255,255,0.7);margin-top:-5px;font-size:19px;text-align:center;margin-bottom:5px;'] {
+	font-size: 1.1875rem !important;
+}
+.challCrdMsg {
+	font-size: 1.6875rem !important;
+}
+#menuWindow .bigMenTab {
+	font-size: 1rem !important;
+}
+.statHolder .bigMenTab {
+	font-size: 1rem !important;
+}
+
+/* #endregion */
+
+/* REMOVAL */
+#mapInfoHolder,
+#headerRightSocial,
+#mainLogo,
+#homeStoreAd,
+#streamContainer,
+#streamContainerNew,
+#gameAnnouncementEl,
+#instructions,
+.menuItem[onclick='playSelect(),logBtnFRVR("community"),window.openCommunityMenu()'],
+.menBtnIcn,
+.greyInlineInner:last-of-type,
+#voiceIcon,
+#recTimer,
+.youNewDiv:not(#battlepassAd):not(#dailySpinDiv),
+.helpTxtHol div[style='color:#fff'],
+.setHed .plusOrMinus,
+#bubbleContainer,
+#customizeButton span,
+#timerIcon,
+#bottomLeftTeamHolder,
+#bottomLeftChallIcon,
+#ammoIcon,
+.weapKey,
+.weapSkin,
+#PC7WaterMark1,
+#PC7WaterMark2,
+#topRightAdHolder,
+#aHolder,
+.webpush-container,
+#battlepassAd .helpTxtHol,
+#dailySpinDiv .helpTxtHol,
+#dailySpinDiv .dailySpinToolTip {
+	display: none !important;
+}
+/* /REMOVAL */
+
+/* events */
+#tlInfHold {
+	top: 20px;
+	left: auto;
+	right: 20px;
+}
+
+#battlepassAd,
+#dailySpinDiv {
+	min-width: fit-content;
+}
+#battlepassAd {
+	margin-top: 0;
+}
+#bpAdIcon,
+#dailySpinIcon {
+	filter: grayscale(1);
+
+	transition: filter 0.3s linear;
+}
+#battlepassAd:hover #bpAdIcon,
+#dailySpinDiv:hover #dailySpinIcon {
+	filter: grayscale(0);
+}
+
+/* spectate button */
+#spectButton {
+	top: 300px !important;
+	bottom: auto !important;
+	left: 20px !important;
+
+	width: fit-content;
+
+	display: flex;
+	align-items: center;
+	padding: 20px;
+
+	background-color: var(--color-primary);
+	transform: translate(0) !important;
+	border: var(--border);
+}
+#spectButton > span:first-child {
+	font-size: 1rem !important;
+	visibility: hidden;
+}
+#spectButton .switchsml {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0 !important;
+
+	cursor: pointer;
+}
+#spectButton .sliderSml {
+	visibility: hidden;
+}
+#spectButton .sliderSml::before {
+	content: 'Spectate';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1rem;
+	color: var(--color-secondary);
+
+	background-color: var(--color-primary);
+
+	transform: translate(0) !important;
+	visibility: visible;
+}
+#spectButton .switchsml:hover .sliderSml::before {
+	color: var(--color-accent);
+}
+#specBtn:checked + .sliderSml::before {
+	content: 'Spectating';
+
+	color: var(--color-accent);
+}
+
+/* HEADER */
+.headerBar {
+	z-index: 0;
+
+	height: auto;
+
+	background-color: var(--color-primary);
+	border: var(--border);
+	overflow: hidden;
+}
+.headerBar > div:first-child,
+#mLevelCont {
+	position: static;
+}
+.headerBar > div[style*='display:inline-block;']:first-child {
+	display: flex !important;
+	flex-direction: column;
+	gap: 10px;
+
+	margin-left: 130px;
+}
+
+#signedInHeaderBar,
+#signedOutHeaderBar {
+	top: 20px;
+	left: 20px;
+
+	padding: 20px !important;
+	padding-right: 20px !important;
+
+	border-bottom-right-radius: 0 !important;
+}
+.verticalSeparator {
+	display: none;
+}
+#menuAccountUsername,
+.krInfo,
+.junkInfo,
+#mailContainer,
+#walletContainer {
+	position: relative;
+
+	transition: 0.1s linear;
+}
+#menuAccountUsername::after,
+.krInfo::after,
+.junkInfo::after,
+#mailContainer::after,
+#walletContainer::after {
+	position: absolute;
+	top: 60%;
+	left: -25px;
+	content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath style='stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: %23fca705; fill-rule: nonzero; opacity: 1;' d='M 23.61 11.28 L 14.809999999999999 2.51 C 14.523909544102404 2.221540051227546 14.091733212254177 2.1348381435244828 13.716518494355755 2.2906290497864 C 13.341303776457334 2.446419956048317 13.09763737695085 2.813734927647196 13.099999999999998 3.2199999999999993 L 13.099999999999998 8.219999999999999 C 13.099999999999998 8.358071187457698 12.988071187457697 8.469999999999999 12.849999999999998 8.469999999999999 L 1.1 8.469999999999999 C 0.5477152501692066 8.469999999999999 0.10000000000000009 8.917715250169206 0.10000000000000009 9.469999999999999 L 0.10000000000000009 14.469999999999999 C 0.10000000000000009 15.022284749830792 0.5477152501692066 15.469999999999999 1.1 15.469999999999999 L 12.85 15.469999999999999 C 12.988071187457699 15.469999999999999 13.1 15.5819288125423 13.1 15.719999999999999 L 13.1 20.72 C 13.097637376950852 21.1262650723528 13.341303776457337 21.49358004395168 13.716518494355757 21.649370950213598 C 14.091733212254177 21.805161856475515 14.523909544102404 21.718459948772452 14.809999999999999 21.43 L 23.61 12.629999999999999 C 23.9977235947108 12.239962545689075 23.9977235947108 11.610037454310921 23.61 11.219999999999999 Z' stroke-linecap='round' /%3E%3C/svg%3E");
+
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: opacity 0.3s linear;
+}
+#menuAccountUsername:hover,
+.krInfo:hover,
+.junkInfo:hover,
+#mailContainer:hover,
+#walletContainer:hover {
+	transform: translateX(5px) !important;
+	color: var(--color-accent);
+}
+#menuAccountUsername:hover::after,
+.krInfo:hover::after,
+.junkInfo:hover::after,
+#mailContainer:hover::after,
+#walletContainer:hover::after {
+	opacity: 1;
+}
+
+#menuUsernameContainer {
+	display: flex;
+	flex-direction: column;
+
+	margin-right: 10px;
+}
+#menuMiniProfilePic {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+
+	width: 100px;
+	height: 100px;
+	margin: 0;
+
+	border-radius: 0;
+}
+#menuAccountUsername {
+	position: relative;
+
+	padding: 0;
+	border: 0;
+	animation: none;
+}
+
+#menuAccountUsername:hover {
+	transform: scale(1);
+}
+#mLevelCont {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+
+	height: auto;
+	padding: 0;
+	margin: 0;
+
+	background: none;
+	border-radius: 0;
+}
+#mLevelContV {
+	padding: 10px;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--color-secondary);
+}
+.krInfo,
+.junkInfo {
+	display: block;
+	margin-top: 0;
+}
+.krInfo:hover #menuKRCount,
+.junkInfo:hover #menuJNKCount {
+	text-decoration: none !important;
+}
+#menuKRCount,
+#menuJNKCount {
+	display: block;
+	color: white;
+}
+#menuKRCount:hover,
+#menuJNKCount:hover {
+	color: var(--color-secondary);
+}
+#menuKRCount::before,
+#menuJNKCount::before {
+	text-transform: uppercase;
+}
+#menuKRCount::before {
+	content: 'CASH: ';
+}
+#menuKRCount span,
+#menuJNKCount span {
+	display: none;
+}
+#menuJNKCount::before {
+	content: 'JUNK: ';
+}
+#mailContainer,
+#walletContainer {
+	position: relative;
+}
+#mailContainer:hover::before,
+#walletContainer:hover::before {
+	color: var(--color-secondary);
+}
+#mailContainer::before,
+#walletContainer::before {
+	cursor: pointer;
+}
+#mailContainer .material-icons,
+#walletContainer .material-icons {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	font-size: 0 !important;
+}
+#mailContainer::before {
+	content: 'MAILBOX';
+}
+#walletContainer::before {
+	content: 'WALLET';
+}
+
+#signedInHeaderBar .progressBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: transparent;
+	transform: translate(0, 0);
+}
+#signedInHeaderBar .progressBarInner {
+	background: none;
+	background-color: var(--color-primary);
+}
+#NewAltManager div span {
+	color: var(--color-primary) !important;
+}
+#NewAltManager div div span {
+	color: var(--color-secondary) !important;
+}
+#mLevelCont {
+	height: auto;
+	display: flex;
+	align-items: center;
+
+	background-color: transparent;
+	color: var(--color-primary) !important;
+}
+#mLevelContV {
+	line-height: 1;
+}
+
+#headerRight {
+	top: 20px;
+	right: 20px;
+}
+#menuFPSDisplay {
+	color: var(--color-secondary) !important;
+}
+#menuFPSDisplay span {
+	color: var(--color-primary) !important;
+}
+#menuPingDisplay,
+#menuFPSDisplay {
+	display: flex !important;
+	align-items: center;
+	gap: 5px;
+
+	text-align: right;
+}
+#menuPingText, #menuFPS{
+	width: 30px;
+}
+#menuTimer {
+	color: var(--color-primary) !important;
+}
+/* /HEADER */
+
+/* main menu */
+#menuItemContainer,
+#subLogoButtons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	padding: 50px;
+
+	margin: 0;
+}
+
+#menuItemContainer {
+	top: 300px;
+	left: 500px;
+	bottom: auto;
+
+	width: fit-content;
+
+	background-color: var(--color-primary);
+	border: var(--border);
+	transform: rotate(var(--rotation));
+}
+#menuItemContainer::before,
+#subLogoButtons::before {
+	content: 'Main menu';
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	padding: 10px 20px;
+
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	white-space: nowrap;
+	color: var(--color-secondary);
+
+	background-color: var(--color-primary);
+	border: var(--border);
+	transform: translate(-50%, -80%);
+}
+#subLogoButtons::before {
+	content: 'Game menu';
+}
+
+.menuItem {
+	text-align: left;
+}
+.menuItem .menuItemTitle,
+#subLogoButtons .button {
+	position: relative;
+
+	margin: 0;
+
+	font-size: 1.5rem !important;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-align: left;
+	white-space: nowrap;
+	line-height: 1;
+
+	transition: 0.1s linear;
+}
+.menuItem .menuItemTitle::before,
+#subLogoButtons .button::before {
+	position: absolute;
+	top: 50%;
+	left: -40px;
+	content: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath style='stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: %23fca705; fill-rule: nonzero; opacity: 1;' d='M 23.61 11.28 L 14.809999999999999 2.51 C 14.523909544102404 2.221540051227546 14.091733212254177 2.1348381435244828 13.716518494355755 2.2906290497864 C 13.341303776457334 2.446419956048317 13.09763737695085 2.813734927647196 13.099999999999998 3.2199999999999993 L 13.099999999999998 8.219999999999999 C 13.099999999999998 8.358071187457698 12.988071187457697 8.469999999999999 12.849999999999998 8.469999999999999 L 1.1 8.469999999999999 C 0.5477152501692066 8.469999999999999 0.10000000000000009 8.917715250169206 0.10000000000000009 9.469999999999999 L 0.10000000000000009 14.469999999999999 C 0.10000000000000009 15.022284749830792 0.5477152501692066 15.469999999999999 1.1 15.469999999999999 L 12.85 15.469999999999999 C 12.988071187457699 15.469999999999999 13.1 15.5819288125423 13.1 15.719999999999999 L 13.1 20.72 C 13.097637376950852 21.1262650723528 13.341303776457337 21.49358004395168 13.716518494355757 21.649370950213598 C 14.091733212254177 21.805161856475515 14.523909544102404 21.718459948772452 14.809999999999999 21.43 L 23.61 12.629999999999999 C 23.9977235947108 12.239962545689075 23.9977235947108 11.610037454310921 23.61 11.219999999999999 Z' stroke-linecap='round' /%3E%3C/svg%3E");
+
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: opacity 0.3s linear;
+}
+.menuItem .menuItemTitle:hover,
+#subLogoButtons .button:hover {
+	transform: translateX(5px) scale(1);
+	color: var(--color-accent) !important;
+}
+.menuItem .menuItemTitle:hover::before,
+#subLogoButtons .button:hover::before {
+	opacity: 1;
+}
+
+/* SUBLOGO BUTTONS */
+#subLogoButtons {
+	right: 100px;
+	bottom: 200px;
+	transform: translate(0);
+
+	width: fit-content;
+
+	background-color: var(--color-primary);
+	border: var(--border);
+
+	transform: rotate(var(--rotation));
+}
+#matchInfoHolder {
+	position: absolute;
+	left: 110%;
+	top: 0;
+
+	width: fit-content;
+
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	padding: 20px;
+	background-color: var(--color-primary);
+	border: var(--border);
+}
+#mapInfoHld {
+	font-size: 0;
+	white-space: nowrap;
+}
+#mapInfoHld > #mapInfo,
+#menuRegionLabel {
+	font-size: 1rem;
+}
+
+#subLogoButtons .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: fit-content;
+	height: auto;
+	padding: 0 !important;
+
+	border: 0 !important;
+}
+/* /SUBLOGO BUTTONS */
+
+/* CHAT */
+#chatHolder {
+	background: linear-gradient(0deg, var(--color-primary), #00000040);
+	/* border: var(--border); */
+}
+#chatHolder,
+#uiBase.onMenu #chatHolder {
+	width: 450px !important;
+
+	left: 20px;
+	bottom: 20px;
+
+	overflow: hidden;
+
+	transition: all 0.3s ease-in-out;
+}
+#uiBase.onEndScrn #chatHolder,
+#uiBase.onGame.onSpect #chatHolder {
+	left: 20px;
+	bottom: 20px;
+}
+#uiBase.onGame #chatHolder {
+	left: 20px;
+	bottom: 150px;
+}
+#uiBase.onCompMenu #chatHolder {
+	left: 20px;
+	bottom: 180px;
+}
+
+#chatList {
+	max-height: 500px !important;
+
+	background: none !important;
+	opacity: 1 !important;
+}
+#chatList .chatItem {
+	max-width: 100% !important;
+	margin: 10px 0 !important;
+	padding: 5px 10px;
+
+	font-size: 1rem !important;
+}
+.chatMsg {
+	color: var(--color-secondary);
+}
+
+.chatMsg [style='color:#fff'] {
+	color: var(--color-secondary) !important;
+}
+
+.chatMsg [style='color:#eb5656'] {
+	color: var(--color-primary) !important;
+}
+
+.chatMsg [style='color:#9eeb56'] {
+	color: var(--color-secondary) !important;
+}
+
+.chatMsg [style='color:#76ff03'] {
+	color: var(--color-secondary) !important;
+}
+
+.chatMsg[style='color: #ff0000;'] {
+	color: var(--color-secondary) !important;
+}
+
+.chatMsg[style*='color:#fc03ec'] {
+	color: var(--color-secondary) !important;
+}
+
+#chatInputHolder {
+	grid-template-columns: 1fr;
+	gap: 20px;
+
+	background: none !important;
+}
+#chatInput {
+	width: 100% !important;
+
+	font-size: 1.2rem !important;
+	color: var(--color-secondary);
+
+	box-sizing: border-box !important;
+}
+#chatInput::placeholder {
+	font-size: 1.5rem !important;
+	color: #ccc;
+}
+#chatSwitch {
+	color: var(--color-primary) !important;
+}
+
+#chatInputHolder .greyInner,
+#chatInputHolder .greyInlineInner,
+#chatInputHolder .greyInlineInnerMid {
+	display: flex;
+	align-items: center;
+	background: none !important;
+}
+#chatInputHolder .greyInlineInner:first-child {
+	display: none;
+}
+/* /CHAT */
+
+/* MENU CLASS CONTAINER */
+#menuClassContainer {
+	right: 20px;
+	top: auto;
+	bottom: 20px;
+
+	display: flex;
+}
+#menuClassContainerInner {
+	display: none;
+}
+#classPreviewCanvas {
+	position: absolute;
+	left: 50%;
+	bottom: -30px;
+
+	transform: translateX(-50%);
+
+	margin: 0 !important;
+}
+#customizeButton {
+	width: fit-content;
+	height: auto;
+	padding: 10px;
+
+	line-height: 1;
+
+	border: var(--border-sm) !important;
+	background-color: var(--color-primary);
+
+	transition: 0.2s linear;
+}
+#customizeButton:hover {
+	color: var(--color-accent) !important;
+}
+/* /MENU CLASS CONTAINER */
+
+/* game settings */
+.settingsHeader {
+	position: static;
+	padding-right: 20px;
+	background: var(--color-primary) !important;
+}
+#settSearch {
+	width: 200px;
+}
+.settName{
+	transition: color .1s linear;
+}
+.settName:hover{
+	color: var(--color-accent) !important;
+}
+.settName .slider{
+	background: none;
+}
+.settName .slider:before{
+	content: 'Off';
+	color: var(--color-secondary);
+
+	background: none;
+
+	transition: color .3s linear;
+}
+.settName input:checked + .slider:before{
+	transform: none;
+	content: 'On';
+	color: var(--color-accent);
+
+	background: none;
+}
+.settName input:checked + .slider{
+	background: none;
+}
+/* /game settings */
+
+/* tabs */
+.bigMenTabs,
+#settingsTabLayout,
+.menu-container.svelte-uheepa {
+	box-sizing: border-box;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: start;
+	gap: 20px;
+	padding: 10px 20px;
+
+	background-color: var(--color-primary) !important;
+	border-radius: 0;
+}
+.bigMenTab,
+.bigMenTab .material-icons,
+.settingTab,
+.menu-item.svelte-uheepa {
+	box-sizing: border-box;
+
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
+	padding: 5px 10px !important;
+	color: var(--color-secondary) !important;
+	line-height: 1 !important;
+
+	background: var(--color-primary);
+	border: var(--border-sm);
+
+	transition: color 0.3s linear, transform .3s ease;
+}
+.bigMenTab .material-icons{
+	border: 0 !important;
+}
+.bigMenTab:hover,
+.bigMenTab:hover .material-icons,
+.bigMenTab:hover .material-icons-outlined,
+.settingTab:hover,
+.menu-item.svelte-uheepa:hover {
+	color: var(--color-accent) !important;
+	border-bottom: var(--border-sm) !important;
+	box-shadow: none;
+	transform: scale(1.1);
+}
+.bigMenTab:hover .material-icons{
+	border: 0 !important;
+	transform: scale(1);
+}
+
+.bigMenTab.bigMenTabA,
+.bigMenTab.bigMenTabA .material-icons,
+.bigMenTab.bigMenTabA .material-icons-outlined,
+.settingTab.tabANew,
+.settingTab.tabANew:hover,
+.menu-item.active.svelte-uheepa {
+	color: var(--color-accent) !important;
+	border-bottom: var(--border-sm) !important;
+	box-shadow: none;
+	transform: scale(1.1);
+}
+.bigMenTab.bigMenTabA .material-icons{
+	border: 0 !important;
+	transform: scale(1);
+}
+/* /tabs */
+
+
+/* POPUPS */
+#genericPop {
+	background-color: var(--color-primary);
+	
+	border: var(--border);
+	border-radius: 0;
+}
+
+/* select server */
+#windowHolder {
+	background: none !important;
+}
+#menuWindow {
+
+	background-color: var(--color-primary) !important;
+	border: var(--border);
+	border-radius: 0;
+}
+#windowHolder[style='display: block;'] {
+	transform: scale(1);
+}
+#referralHeader,
+#itemSearchH,
+#hostHeader,
+.serverHeader {
+	background-color: var(--color-primary) !important;
+}
+.serverHeader {
+	position: static;
+}
+
+#referralHeader,
+#itemSearchH,
+#hostHeader,
+.serverHeader,
+.winbackH {
+	background: none !important;
+}
+.serverHeader {
+	position: static;
+}
+/* form */
+#itemSearchH, .winBackH{
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+
+/* loadout */
+.classCard{
+	background: none;
+	border: var(--border-sm);
+
+	transition: color .1s linear, border-color .1s linear;
+}
+.classCard:hover{
+	color: var(--color-accent);
+	border-color: var(--color-accent);
+}
+.classCard:hover .className, .classCard:hover .classWeap{
+	color: var(--color-accent) !important;
+}
+.className, .classWeap{
+	transition: color .1s linear;
+}
+
+.skinCard{
+	background: none;
+	border: var(--border-sm);
+
+	transition: color .1s linear, border-color .1s linear;
+}
+.skinCard:hover{
+	color: var(--color-accent) !important;
+	border-color: var(--color-accent);
+}
+
+/* /POPUPS */
+
+/* game ui */
+.greyInner, .greyInlineInner, .greyInlineInnerMid{
+	background: none;
+}
+/* leaderboard */
+.centerLeaderContainer {
+	
+}
+.centerLeaderContainerInner {
+	background-color: var(--color-primary);
+	border: var(--border);
+}
+.newLeaderTeam{
+	margin-top: -6px;
+	border-radius: 0;
+}
+.newLeaderNameM {
+	color: var(--color-accent) !important;
+}
+
+/* top left */
+#topLeftHolder {
+	top: 20px;
+	left: 20px;
+
+	display: flex;
+	align-items: center;
+
+	background-color: var(--color-primary);
+	border: var(--border);
+}
+#topLeftData {
+	width: fit-content;
+}
+#topLeftMatchData[style*='display: block'] {
+	display: flex !important;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 20px;
+
+	padding: 10px;
+}
+#timerHolder.topLeftOld {
+	background: none;
+}
+#timerInner.topLeftOld {
+	background-color: var(--color-primary);
+}
+#timerVal {
+	color: var(--color-secondary);
+}
+#fpsDisplay {
+	margin-bottom: 10px;
+}
+
+/* bottom left */
+#bottomLeftHolder {
+	width: fit-content;
+	height: auto;
+
+	padding: 0;
+	margin: 0;
+
+	background-color: transparent;
+}
+#bottomLeftHolder[style*='display: block;'] {
+	display: flex !important;
+	align-items: center;
+	gap: 30px;
+}
+#bottomLeftPlayer {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+
+	padding: 10px;
+
+	background-color: var(--color-primary);
+	border: var(--border);
+}
+#bottomLeftPlayerLeft {
+	margin: 0;
+
+	background: none;
+
+	overflow: hidden;
+}
+#bottomLeftClassImg {
+}
+#bottomLeftPlayerMid {
+	display: none;
+}
+#bottomLeftPlayerRight {
+	text-align: center;
+
+	padding: 0;
+	margin: 0;
+
+	font-family: var(--font);
+	font-size: 1.5rem;
+	color: var(--color-secondary);
+
+	background: none;
+}
+#bottomLeftHealth {
+	font-size: 2.5rem !important;
+}
+#zPerksHolder {
+	margin-left: 30px;
+}
+
+/* weapon holder */
+#weapHolder {
+	top: auto;
+	right: 20px;
+	bottom: 20px;
+	z-index: 1;
+
+	width: 150px;
+	height: 100px;
+
+	background-color: var(--color-primary);
+	border: var(--border);
+}
+.weapItem,
+.weapItemInner {
+	background-color: transparent;
+}
+.weapItem {
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	transform: translateX(-50%);
+	z-index: 12;
+
+	opacity: 0 !important;
+	transition: opacity 0.3s linear;
+}
+.weapItem[style*='opacity:1'] {
+	opacity: 1 !important;
+}
+.weapItem[style*='opacity: 1'] {
+	opacity: 1 !important;
+}
+.weapItemInner {
+	margin: 0;
+	padding: 0;
+}
+.weapStreakHolder {
+	background-color: transparent;
+}
+.weapStreakInner {
+	background-color: transparent;
+}
+.weapStreakInner span:last-child {
+	color: var(--color-secondary) !important;
+}
+.weapStreak {
+	color: var(--color-secondary);
+}
+.weapIcon {
+	filter: drop-shadow(2px 2px var(--color-accent));
+}
+
+/* botttom right */
+#bottomRight {
+	bottom: 20px;
+	right: 20px;
+	z-index: 2;
+}
+#ammoHolder {
+	padding: 5px;
+	background: transparent;
+}
+#ammoHolder .greyInner {
+	background: none;
+}
+#ammoVal,
+#ammoMax {
+	color: var(--color-secondary);
+}
+#ammoMax {
+	opacity: 0.5;
+}
+.killStreakItem,
+.killStreakItemInner {
+	background-color: transparent;
+}
+
+#killStreakItem {
+	padding: 5px;
+}
+#killStreakItemInner {
+	background-color: transparent;
+}
+#killStreakKey {
+	font-size: 0.7rem;
+
+	background-color: var(--color-primary);
+}
+
+/* end ui */
+.matchVote{
+	border-radius: 0;
+}
+.endCard{
+  background-color: var(--color-primary);
+	border: var(--border);
+	border-radius: 0;
+}
+#tabHolder,
+#endTable, 
+.endSection,
+.tabBody div {
+  border-radius: 0 !important;
+}
+
+#menuHolder::after{
+	content: var(--author);
+
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	font-size: 1rem;
+	color: var(--color-secondary);
+	opacity: var(--author-visibility);
+}

@@ -1,0 +1,1862 @@
+:root {
+    --accent: #ffa1da; /* Main Fucking Color */
+    --border: #838383;
+    --menu-fade: #1a1a1a9c;
+    --ingame-fade: #20202069;
+}
+
+/* Color Presets:
+
+Green: 7ee78f
+Pink: ffa1da
+Peach: ffd4a1
+Burg: 6a152a
+Black: 000000
+Red: ff5757
+Blue: 3a6dff
+
+*/
+
+@font-face {
+  font-family: gamefont;
+  src: url("fonts/33801.woff2");
+  font-weight: 400;
+}
+@font-face {
+    font-family: big;
+    src: url('https://raw.githubusercontent.com/XEDYYY/font/main/ethnocentric%20rg.otf')
+}
+
+@font-face {
+    font-family: code;
+    src: url('https://raw.githubusercontent.com/XEDYYY/font/main/CODE%20Bold.otf')
+}
+
+#uiBase.onGame { 
+    filter: invert();
+}
+
+html {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M7.921 2.3C6.936 1.532 5.5 2.234 5.5 3.482v17.009c0 1.422 1.795 2.046 2.677.93l4.19-5.3a1.65 1.65 0 0 1 1.295-.626h6.852c1.428 0 2.049-1.808.921-2.684z'/%3E%3C/svg%3E%0A"), auto !important;
+}
+
+#NewAltManager {
+    display: none !important;
+}
+
+#instructions, #aHolder, .greyInlineInner, #menuMiniProfilePic, .verticalSeparator, #menuClassName, #menuClassSubtext, #menuClassNameTag, .menBtnIcn, #tlInfHold, #mainLogo, #seasonLabel, #newsHolder, #mapInfo, #termsInfo, #topRightAdHolder, #mainLogoFace {
+    display: none !important;
+}
+
+#streamContainer {
+    display: none !important;
+}
+
+#mapInfoHld {
+    display: none !important;
+}
+
+#menuClassIcn {
+    display: none !important;
+}
+
+#menuHider::before {
+    content: "KRUNKER";
+    color: white;
+    font-size: 70px;
+    font-family: big;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 15px;
+    top: 70px;
+}
+
+#clientExit {
+    position: fixed;
+    bottom: 20px !important;
+    width: 9%;
+}
+
+/* KPD Button */
+#policeButton {
+    text-transform: uppercase;
+    position: fixed;
+    right: 210px;
+    left: unset !important;
+    top: 60px;
+    height: 45px !important;
+    width: 45px !important;
+    padding: unset !important;
+    border: none !important;
+    text-shadow: none !important;
+    font-size: 0px !important;
+    background-color: var(--accent) !important;
+    display: flex;
+    border-radius: 10px;
+    border: 5px solid var(--border) !important;
+}
+
+#policeButton:hover {
+    border: 5px solid white !important;
+}
+
+#policeButton::before {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg width='1em' height='1em' viewBox='0 0 36 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23 23.18L24.26 28.64C24.46 29.5 23.52 30.18 22.76 29.72L18 26.84L13.22 29.72C13.0515 29.8222 12.8567 29.8726 12.6597 29.8648C12.4628 29.8571 12.2725 29.7915 12.1126 29.6764C11.9527 29.5612 11.8302 29.4016 11.7603 29.2173C11.6905 29.033 11.6765 28.8322 11.72 28.64L13 23.2L8.8 19.58C8.6491 19.4524 8.53937 19.283 8.48468 19.0931C8.42998 18.9033 8.43277 18.7014 8.49268 18.5131C8.55259 18.3248 8.66695 18.1585 8.82131 18.0351C8.97568 17.9118 9.16312 17.8369 9.36 17.82L14.92 17.34L17.08 12.22C17.42 11.4 18.58 11.4 18.92 12.22L21.08 17.32L26.64 17.8C26.8369 17.8169 27.0243 17.8918 27.1787 18.0151C27.3331 18.1385 27.4474 18.3048 27.5073 18.4931C27.5672 18.6814 27.57 18.8833 27.5153 19.0731C27.4606 19.263 27.3509 19.4324 27.2 19.56L23 23.18ZM2.38 6.94C0.94 7.58 0 9.02 0 10.6V20C0 31.1 7.68 41.48 18 44C28.32 41.48 36 31.1 36 20V10.6C36 9.02 35.06 7.58 33.62 6.94L19.62 0.72C18.58 0.26 17.4 0.26 16.38 0.72L2.38 6.94Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#menuBtnEsports {
+    display: none !important;
+}
+
+#clientExit {
+    bottom: 80px;
+}
+
+.onMenu {
+    backdrop-filter: blur(20px) grayscale(1);
+    background-image: linear-gradient(90deg, var(--menu-fade), transparent, transparent);
+}
+
+#menuItemContainer {
+    padding: 10px;
+    z-index: 99999;
+    position: fixed;
+    top: 180px;
+    left: 20px;
+    width: 340px !important;
+    height: calc(100% - 200px) !important;
+    background-color: transparent;
+    border-left: 4px solid var(--accent);
+    padding: unset !important;
+}
+
+.menuItem {
+    align-items: start !important;
+    text-align: left !important;
+    display: flex;
+    flex-grow: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: transparent;
+    height: fit-content;
+}
+
+.menuItemTitle, .menuItem {
+    transition: none !important;
+    font-size: 20px !important;
+}
+
+.menuItemTitle {
+    margin-top: unset !important;
+}
+
+.menuItem:hover, .menuItem:hover > .menuItemTitle {
+    background-color: var(--accent);
+}
+
+#menuBtnProfile, #menuBtnShop, #menuBtnChall, #menuBtnSocial, #menuBtnMaps, #menuBtnMods, #menuBtnSettings, #menuBtnExit {
+    font-size: 0 !important;
+}
+
+#menuBtnProfile::before {
+    content: "PROFILE";
+    font-size: 40px !important;
+    letter-spacing: 1px;
+}
+
+#menuBtnShop::before {
+    content: "SHOP";
+    font-size: 40px !important;
+    letter-spacing: 1px;
+}
+
+#menuBtnChall::before {
+    content: "CHALLENGES";
+    font-size: 40px !important;
+    letter-spacing: 1px;
+}
+
+#menuBtnSocial::before {
+    content: "HUB";
+    font-size: 40px !important;
+    letter-spacing: 1px;
+}
+
+#menuBtnSettings::before {
+    content: "SETTINGS";
+    font-size: 40px !important;
+    letter-spacing: 1px;
+}
+
+#menuBtnExit::before {
+    content: "EXIT";
+    font-size: 40px !important;
+    letter-spacing: 1px;
+}
+
+#subLogoButtons {
+    height: fit-content;
+    z-index: 999999;
+    position: fixed;
+    left: 24px;
+    bottom: unset;
+    top: 374px;
+    right: unset !important;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+}
+
+#menuItemContainer > div[onClick*="settings"] {
+    position: fixed;
+    right: 80px;
+    top: 60px;
+    padding: unset;
+    height: 45px;
+    width: 45px;
+    background-color: var(--accent);
+    display: flex;
+    border-radius: 10px;
+    border: 5px solid var(--border);
+}
+
+#menuItemContainer > div[onClick*="settings"]:hover {
+    border: 5px solid white;
+}
+
+#menuBtnSettings {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#menuBtnSettings::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 28 28'%3E%3Cpath fill='white' d='M16.693 2.311A13 13 0 0 0 14.013 2q-1.384.016-2.704.311a.92.92 0 0 0-.716.8l-.209 1.877a1.707 1.707 0 0 1-2.371 1.376l-1.72-.757a.92.92 0 0 0-1.043.214a12.06 12.06 0 0 0-2.709 4.667a.92.92 0 0 0 .334 1.017l1.527 1.125a1.7 1.7 0 0 1 0 2.74l-1.527 1.128a.92.92 0 0 0-.334 1.016a12.1 12.1 0 0 0 2.707 4.672a.92.92 0 0 0 1.043.215l1.728-.759a1.7 1.7 0 0 1 1.526.086c.466.27.777.745.838 1.281l.208 1.877a.92.92 0 0 0 .702.796a11.7 11.7 0 0 0 5.413 0a.92.92 0 0 0 .702-.796l.208-1.88a1.693 1.693 0 0 1 2.366-1.37l1.727.759a.92.92 0 0 0 1.043-.215a12.1 12.1 0 0 0 2.707-4.667a.92.92 0 0 0-.334-1.017L23.6 15.37a1.7 1.7 0 0 1-.001-2.74l1.525-1.127a.92.92 0 0 0 .333-1.016a12.06 12.06 0 0 0-2.708-4.667a.92.92 0 0 0-1.043-.214l-1.72.757a1.7 1.7 0 0 1-.68.144a1.7 1.7 0 0 1-1.688-1.518l-.21-1.879a.92.92 0 0 0-.714-.799M14 18a4 4 0 1 1 0-8a4 4 0 0 1 0 8'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#menuItemContainer > div[onClick*="mods"] {
+    position: fixed;
+    right: 15px;
+    top: 60px;
+    padding: unset;
+    height: 45px;
+    width: 45px;
+    background-color: var(--accent);
+    display: flex;
+    border-radius: 10px;
+    border: 5px solid var(--border);
+}
+
+#menuItemContainer > div[onClick*="mods"]:hover {
+    border: 5px solid white;
+}
+
+#menuItemContainer > div[onClick*="mods"] .menuItemTitle {
+    font-size: 0px !important;
+}
+
+#menuBtnMods {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#menuBtnMods::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1A2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7S5 16.2 3.5 16.2H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5a2.5 2.5 0 0 0-2.5-2.5'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#menuItemContainer > div[onClick*="games"] {
+    position: fixed;
+    right: 275px;
+    top: 60px;
+    padding: unset;
+    height: 45px;
+    width: 45px;
+    background-color: var(--accent);
+    display: flex;
+    border-radius: 10px;
+    border: 5px solid var(--border);
+}
+
+#menuItemContainer > div[onClick*="games"]:hover {
+    border: 5px solid white;
+}
+
+#menuItemContainer > div[onClick*="games"] .menuItemTitle {
+    font-size: 0px !important;
+}
+
+#menuBtnMaps {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#menuBtnMaps::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'%3E%3Cpath fill='white' d='M483.13 245.38C461.92 149.49 430 98.31 382.65 84.33A107.1 107.1 0 0 0 352 80c-13.71 0-25.65 3.34-38.28 6.88C298.5 91.15 281.21 96 256 96s-42.51-4.84-57.76-9.11C185.6 83.34 173.67 80 160 80a115.7 115.7 0 0 0-31.73 4.32c-47.1 13.92-79 65.08-100.52 161C4.61 348.54 16 413.71 59.69 428.83a56.6 56.6 0 0 0 18.64 3.22c29.93 0 53.93-24.93 70.33-45.34c18.53-23.1 40.22-34.82 107.34-34.82c59.95 0 84.76 8.13 106.19 34.82c13.47 16.78 26.2 28.52 38.9 35.91c16.89 9.82 33.77 12 50.16 6.37c25.82-8.81 40.62-32.1 44-69.24c2.57-28.48-1.39-65.89-12.12-114.37M208 240h-32v32a16 16 0 0 1-32 0v-32h-32a16 16 0 0 1 0-32h32v-32a16 16 0 0 1 32 0v32h32a16 16 0 0 1 0 32m84 4a20 20 0 1 1 20-20a20 20 0 0 1-20 20m44 44a20 20 0 1 1 20-19.95A20 20 0 0 1 336 288m0-88a20 20 0 1 1 20-20a20 20 0 0 1-20 20m44 44a20 20 0 1 1 20-20a20 20 0 0 1-20 20'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.small.button {
+    margin: 0 !important;
+    text-align: left;
+    width: 320px;
+    height: fit-content;
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+    padding-bottom: 4px !important;
+    padding-top: 4px !important;
+    border-radius: 0;
+    font-size: 40px !important;
+    border: none !important;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.small.button:hover {
+    transform: unset;
+    background-color: var(--accent);
+}
+
+#menuBtnHost, #menuBtnBrowser, #inviteButton, #menuBtnJoin {
+    text-transform: uppercase;
+}
+
+#menuBtnHost {
+    font-size: 0px !important;
+}
+
+#menuBtnHost::before {
+    content: "host";
+    font-size: 40px !important;
+}
+
+#menuBtnBrowser {
+    font-size: 0px !important;
+}
+
+#menuBtnBrowser::before {
+    content: "server";
+    font-size: 40px !important;
+}
+
+#menuBtnJoin {
+    display: flex;
+    padding-left: 32px !important;
+    font-size: 0px !important;
+}
+
+#menuBtnJoin::after {
+    content: "Join";
+    font-size: 40px !important;
+}
+
+#headerRight {
+    background-color: var(--accent);
+    border-radius: 0px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    height: 50px !important;
+}
+
+#menuFPSDisplay, #menuPingDisplay {
+    font-size: 0px !important;
+    width: 140px;
+    position: relative;
+}
+
+#menuFPSDisplay::after, #menuPingDisplay::after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#menuPingDisplay::after {
+    right: 25px;
+}
+
+#menuPingText::before {
+    content: "PING: ";
+}
+
+#menuFPS::before {
+    content: "FPS: ";
+}
+
+#menuPingText, #menuFPS {
+    color: white !important;
+    font-size: 20px;
+}
+
+#menuPingIcon {
+    display: none !important;
+}
+
+#menuRegionLabel {
+    display: none !important;
+}
+
+#menuServerInfoContainer {
+}
+
+#headerRightSocial {
+    display: none !important;
+}
+
+.headerBarLeft {
+    position: absolute;
+    right: 0px;
+    left: unset;
+}
+
+#signedOutHeaderBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    width: 410px !important;
+    height: 55px !important;
+    background-color: transparent;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#signedOutHeaderBar > .button {
+    transition: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    line-height: 50px;
+    border: none !important;
+    border-radius: 0;
+    background-color: rgba(125,125,125,.2);
+    color: white;
+    font-size: 25px !important;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#signedOutHeaderBar > .button > span {
+    font-size: 0 !important;
+}
+
+#signedOutHeaderBar > .button:hover {
+    transform: none !important;
+    cursor: pointer;
+    color: black !important;
+    background-color: white !important;
+    border-radius: 0;
+}
+
+#signedInHeaderBar {
+    width: 414px;
+    height: 47px;
+    padding-left: 0px !important;
+    padding-bottom: 3px !important;
+    background-color: transparent;
+    border-radius: 0 !important;
+}
+
+#menuUsernameContainer {
+    position: absolute;
+    left: 55px;
+    top: 6px;
+    width: 300px !important;
+    max-width: 300px !important;
+    overflow-x: hidden;
+    -webkit-mask-image: linear-gradient(-90deg, transparent 0%, black 15%)
+}
+
+#menuAccountUsername {
+    color: white;
+    font-size: 30px !important;
+}
+
+#mailContainer {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    display: flex !important;
+    transform: unset !important;
+}
+
+#mailIcon {
+    font-size: 40px !important;
+    color: white !important;
+    transform: unset !important;
+    opacity: 1 !important;
+    transition: unset !important;
+}
+
+#mailCount {
+    background-color: white !important;
+    color: var(--accent) !important;
+    font-size: 16px;
+    border: unset !important;
+    right: -4px;
+    top: 0px;
+    border: 1px solid var(--accent) !important;
+}
+
+#mLevelCont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 0 !important;
+    background-color: transparent;
+}
+
+#mLevelContV {
+    line-height: 50px;
+    text-align: right !important;
+    color: white;
+    letter-spacing: 2px !important;
+}
+
+#menuLvlHold {
+    background-color: rgba(125,125,125,.5);
+    padding: 0 !important;
+    border-radius: 0 !important;
+    height: 3px !important;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#menuLevelBar {
+    background-image: linear-gradient(90deg, white, white);
+    border-radius: 0 !important;
+}
+
+.krInfo {
+    margin-top: 0 !important;
+    font-size: 20px !important;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 2px;
+    left: 310px;
+    z-index: 123;
+    width: 140px;
+}
+
+#menuJNKCount {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+}
+
+.junkInfo {
+    display: none !important;
+}
+
+#menuKRCount, .mainJunkInfo, #menuJNKCount {
+    margin-top: 0 !important;
+    font-size: 20px !important;
+    color: white !important;
+    vertical-align: unset !important;
+}
+
+#menuKRCount > span {
+    color: white !important;
+}
+
+#menuJNKCount > span {
+    display: none;
+}
+
+.krInfo:hover > #menuKRCount {
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+#menuJNKCount:hover {
+    cursor: pointer !important;
+}
+
+/* chat bs */
+#uiBase.onMenu #chatHolder {
+    background: linear-gradient(0deg, rgba(125,125,125,.2), transparent) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end;
+    right: -1px;
+    bottom: 0;
+    width: 415px;
+    height: calc(100% - 100px);
+    left: unset;
+    top: unset;
+    -webkit-mask-image: linear-gradient(0deg, black 70%, transparent 100%)
+}
+
+#uiBase.onMenu #chatInputHolder {
+    background-color: var(--accent);
+    border: none;
+    text-align: left;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+#uiBase.onMenu #chatInput::placeholder {
+    text-transform: uppercase !important;
+}
+
+#uiBase.onMenu #chatInput {
+    background-color: transparent;
+    border: none;
+    border-radius: 0 !important;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 0 !important;
+    padding: 20px !important;
+    margin-left: 0 !important;
+    width: 405px !important;
+}
+
+#uiBase.onMenu #chatList {
+    max-height: unset !important;
+    width: 415px !important;
+    background-color: transparent;
+    border-radius: 0;
+    padding-top: 50px;
+    padding-bottom: 8px;
+}
+
+#uiBase.onMenu #chatList::-webkit-scrollbar {
+    display: none !important;
+}
+
+#uiBase.onMenu .chatItem {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 4px;
+    margin-left: 10px;
+    font-size: 20px !important;
+    max-width: 400px !important;
+}
+
+.chatMsg {
+    color: rgba(255, 255, 255, .7);
+}
+
+.chatMsg span[style*="#eb5656"] {
+    color: white !important;
+}
+
+.chatMsg span[style*="#9eeb56"] {
+    color: white !important;
+}
+
+.chatMsg[style*="color"] {
+    color: white !important;
+}
+
+#uiBase.onMenu .weaponChatIcon {
+    width: 48px;
+    height: 25px;
+}
+
+#uiBase.onMenu .headShotChatIcon {
+    width: 22px;
+    height: 22px;
+}
+
+#chatInputHolder .greyInlineInnerMid {
+    background: transparent !important;
+    margin: unset !important;
+    padding: unset !important;
+}
+
+/* timer */
+#uiBase.onMenu #spectateUI {
+    display: block !important;
+    padding-top: 0px;
+    position: fixed;
+    top: -18px;
+    right: 470px;
+    z-index: 123;
+    width: 10px;
+    height: 10px;
+}
+
+#uiBase.onMenu #spectateHUD {
+    display: flex;
+    justify-content: center;
+    transform: unset;
+    left: unset;
+}
+
+#uiBase.onMenu #specTeam0, #uiBase.onMenu #spec0, #uiBase.onMenu #spec1, #uiBase.onMenu #specNames, #uiBase.onMenu #specStats, #uiBase.onMenu #specControlHolder, #uiBase.onMenu #specKPDContr, #uiBase.onMenu #specSus, #uiBase.onMenu #specTeam1, #uiBase.onMenu #specGMessage, #uiBase.onMenu #specGameInfo {
+    display: none !important
+}
+
+#uiBase.onMenu #specTimer {
+    display: block !important;
+    font-size: 35px;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* customize and shit */
+#menuClassContainer {
+    z-index: 999999 !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: unset;
+    right: unset;
+    transform: none;
+    pointer-events: all;
+    flex-direction: unset !important;
+}
+
+#classPreviewCanvas {
+    position: absolute;
+    left: 00px;
+    transform: scaleX(-1);
+    bottom: 90px;
+    visibility: hidden;
+    -webkit-mask-image: linear-gradient(0deg, transparent, #000 40%);
+}
+
+#policeButton > img {
+    display: none;
+}
+
+#policeButton:hover {
+    background-color: white;
+    color: black !important;
+    transform: none !important;
+}
+
+#menuClassContainer:hover #classPreviewCanvas {
+    visibility: visible;
+}
+
+#customizeButton {
+    text-transform: uppercase;
+    position: fixed;
+    right: 145px;
+    left: unset !important;
+    top: 60px;
+    height: 45px !important;
+    width: 45px !important;
+    padding: unset !important;
+    border: none !important;
+    text-shadow: none !important;
+    font-size: 0px !important;
+    background-color: var(--accent) !important;
+    display: flex;
+    border-radius: 10px;
+    border: 5px solid var(--border) !important;
+}
+
+#customizeButton:hover {
+    border: 5px solid white !important;
+}
+
+#customizeButton::before {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M12 22A10 10 0 0 1 2 12A10 10 0 0 1 12 2c5.5 0 10 4 10 9a6 6 0 0 1-6 6h-1.8c-.3 0-.5.2-.5.5c0 .1.1.2.1.3c.4.5.6 1.1.6 1.7c.1 1.4-1 2.5-2.4 2.5m0-18a8 8 0 0 0-8 8a8 8 0 0 0 8 8c.3 0 .5-.2.5-.5c0-.2-.1-.3-.1-.4c-.4-.5-.6-1-.6-1.6c0-1.4 1.1-2.5 2.5-2.5H16a4 4 0 0 0 4-4c0-3.9-3.6-7-8-7m-5.5 6c.8 0 1.5.7 1.5 1.5S7.3 13 6.5 13S5 12.3 5 11.5S5.7 10 6.5 10m3-4c.8 0 1.5.7 1.5 1.5S10.3 9 9.5 9S8 8.3 8 7.5S8.7 6 9.5 6m5 0c.8 0 1.5.7 1.5 1.5S15.3 9 14.5 9S13 8.3 13 7.5S13.7 6 14.5 6m3 4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#customizeButton > span {
+    font-size: 0 !important;
+}
+
+#customizeButton:hover {
+    transform: none;
+}
+
+#altManagerBtn, #logoutBtn {
+    display: none !important;
+}
+
+/* spec btn */
+#uiBase.onMenu #spectButton {
+    transition: all 0.5s;
+    position: fixed;
+    top: 61px;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    right: 345px;
+    left: unset;
+    transform: unset;
+}
+
+#uiBase.onMenu #spectButton::before {
+    color: white;
+    position: fixed;
+    font-size: 40px;
+    margin-left: 20px;
+    bottom: 0px;
+}
+
+#spectButton span[style="font-size:15px;color:rgba(255,255,255,0.6)"] {
+    display: none;
+    color: transparent !important;
+}
+
+#spectButton .switchsml {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#spectButton > span {
+    font-size: 0 !important;
+}
+
+.sliderSml::before {
+    content: "";
+    font-size: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+#spectButton:hover .sliderSml:before {
+    border: 5px solid white !important;
+}
+
+.sliderSml::before {
+    border-bottom: none !important;
+    background-color: var(--accent);
+    content: "visibility_off";
+    font-size: 30px;
+    color: white;
+    border-top: none;
+    width: 45px;
+    height: 45px !important;
+    bottom: unset !important;
+    text-align: center;
+    border-radius: 0;
+    top: -17px !important;
+    left: 0px;
+    line-height: 45px;
+    border-radius: 10px;
+    border: 5px solid var(--border) !important;
+    font-family: 'Material Icons';
+    transition: unset !important;
+}
+
+input:checked+.sliderSml::before {
+    content: "visibility";
+    transform: unset;
+}
+
+input:checked+.sliderSml {
+    background-color: transparent !important;
+}
+
+.sliderSml {
+    background-color: transparent;
+}
+
+#livesCount, #kdCount, #challIcon, #bottomLeftChallIcon, #hudClassIcon, #timerIcon {
+    display: none !important;
+}
+
+/* leaderboard */
+#leaderContainer {
+    background: transparent !important;
+    padding: unset !important
+}
+
+#leaderboardHolder {
+    padding: 0 !important;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 400px !important;
+    background-color: transparent;
+}
+
+.leaderItem {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(90deg, transparent, var(--ingame-fade));
+    border-right: 5px solid var(--accent);
+    padding: 5px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.leaderName, .leaderNameM, .leaderNameF {
+    text-align: right;
+}
+
+.leaderCounter {
+    display: none;
+}
+
+.leaderItem > img {
+    line-height: 20px;
+    margin-top: 0 !important;
+}
+
+.leaderScore, .leaderCounter {
+    color: white;
+}
+
+.leaderName {
+    color: rgba(255,255,255,.6) !important;
+}
+
+.leaderNameF {
+    color: white !important;
+}
+
+.leaderItem > i {
+    line-height: 20px;
+    margin-top: 0 !important;
+}
+
+/* weapon icon shit */
+.weapStreakHolder, .weapSkin {
+    display: none !important;
+}
+
+#bottomRight, #weapHolder {
+    position: unset;
+}
+
+#weapHolder:not([style*=none]) {
+    bottom: 65px;
+    display: flex !important;
+    position: fixed;
+    right: 15px;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.weapKey {
+    position: relative;
+    left: unset;
+    bottom: unset;
+    border-radius: 4px;
+    background-color: var(--ingame-fade);
+}
+
+.weapItem {
+    margin-top: 0;
+    margin-right: 0px;
+    background-color: transparent;
+    !important}
+
+.weapItemInner {
+    flex-direction: column;
+    row-gap: 2px;
+    display: flex !important;
+    background-color: transparent !important;
+    padding: unset !important;
+    margin: unset !important;
+}
+
+.weapIcon {
+    margin-right: 0 !important;
+    align-self: center;
+    width: calc(110px / 1.4) !important;
+    height: calc(60px / 1.4) !important;
+    filter: brightness(1.2);
+}
+
+.weapItem[style*="0.5"] {
+    order: 0;
+}
+
+.weapItem[style*="1"] {
+    order: 1;
+    transform: translateX(-60px)
+}
+
+.weapItem[style*="1"] .weapKey {
+    display: none;
+}
+
+.weapItem[style*="1"] .weapIcon {
+}
+
+.weapIcon[src*="melee"] {
+    transform: translateY(25%);
+}
+
+/* above weapon shit */
+#ammoHolder > .greyInner {
+    background: transparent !important;
+}
+
+#ammoHolder {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    width: 355px !important;
+    height: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0;
+    background-color: var(--ingame-fade) !important;
+    background-image: linear-gradient(-90deg, var(--accent), var(--accent));
+    background-position: right;
+}
+
+#ammoHolder[style*="background-size: 0%;"] {
+    background-image: linear-gradient(-90deg, var(--accent), var(--accent));
+    background-size: 100% !important;
+}
+
+#ammoVal {
+    position: fixed;
+    right: 10px;
+    letter-spacing: 1px;
+    font-size: 34px !important;
+    background-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 2ch;
+    bottom: 35px;
+    z-index: 123;
+}
+
+#ammoMax {
+    position: fixed;
+    right: 0px;
+    width: 335px !important;
+    background: linear-gradient(0deg, var(--ingame-fade), transparent);
+    border-bottom: 5px solid var(--accent);
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    justify-content: flex-end;
+    padding-top: 30px !important;
+    bottom: 25px;
+    padding-bottom: 5px !important;
+    font-size: 0px !important;
+    letter-spacing: 0px !important;
+}
+
+#ammoMax::after {
+    content: "AMMO";
+    position: absolute;
+    left: 10px;
+    bottom: 7px;
+    font-size: 20px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    color: white;
+    z-index: 123;
+    background-position: left center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M14 22h-4v-1h4zm-1-12V7h-2v3l-1 1.5V20h4v-8.5zm-1-8s-1 1-1 3v1h2V5s0-2-1-3M8 22H4v-1h4zM7 10V7H5v3l-1 1.5V20h4v-8.5zM6 2S5 3 5 5v1h2V5s0-2-1-3m14 20h-4v-1h4zm-1-12V7h-2v3l-1 1.5V20h4v-8.5zm-1-8s-1 1-1 3v1h2V5s0-2-1-3'/%3E%3C/svg%3E%0A");
+}
+
+#ammoIcon {
+    display: none !important
+}
+
+/* chat */
+#uiBase.onGame #chatHolder {
+    position: absolute;
+    left: 15px;
+    bottom: 130px !important;
+    align-items: flex-start;
+    gap: 2px;
+    -webkit-mask-image: linear-gradient(180deg, transparent, black 40%);
+}
+
+#uiBase.onGame #chatList {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    width: 330px !important;
+    max-height: 250px !important;
+    margin-bottom: 2px;
+    background-color: transparent;
+}
+
+#uiBase.onGame #chatList::-webkit-scrollbar {
+    display: none !important;
+}
+
+#uiBase.onGame #chatInputHolder {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-left: 5px solid var(--accent);
+    width: 100% !important;
+    grid-template-columns: unset !important;
+}
+
+#uiBase.onGame #chatInput::placeholder {
+    text-transform: uppercase;
+    color: white !important;
+}
+
+#uiBase.onGame #chatInput {
+    background: linear-gradient(90deg, var(--ingame-fade), transparent);
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    width: 325px;
+    line-height: 30px;
+    height: 30px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#uiBase.onGame .chatItem {
+    margin-top: 2px !important;
+    margin: 0;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#uiBase.onGame #chatList > div {
+    background: linear-gradient(90deg, var(--ingame-fade), transparent);
+    border-left: 5px solid var(--accent);
+    margin-bottom: 2px;
+}
+
+/* onEndScrn */
+#uiBase.onEndScrn #chatHolder {
+    position: absolute;
+    left: 15px;
+    bottom: 50px;
+}
+
+#uiBase.onEndScrn #chatList {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    width: 330px !important;
+    max-height: 250px !important;
+    background-color: transparent;
+}
+
+#uiBase.onEndScrn #chatList::-webkit-scrollbar {
+    display: none !important;
+}
+
+#uiBase.onEndScrn #chatInputHolder {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#uiBase.onEndScrn #chatInput::placeholder {
+    text-transform: uppercase;
+    color: white !important;
+}
+
+#uiBase.onEndScrn #chatInput {
+    background-color: rgba(125,125,125,.2);
+    border: none;
+    border-left: 5px solid white;
+    border-radius: 0;
+    margin-right: 30px !important;
+    margin: 0;
+    width: 325px;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    position: fixed;
+    left: 15px;
+}
+
+#uiBase.onEndScrn .chatItem {
+    background-color: rgba(125,125,125,.2) !important;
+    margin-bottom: 5px !important;
+    margin: 0;
+    border-radius: 0;
+    width: calc(100% - 25px);
+    line-height: 30px;
+    padding-left: 10px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-left: 5px solid white;
+}
+
+/* timer */
+#timerHolder {
+    letter-spacing: 1px;
+    background-color: transparent !important;
+    position: fixed;
+    right: 15px;
+    bottom: -7px;
+    z-index: 123;
+    height: fit-content;
+    padding: unset !important;
+    margin: unset !important
+}
+
+#timerVal.topLeftOld {
+    font-size: 13px !important;
+    font-family: consolas;
+}
+
+#timerInner {
+    padding: unset !important;
+    margin: unset !important;
+    background-color: transparent !important;
+}
+
+#curGameInfo {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* match info */
+#matchInfo.topLeftOld {
+    margin-top: 25px !important;
+    position: fixed !important;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 22px;
+    font-size: 13px !important;
+    display: flex !important;
+    text-align: left !important;
+    column-gap: 10px;
+    background-color: rgba(0,0,0,.2);
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: consolas;
+}
+
+#matchInfo.topLeftOld::before {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "instance: pc7 client";
+    text-transform: uppercase;
+}
+
+#matchInfo.topLeftOld::after {
+    position: absolute;
+    left: calc(50% + 143px);
+    top: 50%;
+    border-left: 2px solid white;
+    padding-left: 6px;
+    height: 14px;
+    line-height: 14px;
+    transform: translateY(-50%);
+    content: "speed";
+    color: #ebb875;
+    text-transform: uppercase;
+}
+
+#matchInfo > div {
+    display: none;
+}
+
+.debugInfo {
+    position: fixed;
+    bottom: 4px;
+    left: calc(50% - 463px);
+    width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    padding: unset !important;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    z-index: 123;
+    flex-direction: row-reverse;
+}
+
+#pingDisplay[style*="block"] {
+    font-size: 0px !important;
+    display: flex !important;
+    vertical-align: unset !important;
+    margin: unset !important;
+    color: white !important;
+    border-right: 2px solid white;
+    padding-right: 6px;
+    height: 14px;
+    align-items: center;
+}
+
+#fpsDisplay[style*="block"] {
+    font-size: 0px !important;
+    display: flex !important;
+    vertical-align: unset !important;
+    margin: unset !important;
+    color: white !important;
+    border-right: 2px solid white;
+    padding-right: 6px;
+    height: 14px;
+    align-items: center;
+}
+
+#pingText::before {
+    content: "LATENCY ";
+    color: #6ae1ff;
+}
+
+#pingText::after {
+    content: "ms ";
+    color: #ffffff75;
+    font-size: 13px;
+}
+
+#ingameFPS::before {
+    content: "FPS ";
+    color: #78ffa8;
+}
+
+#ingameFPS, #pingText {
+    font-size: 13px !important;
+    vertical-align: unset !important;
+    color: white !important;
+    display: flex;
+    column-gap: 3px;
+    align-items: flex-end;
+    font-family: consolas;
+}
+
+/* bottom left */
+#bottomLeftTeamHolder, #bottomLeftPlayerLeft {
+    display: none !important;
+}
+
+#bottomLeftPlayer {
+    background: transparent !important;
+}
+
+/* healthbar */
+#bottomLeftPlayerRight {
+    background: transparent !important;
+}
+
+#bottomLeftHealthBar {
+    position: fixed;
+    left: 15px;
+    bottom: 30px;
+    display: inline-flex;
+    width: 354px !important;
+    height: 20px !important;
+    background-color: var(--ingame-fade) !important;
+    padding: 0 !important;
+    column-gap: 0 !important;
+}
+
+.nHealthBarSeg {
+    border-radius: 0 !important;
+    margin-right: -1px !important;
+    background-color: transparent !important;
+    width: -webkit-fill-available !important;
+    height: -webkit-fill-available !important;
+}
+
+.nHpBSeg {
+    color: white !important;
+    border-radius: 0 !important;
+    background: var(--accent) !important;
+    -webkit-box-shadow: unset !important;
+}
+
+#bottomLeftHealth {
+    position: fixed;
+    left: 15px;
+    width: 335px !important;
+    background: linear-gradient(0deg, var(--ingame-fade), transparent);
+    border-bottom: 5px solid var(--accent);
+    display: flex;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    align-items: flex-end;
+    padding-top: 30px !important;
+    bottom: 55px;
+    padding-bottom: 5px !important;
+    padding: 0;
+    margin: 0;
+    font-size: 34px !important;
+    background-color: transparent;
+}
+
+#bottomLeftHealth::after {
+    content: "HEALTH";
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    font-size: 20px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 48 48'%3E%3Cpath fill='white' fill-rule='evenodd' d='M21.671 6.8a5.54 5.54 0 0 1 5.737 0l2.037 1.246c2.858 1.747 6.113 2.136 9.383 2.528c1.057.127 2.115.253 3.162.426c0 0 .023 1.834-.001 2.666l-.209 7.151c-.18 6.133-2.907 11.948-7.585 16.174c-2.207 1.993-4.49 3.794-7.113 5.29a5.55 5.55 0 0 1-5.1.187c-3.029-1.44-5.711-3.266-8.16-5.477c-4.678-4.226-7.405-10.041-7.584-16.174l-.208-7.128c-.025-.844 0-2.689 0-2.689c.85-.1 1.716-.183 2.589-.266c3.853-.366 7.834-.744 11.1-2.74zM22 22v-7h4v7h7v4h-7v7h-4v-7h-7v-4z' clip-rule='evenodd'/%3E%3C/svg%3E%0A");
+}
+
+/* reload */
+#reloadMsg {
+    position: fixed;
+    bottom: calc(50% - 300px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: transparent;
+    font-size: 0 !important;
+}
+
+#reloadMsg::before {
+    content: "sync";
+    font-family: 'Material Icons';
+    font-size: 35px !important;
+    animation: grow 0.5s infinite alternate;
+}
+
+/* counters */
+.topRightCounters {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+.statIcon, .statIcon > .greyInner {
+    color: white !important;
+    background-color: transparent;
+    display: flex;
+}
+
+.statIcon .greyInner > img, .statIcon .greyInner > i {
+    display: none;
+}
+
+#killsVal, #deathsVal, #streakVal, #myScoreVal {
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    position: relative;
+    background-color: transparent;
+}
+
+#killsVal::before {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 64 64'%3E%3Cpath fill='white' d='M16.726 25.981c0 2.318 2.036 4.194 4.548 4.194q.356 0 .698-.049c-.286.655-.62 1.469-.698 1.877c-.335 1.721 1.537 3.166 3.432 3.166c0 0 .917.076 1.114-.104c.709-.654 0-3.593 0-3.593c0-.496.436-.897.974-.897c.536 0 .97.401.97.897c0 0-.707 3.043 0 3.697c.578.532 2.688.532 3.265 0c.709-.654 0-3.697 0-3.697c0-.496.437-.897.972-.897s.972.401.972.897c0 0-.709 3.043 0 3.697c.576.532 2.687.532 3.263 0c.709-.654 0-3.697 0-3.697c0-.496.436-.897.972-.897c.538 0 .972.401.972.897c0 0-.709 2.938 0 3.593c.197.181 1.116.104 1.116.104c1.896 0 3.766-1.445 3.433-3.166c-.078-.408-.412-1.222-.7-1.877q.343.05.7.049c2.512 0 4.548-1.876 4.548-4.194c0-1.35-.69-2.549-1.765-3.316a13.16 13.16 0 0 0 1.765-6.577C47.274 8.309 40.437 2 32 2S16.726 8.309 16.726 16.088c0 2.377.639 4.614 1.765 6.577c-1.074.768-1.765 1.967-1.765 3.316m26.195-8.752c3.681.203-.769 5.066-2.486 6.227c-1.716 1.161-5.839-.999-5.601-2.407c.353-2.07 5.819-3.945 8.087-3.82m-12.304 8.472c.541-.946.814-1.804 1.479-1.804s.937.857 1.48 1.804c.467.814 1.797 1.415.995 2.153c-.875.808-4.078.808-4.953 0c-.819-.755.53-1.338.999-2.153m-9.343-8.472c2.265-.125 7.734 1.75 8.086 3.819c.239 1.408-3.885 3.568-5.601 2.407c-1.716-1.159-6.167-6.022-2.485-6.226'/%3E%3Cpath fill='white' d='M57.684 50.325c-2.099-1.119-3.493-.295-3.493-.295c-1.442.85-3.829.901-5.312.111l-11.44-6.091l11.439-6.092c1.482-.787 3.871-.737 5.312.112c0 0 1.395.822 3.493-.295c2.214-1.18 2.975-3.792 1.695-5.838l-.424-.674c-.699-.488-1.361-1.547-1.471-2.353l-.423-.674c-1.279-2.044-4.112-2.743-6.329-1.563c-2.099 1.116-2.021 2.642-2.021 2.642c.076 1.577-1.07 3.511-2.551 4.298L32 41.153l-14.161-7.54c-1.48-.787-2.628-2.721-2.55-4.298c0 0 .077-1.525-2.021-2.642c-2.217-1.18-5.051-.48-6.33 1.563l-.422.674c-.11.806-.771 1.864-1.473 2.353l-.421.674c-1.28 2.046-.52 4.658 1.696 5.838c2.097 1.118 3.492.295 3.492.295c1.44-.85 3.83-.899 5.31-.112l11.441 6.092l-11.441 6.092c-1.48.79-3.87.738-5.31-.111c0 0-1.395-.824-3.492.295c-2.215 1.179-2.976 3.794-1.696 5.837l.421.674c.701.489 1.363 1.548 1.473 2.354l.422.674c1.278 2.043 4.113 2.744 6.33 1.563c2.099-1.117 2.021-2.643 2.021-2.643c-.078-1.574 1.07-3.51 2.55-4.297L32 46.947l14.16 7.54c1.48.787 2.627 2.723 2.551 4.297c0 0-.077 1.525 2.021 2.643c2.217 1.181 5.05.479 6.329-1.563l.423-.674c.109-.806.771-1.864 1.471-2.354l.424-.674c1.279-2.043.518-4.658-1.695-5.837'/%3E%3C/svg%3E%0A");
+    width: 30px;
+    height: 25px;
+    width: 25px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+}
+
+#deathsVal::before {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M25.947 11.14c0-5.174-3.98-9.406-10.613-9.406S5.052 5.966 5.052 11.14s1.46 4.51 1.46 7.43c0 1.095-1.062.564-1.062 2.92c0 2.586 3.615 2.222 4.677 3.282c1.06 1.062.96 3.02.96 3.02s.2.795.565.562c0 0 .232.564.498.232c0 0 .265.563.53.1c0 0 .266.63.697.166c0 0 .43.63.93.133c0 0 .563.53 1.193.133c.63.397 1.194-.133 1.194-.133c.497.497.93-.133.93-.133c.43.465.694-.166.694-.166c.268.464.53-.1.53-.1c.267.332.5-.232.5-.232c.364.232.563-.563.563-.563s-.1-1.956.962-3.018c1.062-1.06 4.676-.696 4.676-3.283c0-2.355-1.06-1.825-1.06-2.92c0-2.92 1.46-2.256 1.46-7.43zm-15.614 9.852c-1.783.285-2.59-.215-2.785-1.492c-.508-3.328 2.555-3.866 4.08-3.683c.73.088 1.99.862 1.99 1.825c0 2.587-1.626 3.085-3.285 3.35m6.128 4.31c-.33 0-.86-.43-.894-1.226c-.033.796-.63 1.227-.96 1.227c-.333 0-.83-.33-.864-1.127c-.033-.796 1.028-4.013 1.792-4.013c.762 0 1.824 3.217 1.79 4.013s-.53 1.127-.863 1.127zm6.9-5.802c-.194 1.277-1.003 1.777-2.786 1.492c-1.658-.266-3.283-.763-3.283-3.35c0-.963 1.26-1.737 1.99-1.825c1.525-.183 4.59.355 4.08 3.683z'/%3E%3C/svg%3E%0A");
+    height: 25px;
+    width: 25px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#streakVal::before {
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 1200 1200'%3E%3Cpath fill='white' d='M381.64 1200C135.779 1061.434 71.049 930.278 108.057 751.148c27.321-132.271 116.782-239.886 125.36-371.903c38.215 69.544 54.183 119.691 58.453 192.364C413.413 422.695 493.731 216.546 498.487 0c0 0 316.575 186.01 337.348 466.98c27.253-57.913 40.972-149.892 13.719-209.504c81.757 59.615 560.293 588.838-64.818 942.524c117.527-228.838 30.32-537.611-173.739-680.218c13.628 61.319-10.265 290.021-100.542 390.515c25.014-167.916-23.8-238.918-23.8-238.918s-16.754 94.054-81.758 189.065c-59.36 86.762-100.49 178.847-23.257 339.556'/%3E%3C/svg%3E%0A");
+    height: 25px;
+    width: 25px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#myScoreVal {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    width: 100px;
+    background-color: transparent;
+    transform: translate(-50%);
+}
+
+#myScoreVal::before {
+    content: "POINTS";
+    color: white;
+}
+
+.greyInner, .greyInlineInner, .greyInlineInnerMid {
+    margin: unset !important;
+    padding: unset !important;
+}
+
+#fpsDisplay {
+}
+
+#pingDisplay {
+}
+
+/* capture the flag shit */
+.tScoreF.you {
+    position: fixed;
+    top: 25px;
+    left: calc(50% - 45px);
+    transform: translate(-50%) rotate(-10deg);
+    font-size: 40px !important;
+}
+
+.tScoreF.you::before {
+    position: fixed;
+    top: 10px;
+    left: calc(50% - 215px);
+    transform: rotate(10deg) translate(-50%);
+    content: " ";
+    background-color: #5699eb;
+    width: 300px;
+    height: 5px;
+}
+
+#tScoreV1 {
+    color: white !important;
+    font-size: 18px !important;
+    position: fixed;
+    top: 55px;
+    right: calc(50% - 175px);
+    transform: translate(50%);
+}
+
+#tScoreV1::before {
+    content: "ENEMY TEAM: " !important;
+    color: white;
+}
+
+.tScoreF {
+    position: fixed;
+    top: 30px;
+    right: calc(50% - 85px);
+    transform: translate(50%) rotateY(180deg) rotate(-10deg);
+    font-size: 40px !important;
+}
+
+.tScoreF::before {
+    position: fixed;
+    top: 0px;
+    right: calc(50% + 175px);
+    transform: rotate(10deg) translate(50%, -40px);
+    content: " ";
+    background-color: #eb5656;
+    width: 300px;
+    height: 5px;
+}
+
+#tScoreV2 {
+    color: white !important;
+    font-size: 18px !important;
+    position: fixed;
+    top: 55px;
+    left: calc(50% - 170px);
+    transform: translate(-50%);
+}
+
+#tScoreV2::before {
+    content: "YOUR TEAM: " !important;
+    color: white;
+}
+
+#teamScores {
+    background-color: transparent;
+}
+
+.tScoreM {
+    font-size: 0 !important;
+}
+
+.tScoreC {
+    display: none;
+}
+
+#gameMessage {
+    position: relative;
+    top: 10px;
+    text-transform: uppercase;
+}
+
+/* killstreak */
+#killStreakHolder {
+    display: inline-flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 425px;
+    right: 10px;
+    width: 250px !important;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* bighead */
+#bhHolder {
+    position: fixed;
+    left: 35px;
+    top: 120px;
+}
+
+/* killcard */
+.kCFlag, #kCInfo {
+    display: none !important;
+}
+
+#killCardMsg {
+    z-index: 999999999;
+    position: absolute;
+    bottom: 185px;
+    left: 30px;
+}
+
+#killCardBy {
+    color: white !important;
+    text-transform: uppercase;
+}
+
+#killCardHolder {
+    position: absolute;
+    bottom: 0;
+}
+
+#killCard {
+    border-top: 3px solid white;
+    background-color: transparent;
+    backdrop-filter: blur(10px) !important;
+    z-index: 999999;
+    height: 225px;
+    width: 100% !important;
+}
+
+#killCard::before {
+    content: " ";
+    background-color: rgba(125,125,125,.4);
+    height: 180px;
+    width: 3px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 325px);
+    transform: translate(-50%);
+}
+
+#killCard::after {
+    content: " ";
+    background-color: rgba(125,125,125,.4);
+    height: 180px;
+    width: 3px;
+    position: absolute;
+    bottom: 30px;
+    right: calc(50% - 325px);
+    transform: translate(50%);
+}
+
+#kCName {
+    max-width: 450px;
+    position: absolute;
+    bottom: 155px;
+    left: 10px;
+    text-transform: uppercase;
+    font-size: 30px !important;
+}
+
+#kCInfoS {
+    font-size: 25px !important;
+    color: white !important;
+    position: absolute;
+    left: 25px;
+    right: unset;
+    bottom: 20px;
+}
+
+#kCInfoS::after {
+    content: " POINTS";
+    color: white;
+}
+
+.kClvl {
+    position: absolute;
+    left: unset;
+    right: 50px;
+    bottom: 185px;
+    text-transform: uppercase;
+    text-shadow: unset;
+    font-size: 30px;
+    color: white;
+    text-align: right;
+}
+
+#kCStat {
+    position: absolute;
+    right: 50px;
+    bottom: 135px;
+    text-transform: uppercase;
+    text-shadow: unset;
+    font-size: 25px !important;
+    letter-spacing: 1px;
+    color: white !important;
+    text-align: right;
+}
+
+#kCProfile {
+    image-rendering: unset;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_0.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_2.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_1.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_1.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_2.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_4.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_3.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_7.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_4.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_6.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_5.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_5.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_6.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_8.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_7.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_9.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_8.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_10.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_9.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_0.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_10.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_11.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_11.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_14.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_12.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_15.png) !important;
+}
+
+#kCProfile[src*="https://storage.googleapis.com/assets.krunker.io/textures/classes/icon_13.png"] {
+    content: url(https://assets.krunker.io/textures/weapons/icon_19.png) !important;
+}
+
+/* deposit */
+#krTagHolder {
+    position: fixed;
+    ... (1 Ko restants)
