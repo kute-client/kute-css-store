@@ -37,24 +37,6 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
-<p align="center"><img src="BlackLune/preview.png" alt="BlackLune preview" width="100%"></p>
-<h3 align="center"><a href="BlackLune/BlackLune.css">BlackLune</a></h3>
-
-<p align="center">By Unknown, Skal</p>
-
-<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
-
-<hr>
-
-<p align="center"><img src="Brutal/preview.png" alt="Brutal preview" width="100%"></p>
-<h3 align="center"><a href="Brutal/Brutal.css">Brutal</a></h3>
-
-<p align="center">By -deusVult</p>
-
-<p align="center"><b>Source:</b> <a href="https://github.com/deusVult69/krunker-css-brutal">deusVult69/krunker-css-brutal</a><br><b>License:</b> none stated</p>
-
-<hr>
-
 <p align="center"><img src="EXTRA_CLEAN_v3/preview.png" alt="EXTRA CLEAN v3 preview" width="100%"></p>
 <h3 align="center"><a href="EXTRA_CLEAN_v3/EXTRA_CLEAN_v3.css">EXTRA CLEAN v3</a></h3>
 
@@ -82,35 +64,8 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
-<p align="center"><img src="mof1/preview.png" alt="mof1 preview" width="100%"></p>
-<h3 align="center"><a href="mof1/mof1.css">mof1</a></h3>
-
-<p align="center">By epicX67 (MOF1)</p>
-
-<p align="center"><b>Source:</b> <a href="https://github.com/MOF1/krunker_css">MOF1/krunker_css</a><br><b>License:</b> <a href="mof1/LICENSE">GPL-3.0</a></p>
-
-<hr>
-
-<p align="center"><img src="MTZ/preview.png" alt="MTZ CSS preview" width="100%"></p>
-<h3 align="center"><a href="MTZ/MTZ.css">MTZ CSS</a></h3>
-
-<p align="center">By Mashtoolz, updated by AirFxrce</p>
-
-<p align="center"><b>Source:</b> <a href="https://github.com/OneInsightCoder/Water">Water client community CSS</a><br><b>License:</b> none stated</p>
-
-<hr>
-
 <p align="center"><img src="NeonBar/preview.png" alt="NeonBar preview" width="100%"></p>
 <h3 align="center"><a href="NeonBar/NeonBar.css">NeonBar</a></h3>
-
-<p align="center">By NamekujiLSDs (original), rewritten by JINXZ</p>
-
-<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
-
-<hr>
-
-<p align="center"><img src="NeonStorm/preview.png" alt="NeonStorm preview" width="100%"></p>
-<h3 align="center"><a href="NeonStorm/NeonStorm.css">NeonStorm</a></h3>
 
 <p align="center">By NamekujiLSDs (original), rewritten by JINXZ</p>
 
@@ -160,24 +115,6 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 <p align="center">By tae (<code>whuuayu</code>), 2026 fixes by Rinkishimo</p>
 
 <p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/krunker-classic-css">whuuayu/krunker-classic-css</a><br><b>License:</b> none stated</p>
-
-<hr>
-
-<p align="center"><img src="xeno_xenon_old1/preview.png" alt="xeno_xenon_old1 preview" width="100%"></p>
-<h3 align="center"><a href="xeno_xenon_old1/xeno_xenon_old1.css">xeno_xenon_old1</a></h3>
-
-<p align="center">By DEADCELL, edits by XenoXenon</p>
-
-<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
-
-<hr>
-
-<p align="center"><img src="xeno_xenon_old2/preview.png" alt="xeno_xenon_old2 preview" width="100%"></p>
-<h3 align="center"><a href="xeno_xenon_old2/xeno_xenon_old2.css">xeno_xenon_old2</a></h3>
-
-<p align="center">By DEADCELL</p>
-
-<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
 
 <hr>
 
