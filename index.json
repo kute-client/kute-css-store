@@ -7,20 +7,6 @@
     "preview": "Arkham/preview.png"
   },
   {
-    "id": "blacklune",
-    "name": "BlackLune",
-    "author": "Unknown & Skal",
-    "file": "BlackLune/BlackLune.css",
-    "preview": "BlackLune/preview.png"
-  },
-  {
-    "id": "brutal",
-    "name": "Brutal",
-    "author": "-deusVult",
-    "file": "Brutal/Brutal.css",
-    "preview": "Brutal/preview.png"
-  },
-  {
     "id": "extra_clean_v3",
     "name": "EXTRA CLEAN v3",
     "author": "thaddeuz",
@@ -42,32 +28,11 @@
     "preview": "lemonfish-hud/preview.png"
   },
   {
-    "id": "mof1",
-    "name": "mof1",
-    "author": "epicX67",
-    "file": "mof1/mof1.css",
-    "preview": "mof1/preview.png"
-  },
-  {
-    "id": "mtz",
-    "name": "MTZ CSS",
-    "author": "Mashtoolz & AirFxrce",
-    "file": "MTZ/MTZ.css",
-    "preview": "MTZ/preview.png"
-  },
-  {
     "id": "neonbar",
     "name": "NeonBar",
     "author": "NamekujiLSDs & JINXZ",
     "file": "NeonBar/NeonBar.css",
     "preview": "NeonBar/preview.png"
-  },
-  {
-    "id": "neonstorm",
-    "name": "NeonStorm",
-    "author": "NamekujiLSDs & JINXZ",
-    "file": "NeonStorm/NeonStorm.css",
-    "preview": "NeonStorm/preview.png"
   },
   {
     "id": "nuke",
@@ -103,19 +68,5 @@
     "author": "Tae & Rinkishimo",
     "file": "tae_og_2018_css/tae_og_2018_css.css",
     "preview": "tae_og_2018_css/preview.png"
-  },
-  {
-    "id": "xeno_xenon_old1",
-    "name": "xeno_xenon_old1",
-    "author": "DEADCELL & XenoXenon",
-    "file": "xeno_xenon_old1/xeno_xenon_old1.css",
-    "preview": "xeno_xenon_old1/preview.png"
-  },
-  {
-    "id": "xeno_xenon_old2",
-    "name": "xeno_xenon_old2",
-    "author": "DEADCELL",
-    "file": "xeno_xenon_old2/xeno_xenon_old2.css",
-    "preview": "xeno_xenon_old2/preview.png"
   }
 ]
