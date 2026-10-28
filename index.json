@@ -6,6 +6,13 @@
     "file": "Arkham/Arkham.css",
     "preview": "Arkham/preview.png"
   },
+    {
+    "id": "ephemeral",
+    "name": "ephemeral",
+    "author": "ashevoy",
+    "file": "ephemeral/ephemeral.css",
+    "preview": "ephemeral/preview.png"
+  },
   {
     "id": "extra_clean_v3",
     "name": "EXTRA CLEAN v3",

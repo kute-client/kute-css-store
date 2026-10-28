@@ -37,6 +37,15 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
+<p align="center"><img src="ephemeral/preview.png" alt="ephemeral preview" width="100%"></p>
+<h3 align="center"><a href="ephemeral/ephemeral.css">ephemeral</a></h3>
+
+<p align="center">By ashevoy</p>
+
+<p align="center"><b>Source:</b> <a href="https://voy.moe/">ashevoy's website</a><br><b>License:</b> none stated</p>
+
+<hr>
+
 <p align="center"><img src="EXTRA_CLEAN_v3/preview.png" alt="EXTRA CLEAN v3 preview" width="100%"></p>
 <h3 align="center"><a href="EXTRA_CLEAN_v3/EXTRA_CLEAN_v3.css">EXTRA CLEAN v3</a></h3>
 

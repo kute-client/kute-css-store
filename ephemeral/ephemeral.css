@@ -1,0 +1,77 @@
+@import url(https://voy.moe/kc/latest.css);
+/*            !!! do not touch this url! it's to autoupdate!
+css made by ashevoy
+https://voy.moe
+changelog available there too
+
+much love. feel free to share.
+*/
+
+:root {
+  --backgroundColour: #302c29;
+  /* backgrounds and buttons colour - default: 302c29 */
+  --textColour: #ffffff;
+  /* basic text colour - default is ffffff */
+  --specialTextColour: #ff4fb9;
+  /* special text such as fps etc */
+  --linkColour: #ff4fb9;
+  /* link colour, default is ff4fb9 */
+  --rankedColour: #1fc57a;
+  /* ranked colour default 1fc57a */
+  --fontThickness: 500;
+  /* self explanatory, thickness of the font - default 500 */
+  --showMaxAmmo: 0;
+  /* showmaxammo: show opacity of the max ammo (default 0) */
+  --hpValueColour: #ffffff;
+  --ammoValueColour: #ffffff;
+  /* hp and ammo val colour, default fff */
+  --hpNumberHeight: 0px;
+  --ammoNumberHeight: 0px;
+  /* change the height of the hp and ammo (adds pixels) */
+  --hpBarHeight: 16px;
+  --hpBarWidth: 240px;
+  --hpBarPositionX: 50%;
+  --hpBarPositionY: 7%;
+  --hpBarOutlineWidth: 2px;
+  --hpBarOpacity: 1;
+  /* hpbar(element): self explanatory. */
+  /* hpbaropacity: hp bar opacity, 0 for hidden 1 for shown */
+  --classPickerOpacity: 1;
+  --hoverClassPickerOpacity: 0.5;
+  /* the class picker on the right of the menu's opacity. it'll still show when hovering above it. default is 0 (hidden) */
+  /* the classes you aren't hovering over's opacities. default is 0.5. if you put the class picker opacity to 1 i recommend making this 1 as well. */
+  --customReloadMessage: ' ';
+  /* replace this with a custom reload message, keep the apostrophes */
+  --customTopLeftMessage: " ";
+  /* replace this with a custom message to put at the top left, keep quote marks */
+  --customChatHolder: 'annoy people';
+  /* replace this with any custom chat holder message you want 2 add, keep the apostrophes */
+  --customTopOfServerBrowserMsg: " ";
+  /* self explanatory too. shows a custom message at top of server browser lol */
+  --showChangelog: 1;
+  /* putting this to 0 will hide the changelog during the loading. */
+  --btmLeftIconBorderRadius: 5px;
+  --btmLeftIconRendering: pixelated;
+  --ammoReloadBgHeight: 0px;
+  /* change the height of the hp reload bar (adds pixels) */
+  --loadingImageBack: url();
+
+  --displayNowPlayingCredits: 1;
+  /* set the opacity of the bottom thingamajig with the css name and author. set to 0 to hide it. */
+  --displayMapInfo: 0;
+
+  --displayStreams: none;
+    /*set to none for no display, set to block for display*/
+
+    --menuClassPickFontSize: 32px;
+    /* sets the size of the icons on the right */
+}
+
+@font-face {
+  font-family: gamefont;
+  src: url(https://voy.moe/fontvariable.ttf);
+}
+
+/*
+feel free to add your custom edits below.
+*/
