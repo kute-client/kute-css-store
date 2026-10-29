@@ -28,11 +28,25 @@
     "preview": "Glass_v1/preview.png"
   },
   {
+    "id": "LEMONFISH-CSS",
+    "name": "LEMONFISH CSS",
+    "author": "tae & ameer",
+    "file": "LEMONFISH-CSS/LEMONFISH-CSS.css",
+    "preview": "LEMONFISH-CSS/preview.png"
+  },
+  {
     "id": "lemonfish_hud",
     "name": "LEMONFISH CSS - IN-GAME HUD ONLY",
     "author": "tae",
     "file": "lemonfish-hud/lemonfish-hud.css",
     "preview": "lemonfish-hud/preview.png"
+  },
+  {
+    "id": "Magical-Girl-CSS",
+    "name": "Magical Girl CSS",
+    "author": "tae",
+    "file": "Magical-Girl-CSS/Magical-Girl-CSS.css",
+    "preview": "Magical-Girl-CSS/preview.png"
   },
   {
     "id": "neonbar",
@@ -63,6 +77,13 @@
     "preview": "Nuke_reimagined/preview.png"
   },
   {
+    "id": "omori",
+    "name": "OMORI CSS",
+    "author": "tae",
+    "file": "OMORI-CSS/OMORI-CSS.css",
+    "preview": "OMORI-CSS/preview.png"
+  },
+  {
     "id": "skals",
     "name": "Skals",
     "author": "Skal",
@@ -75,5 +96,12 @@
     "author": "Tae & Rinkishimo",
     "file": "tae_og_2018_css/tae_og_2018_css.css",
     "preview": "tae_og_2018_css/preview.png"
+  },
+  {
+    "id": "yuki_aim_css",
+    "name": "Yuki Aim CSS",
+    "author": "Tae",
+    "file": "yuki-aim-css/Yuki_Aim_CSS.css",
+    "preview": "yuki-aim-css/preview.png"
   }
 ]

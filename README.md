@@ -64,12 +64,30 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
+<p align="center"><img src="LEMONFISH-CSS/preview.png" alt="LEMONFISH CSS" width="100%"></p>
+<h3 align="center"><a href="LEMONFISH-CSS/LEMONFISH_CSS.css">LEMONFISH CSS</a></h3>
+
+<p align="center">By tae (<code>whuuayu</code>) & ameer (<code>envyxyz</code>)</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/lemonfish-css">whuuayu/lemonfish-css</a><br><b>License:</b> <a href="LEMONFISH-CSS/LICENSE">GPL-3.0</a></p>
+
+<hr>
+
 <p align="center"><img src="lemonfish-hud/preview.png" alt="Lemonfish (HUD only) preview" width="100%"></p>
 <h3 align="center"><a href="lemonfish-hud/lemonfish-hud.css">Lemonfish (HUD only)</a></h3>
 
 <p align="center">By tae (<code>whuuayu</code>), trimmed to the in-game HUD</p>
 
 <p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/lemonfish-css">whuuayu/lemonfish-css</a><br><b>License:</b> <a href="lemonfish-hud/LICENSE">GPL-3.0</a></p>
+
+<hr>
+
+<p align="center"><img src="Magical-Girl-CSS/preview.png" alt="Magical Girl CSS" width="100%"></p>
+<h3 align="center"><a href="Magical-Girl-CSS/Magical-Girl-CSS.css">Magical Girl CSS</a></h3>
+
+<p align="center">By tae (<code>whuuayu</code>)</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/magical-girl-css">whuuayu/magical-girl-css</a><br><b>License:</b> <a href="Magical-Girl-CSS/LICENSE">GPL-3.0</a></p>
 
 <hr>
 
@@ -109,6 +127,15 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
+<p align="center"><img src="OMORI-CSS/preview.png" alt="OMORI CSS" width="100%"></p>
+<h3 align="center"><a href="OMORI-CSS/OMORI-CSS.css">OMORI CSS</a></h3>
+
+<p align="center">By tae (<code>whuuayu</code>)</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/omori-css">whuuayu/omori-css</a><br><b>License:</b> none stated</p>
+
+<hr>
+
 <p align="center"><img src="Skals/preview.png" alt="Skals preview" width="100%"></p>
 <h3 align="center"><a href="Skals/Skals.css">Skals</a></h3>
 
@@ -124,6 +151,15 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 <p align="center">By tae (<code>whuuayu</code>), 2026 fixes by Rinkishimo</p>
 
 <p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/krunker-classic-css">whuuayu/krunker-classic-css</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="yuki-aim-css/preview.png" alt="Krunker Classic preview" width="100%"></p>
+<h3 align="center"><a href="yuki-aim-css/Yuki_Aim_CSS.css">Yuki Aim CSS</a></h3>
+
+<p align="center">By tae (<code>whuuayu</code>)</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/yuki-aim-css">whuuayu/yuki-aim-css</a><br><b>License:</b> <a href="lemonfish-hud/LICENSE">GPL-3.0</a></p>
 
 <hr>
 
