@@ -78,7 +78,7 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <p align="center">By NamekujiLSDs (original), rewritten by JINXZ, fixed by Skal</p>
 
-<p align="center"><b>Source:</b> <a href="https://www.youtube.com/watch?v=dk6Rj3twLCM">youtube.com/@raphaelmartin8647/NeonBar Css</a><b>License:</b> none stated</p>
+<p align="center"><b>Source:</b> <a href="https://www.youtube.com/watch?v=dk6Rj3twLCM">youtube.com/@raphaelmartin8647/NeonBar Css </a><b>License:</b> none stated</p>
 
 <hr>
 
