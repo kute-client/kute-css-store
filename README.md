@@ -76,9 +76,9 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 <p align="center"><img src="NeonBar/preview.png" alt="NeonBar preview" width="100%"></p>
 <h3 align="center"><a href="NeonBar/NeonBar.css">NeonBar</a></h3>
 
-<p align="center">By NamekujiLSDs (original), rewritten by JINXZ</p>
+<p align="center">By NamekujiLSDs (original), rewritten by JINXZ, fixed by Skal</p>
 
-<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+<p align="center"><b>Source:</b> <a href="https://www.youtube.com/watch?v=dk6Rj3twLCM">youtube.com/@raphaelmartin8647/NeonBar Css</a><b>License:</b> none stated</p>
 
 <hr>
 
@@ -114,7 +114,7 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <p align="center">By Skal</p>
 
-<p align="center"><b>Source:</b> Discord<br><b>License:</b> none stated</p>
+<p align="center"><b>Source:</b> <a href="https://discord.gg/Vs3R4nsUxg">Discord/Skal's Control Center</a><br><b>License:</b> none stated</p>
 
 <hr>
 
