@@ -136,6 +136,15 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
+<p align="center"><img src="KPD_Public/preview.png" alt="KPD Public" width="100%"></p>
+<h3 align="center"><a href="KPD_Public/KPD_Public.css">KPD Public</a></h3>
+
+<p align="center">By spiegle & fixed by -deusVult</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/deusVult69/kpd-public-css">deusVult69/kpd-public-css</a><br><b>License:</b> none stated</p>
+
+<hr>
+
 <p align="center"><img src="Laxzy_Edited/preview.png" alt="Laxzy Edited" width="100%"></p>
 <h3 align="center"><a href="Laxzy_Edited/Laxzy_Edited.css">Laxzy Edited</a></h3>
 
@@ -187,6 +196,15 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 <p align="center">By inadvertently (<code>Ivan</code>)</p>
 
 <p align="center"><b>Source:</b> <a href="https://github.com/inadvertently/mtz-client-css">inadvertently/mtz-client-css</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="MXHud/preview.png" alt="MXHud preview" width="100%"></p>
+<h3 align="center"><a href="MXHud/MXHud.css">MXHud</a></h3>
+
+<p align="center">By pipz</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/seen-t/MXHud">seen-t/MXHud</a><br><b>License:</b> <a href="MXHud/LICENSE">GPL-3.0</a></p>
 
 <hr>
 

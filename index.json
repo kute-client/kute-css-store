@@ -84,6 +84,13 @@
     "preview": "kden/preview.png"
   },
   {
+    "id": "KPD_Public",
+    "name": "KPD Public",
+    "author": "spiegle & fixed by -deusVult",
+    "file": "KPD_Public/KPD_Public.css",
+    "preview": "KPD_Public/preview.png"
+  },
+  {
     "id": "Laxzy_Edited",
     "name": "Laxzy Edited",
     "author": "Laxzy & spiegle",
@@ -124,6 +131,13 @@
     "author": "inadvertently",
     "file": "mtz-client/mtz-client.css",
     "preview": "mtz-client/preview.png"
+  },
+  {
+    "id": "MXHud",
+    "name": "MXHud",
+    "author": "pipz",
+    "file": "MXHud/MXHud.css",
+    "preview": "MXHud/preview.png"
   },
   {
     "id": "neonbar",

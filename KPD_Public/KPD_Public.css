@@ -1,0 +1,1288 @@
+/* 
+---------------------
+| Mod/Fix: -deusVult
+| Original Author: spiegle (at least this ign was written on pc7)
+|
+| IGN: -deusVult
+| Github: https://github.com/deusVult69
+| Discord: hardypr0
+---------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+:root {
+	--font-regular: 'Audiowide', sans-serif;
+	--colors-primary: #fff;
+	--colors-highlight: #ff91e0;
+	--white: #ffffff;
+	--accent: #db8f8f;
+	--pic: url(https://i.pinimg.com/736x/48/b0/08/48b008741860652f8282416f2d98930e.jpg);
+	--uiscale: 0.93;
+}
+* {
+	font-family: var(--font-regular);
+}
+
+#uiBase {
+	/* height: calc(100%/var(--uiscale)) !important;
+    width: calc(100%/var(--uiscale)) !important;
+    transform: scale(var(--uiscale)) !important; */
+}
+
+/* REMOVE ELEMENTS */
+#menuItemContainer > :nth-child(5) {
+	display: none;
+}
+
+#aMerger,
+#rankedSoonTm,
+#newsHolder,
+.youNewDiv:not(#battlepassAd):not(#dailySpinDiv),
+#homeStoreAd,
+#onetrust-consent-sdk,
+#aHolder,
+.imageButton,
+#editorBtnM,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+.krSocial,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+#loadEditrBtn,
+.settingsBtn[onclick='openOneTrust()'],
+.menuSocialB,
+#streamContainer,
+#streamContainerNew {
+	display: none !important;
+}
+.setSugBox2 {
+	display: none;
+}
+#mainLogo {
+	display: none;
+}
+.menuItemTitle {
+	display: none;
+}
+
+.button,
+.button:hover,
+.quickJoin {
+	border: hidden !important;
+}
+#termsInfo {
+	display: none;
+}
+/* /REMOVE ELEMENTS */
+
+/* CONTROL BUTTONS */
+#subLogoButtons,
+#tlInfHold {
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	bottom: auto !important;
+	transform: unset;
+	display: flex;
+	flex-direction: column;
+}
+#tlInfHold {
+	top: 474px;
+	display: flex !important;
+}
+#tlInfHold .youNewDiv {
+	padding: 0 !important;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+#tlInfHold .youNewDiv .helpTxtHol {
+	margin-left: 0 !important;
+}
+#subLogoButtons div.button,
+#menuRegionLabel,
+#battlepassAd .helpTxtHol div:first-child::before,
+#dailySpinDiv {
+	box-sizing: border-box;
+	height: 58px !important;
+	padding: 0 20px 0 20px !important;
+
+	font-size: 20.5px !important;
+	line-height: 60px !important;
+	color: rgba(255, 255, 255, 0.7);
+
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid rgba(0, 0, 0, 0.1) !important;
+	border-radius: 4px;
+
+	transition: color 0.3s linear;
+}
+#subLogoButtons .button.small {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+#subLogoButtons .button.small:last-child {
+	margin: 0;
+}
+#subLogoButtons div:hover {
+	color: white !important;
+}
+#subLogoButtons #menuBtnRanked:hover {
+	border: 2px solid rgba(0, 0, 0, 0.1) !important;
+}
+#tlInfHold > div {
+	width: 100%;
+}
+#tlInfHold .youNewDiv {
+	width: 100%;
+	height: 58px;
+	font-size: 0;
+	min-width: 100%;
+
+	transition: color 0.3s linear;
+}
+#tlInfHold .youNewDiv:hover {
+	color: white !important;
+}
+#battlepassAd[onclick='playSelect(),showAccountUpdatesPopup()'] {
+	display: none !important;
+}
+#battlepassAd .helpTxtHol {
+	margin-left: 0 !important;
+}
+#battlepassAd .helpTxtHol:hover {
+	opacity: 1;
+}
+#battlepassAd #bpAdIcon,
+#battlepassAd .helpTxtHol div:nth-child(2) {
+	display: none;
+}
+#battlepassAd .helpTxtHol div:first-child {
+	position: relative;
+
+	font-size: 0 !important;
+
+	margin-left: -8px;
+}
+#battlepassAd .helpTxtHol div:first-child::before {
+	position: absolute;
+	inset: 0;
+
+	width: fit-content;
+
+	content: 'BattlePass';
+	font-size: 20.5px;
+	white-space: nowrap;
+
+	padding: 0 27px !important;
+
+	background-color: transparent !important;
+
+	transition: color 0.3s linear;
+}
+#tlInfHold #battlepassAd:hover .helpTxtHol div:first-child::before {
+	color: white !important;
+}
+
+#tlInfHold #dailySpinDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0 5px !important;
+	margin-top: 6px;
+
+	color: #fff;
+	line-height: 100% !important;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#dailySpinIcon {
+	display: none !important;
+}
+#dailySpinDiv div {
+	color: #fff;
+}
+#dailySpinDiv.claimed {
+	opacity: 1;
+}
+#dailySpinDiv .claimedText {
+	display: none;
+}
+#dailySpinDiv .timeRemaining.svelte-1g1yfcp {
+	color: #fff;
+}
+
+/* spec */
+#spectButton [style='font-size:15px;color:rgba(255,255,255,0.6)'] {
+	display: none;
+}
+.sliderSml {
+	visibility: hidden;
+}
+#spectButton .switchsml {
+	all: unset !important;
+}
+.sliderSml:after {
+	position: absolute;
+	visibility: visible;
+	height: auto;
+	content: 'Spectate';
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+
+	transition: color 0.3s linear;
+}
+.switchsml:hover .sliderSml:after {
+	color: white !important;
+}
+.switchsml #specBtn:checked ~ .sliderSml:after {
+	color: white !important;
+}
+
+input:checked + .sliderSml:after {
+	visibility: visible;
+	/* height: 58px; */
+	content: 'Spectating';
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 15px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+#uiBase.onMenu #spectButton {
+	top: 164px;
+	left: 375px;
+	visibility: hidden;
+	transform: translateX(0) !important;
+}
+/* /CONTROL BUTTONS */
+
+/* SIGNOUT STYLES */
+#signedOutHeaderBar {
+	padding-right: 10px;
+	padding-left: 10px;
+	filter: grayscale(1);
+}
+/* /SIGNOUT STYLES */
+
+/* CHAT */
+#chatList {
+	background-color: transparent !important;
+	border: none !important;
+	-webkit-mask-image: -webkit-gradient(
+		linear,
+		left top,
+		left top 50%,
+		from(rgba(0, 0, 0, 0)),
+		to(rgba(0, 0, 0, 1))
+	);
+}
+#uiBase.onGame #chatHolder {
+	bottom: 90px !important;
+}
+#chatHolder {
+	transition: all 0.4s cubic-bezier(0.43, 0.32, 0.35, 1.32);
+}
+.chatItem {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	border-radius: 5px;
+	padding: 4px 16px;
+	max-width: 280px;
+	color: #ffffff;
+	margin-left: 0px !important;
+	margin: 5px 5px 5px;
+}
+/* /CHAT */
+
+/* TOP  */
+.topRightCounters div {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#mLevelCont {
+	background-color: transparent;
+}
+
+/* TOP LEFT */
+#signedInHeaderBar > div:nth-of-type(1),
+#signedInHeaderBar > div:nth-of-type(2) {
+	display: flex !important;
+	align-items: center;
+}
+.krInfo,
+#menuJNKCount {
+	display: flex !important;
+	align-self: center;
+	align-items: center;
+}
+.krInfo {
+	margin-top: 0 !important;
+}
+.junkInfo {
+	margin-top: 0 !important;
+}
+.junkInfo:hover #menuJNKCount,
+.junkInfo:hover span {
+	text-decoration: none !important;
+}
+#NewAltManager {
+	display: flex !important;
+}
+#NewAltManager #linkCmdBtn1,
+#linkCmdBtn2 {
+	display: none !important;
+}
+#NewAltManager div:first-of-type {
+	margin-left: 0 !important;
+	margin-top: 0 !important;
+
+	display: flex !important;
+	align-items: center;
+}
+#NewAltManager span {
+	color: white !important;
+}
+
+#mLevelCont {
+	margin-left: 0 !important;
+}
+
+#timerIcon.topLeftOld {
+	display: none;
+}
+
+#timerHolder.topLeftOld {
+	background-color: rgba(0, 0, 0, 0.2);
+	border: none !important;
+	margin: 0px;
+}
+
+#timerInner.topLeftOld {
+	background-color: transparent;
+}
+
+#timerVal.topLeftOld {
+	font-size: 45px !important;
+	letter-spacing: 2px;
+	text-align: left !important;
+}
+
+/* /TOP LEFT */
+
+/* GAME INFO: MAP, SERVER, ETC */
+#mapInfo {
+	display: none;
+}
+/* /GAME INFO: MAP, SERVER, ETC */
+
+/* CUSTOMIZE */
+#menuClassContainer {
+	transform: unset;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+#customizeButton {
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.1) !important;
+	background-color: rgba(0, 0, 0, 0.2);
+	text-shadow: unset !important;
+	width: auto;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: rgba(255, 255, 255, 0.7);
+}
+#customizeButton:hover {
+	color: white !important;
+}
+#customizeButton span {
+	display: none;
+}
+#menuClassNameTag {
+	position: fixed;
+	right: 20px;
+	text-shadow: unset !important;
+	font-size: 20px !important;
+	bottom: 175px;
+	opacity: 0.6;
+}
+
+#menuClassSubtext {
+	position: fixed;
+	right: 20px;
+	text-shadow: unset !important;
+	font-size: 20px !important;
+	bottom: 135px;
+	color: white;
+	opacity: 0.7;
+}
+
+#classPreviewCanvas {
+	position: fixed;
+	right: -150px;
+	bottom: 118px;
+	opacity: 0.7;
+}
+
+#menuClassName {
+	position: fixed;
+	right: 20px;
+	text-shadow: unset !important;
+	font-size: 20px !important;
+	bottom: 80px;
+	opacity: 0.7;
+}
+/* /CUSTOMIZE */
+
+/* TOP RIGHT CORNER */
+#menuServerInfoContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#menuRegionLabel {
+	margin-right: 5px;
+	margin-left: 5px;
+
+	white-space: nowrap;
+}
+
+#menuPingText {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+#menuPingText::after {
+	content: ' MS';
+}
+
+.leaderNameF {
+	color: white;
+}
+
+.leaderName {
+	color: var(--accent);
+}
+
+.leaderScore {
+	color: var(--white);
+	opacity: 100%;
+}
+
+#menuPingIcon {
+	display: none;
+}
+
+#instructions {
+	visibility: hidden;
+}
+
+#instructionHolder {
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+}
+
+.countIcon {
+	background-color: rgba(35, 35, 35, 0.3);
+}
+
+#killsVal,
+#deathsVal,
+#streakVal,
+#myScoreVal,
+#kdVal,
+#killCount:after,
+#deathCount:after,
+#streakCount:after,
+#scoreCount:after {
+	font-size: 20px;
+	color: white;
+	width: 100px;
+}
+
+img#streakIcon {
+	display: none;
+}
+
+img#kdIcon {
+	display: none;
+}
+
+img#deathsIcon {
+	display: none;
+}
+
+img#killsIcon {
+	display: none;
+}
+
+span#killsVal:after {
+	content: ' K';
+}
+
+span#deathsVal:after {
+	content: ' D';
+}
+
+span#streakVal:after {
+	content: ' S';
+}
+#scoreCount i {
+	font-size: 19px !important;
+}
+.topRightCounters {
+	position: fixed;
+	bottom: 120px;
+	right: 20px;
+	background-color: transparent;
+	border: none;
+}
+
+#policeButton {
+	position: fixed;
+	right: 230px;
+	bottom: 5px;
+	height: 68px !important;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	border: 2px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+#headerRight {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#headerRight #tcStringBtn {
+	display: none !important;
+}
+
+.headerBar {
+	background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+#signedOutHeaderBar {
+	margin-left: 132px;
+	border-right: 2px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#signedInHeaderBar {
+	margin-left: 132px;
+	border-right: 2px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#menuUsernameContainer {
+	font-size: 24px;
+}
+
+#menuKRCount,
+#menuKRCount [style='color:#fbc02d'] {
+	color: white !important;
+	font-size: 24px;
+}
+
+#menuMiniProfilePic,
+#profilePicM {
+	content: var(--pic);
+}
+
+.verticalSeparator {
+	background-color: transparent;
+}
+
+#menuItemContainer {
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#signedOutHeaderBar > div {
+	background-color: transparent;
+}
+
+#headerRight {
+	border-left: 2px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#pingIcon {
+	display: none;
+}
+
+#pingText {
+	color: rgba(255, 255, 255, 0.7) !important;
+	font-size: 18px !important;
+}
+
+#ingameFPS {
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.material-icons-outlined,
+.material-symbols-outlined {
+	color: white !important;
+}
+.weapKey,
+.weapIcon {
+	display: none;
+}
+
+.chatMsg {
+	color: #ffffff;
+}
+
+.chatMsg [style='color:#fff'] {
+	color: #ffffff !important;
+}
+
+.chatMsg [style='color:#fc03ec'] {
+	color: #ffffff !important;
+}
+
+.chatMsg [style='color:#eb5656'] {
+	color: var(--accent) !important;
+}
+
+.chatMsg [style='color:#fc03ec'] {
+	color: #ffffff !important;
+}
+
+.chatMsg [style='color:#9eeb56'] {
+	color: #ffffff !important;
+}
+
+.chatMsg [style='color:#76ff03'] {
+	color: #ffffff !important;
+}
+
+.chatMsg[style='color: #ff0000;'] {
+	color: #ffffff !important;
+}
+
+.chatMsg[style*='color:#fc03ec'] {
+	color: var(--accent) !important;
+}
+
+.menuDebugInfo {
+	display: none;
+}
+
+#curGameInfo {
+	visibility: hidden;
+}
+#curGameInfo::before {
+	content: 'Mikuaim';
+	visibility: visible;
+	background-image: linear-gradient(90deg, #ffeb8b, #775bfb);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+#maxHP {
+	display: none;
+}
+
+#weapDisplay {
+	margin-bottom: 20px;
+}
+
+#challIcon {
+	display: none;
+}
+#hudClassIcon {
+	display: none;
+}
+
+#voiceDisplay {
+	display: none;
+}
+
+#leaderContainer > div > img[src='./img/ranked/rnk_0.svg'] {
+	display: none;
+}
+
+#leaderContainer > div > img[src='./img/ranked/rnk_1.svg'] {
+	display: none;
+}
+
+#leaderContainer > div > img[src='./img/ranked/rnk_2.svg'] {
+	display: none;
+}
+
+#leaderContainer > div > img[src='./img/ranked/rnk_3.svg'] {
+	display: none;
+}
+
+#leaderContainer > div > img[src='./img/ranked/rnk_4.svg'] {
+	display: none;
+}
+
+#leaderContainer > div > img[src='./img/ranked/rnk_5.svg'] {
+	display: none;
+}
+
+#leaderboardHolder {
+	background-color: transparent !important;
+	border: none;
+	margin-right: -20px;
+}
+
+@keyframes legacyloader {
+	from {
+		opacity: 0.7;
+		font-size: 30px;
+	}
+}
+
+#initLoader {
+	background-color: transparent !important;
+}
+
+#initLoader > * {
+	display: none;
+}
+
+#initLoader > :empty {
+	opacity: 0;
+}
+
+#loadGamNm {
+	display: block !important;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 0;
+	width: 500px;
+	height: 500px;
+	line-height: 500px;
+	background: transparent;
+}
+
+#loadGamNm::before {
+	content: 'MIKUAIM';
+	color: #ffffff;
+	text-shadow: 0 0 2px #000000;
+	font-size: 32px;
+	animation: none;
+}
+
+#instructions > *[style*='transform:scale(1.4);'] {
+	transform: scale(0.7) !important;
+}
+
+#instructions > * > .lds-ring {
+	width: unset;
+	height: unset;
+}
+
+#instructions > * > .lds-ring > * {
+	display: none;
+}
+
+#windowHolder.popupWin {
+	background-color: transparent !important;
+}
+
+#menuWindow.dark {
+	background-color: #2e2e2e;
+	box-shadow: none !important;
+}
+
+.settingsHeader {
+	background-color: #3330;
+}
+
+.setHed {
+	border: none !important;
+	background-color: transparent;
+}
+
+.setBodH {
+	background-color: rgb(0 0 0 / 0%);
+}
+
+.settingTab {
+	background-color: transparent;
+}
+
+#settingsTabLayout {
+	background-color: rgb(0 0 0 / 0%);
+}
+
+.sliderVal {
+	border: none;
+	background-color: transparent;
+}
+
+.settName,
+.settNameSmall {
+	border-bottom: none;
+}
+
+.sliderM {
+	background-color: #ffffff10 !important;
+	outline: none;
+}
+
+.sliderM::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.inputGrey2 {
+	border: none;
+	background: transparent;
+	color: white;
+}
+
+input:checked + .slider:after {
+	visibility: visible;
+	content: 'on';
+	font-size: 22px;
+	position: relative;
+	left: -7px;
+	color: #fff;
+}
+.slider {
+	width: 28px !important;
+	height: 28px !important;
+	left: 16px;
+	border-radius: 12px;
+	transition: 0.2s !important;
+}
+.slider {
+	visibility: hidden;
+}
+.slider:before {
+	display: none !important;
+}
+.slider::after {
+	visibility: visible;
+	content: 'off';
+	font-size: 22px;
+	position: relative;
+	left: -7px;
+	color: #fff;
+}
+.sliderM::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.settingsBtn {
+	background-color: transparent !important;
+}
+
+input:checked + .slider {
+	background-color: transparent !important;
+}
+
+.slider {
+	background-color: transparent !important;
+}
+
+#mainLogoFace {
+	display: none !important;
+}
+
+#chatList::-webkit-scrollbar,
+#chatSwitch:after {
+	display: none;
+}
+
+#chatInput {
+	background-color: rgba(0, 0, 0, 0.2);
+	border: none;
+	margin-left: -5%;
+	opacity: 0.7;
+	border-radius: 5px;
+	padding: 4px 16px;
+	visibility: visible;
+}
+
+/* #uiBase.onGame #chatInput {
+  visibility: hidden !important;
+} */
+
+#chatSwitch {
+	display: none;
+}
+
+#chatInputHolder {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+}
+
+.headShotChatIcon {
+	display: none !important;
+}
+
+#modVote {
+	display: none;
+}
+
+.progressBarInner,
+.progressBar {
+	display: none;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+	display: none;
+}
+
+#pingDisplay,
+#fpsDisplay,
+#ingressDisplay,
+#egressDisplay,
+#tickDisplay {
+	font-size: 18px;
+	vertical-align: top;
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(0, 0, 0, 0.2);
+	border: none;
+	padding: 5px;
+	margin-bottom: 5px;
+	width: auto;
+	border-radius: 5px;
+}
+
+.leaderItem {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.2);
+	font-size: 18px;
+	border: none;
+	margin-bottom: 5px;
+	padding: 6px 16px;
+	border-radius: 5px;
+	padding-left: 6px !important;
+}
+
+#leaderContainer i[style*='color:#FBC02D'] {
+	display: none !important;
+}
+
+#leaderContainer i[style*='color:#40C4FF'] {
+	display: none !important;
+}
+
+.doubleXPButton {
+	display: none;
+}
+
+#settHolder {
+	margin-top: 150px;
+}
+
+.settingsHeader {
+	position: absolute;
+}
+
+#reloadMsg {
+	background: linear-gradient(
+		to right,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(162, 94, 209, 0.6) 40%,
+		rgba(162, 94, 209, 0.6) 60%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	visibility: hidden;
+}
+#reloadMsg::after {
+	content: '!';
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 360px;
+	clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 50px;
+	height: 50px;
+	padding-bottom: 5px;
+	color: white;
+	font-size: 35px;
+	visibility: visible;
+}
+#reloadMsg::before {
+	content: '';
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, 0);
+	bottom: 357.6px;
+	clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 60px;
+	height: 60px;
+	padding-bottom: 5px;
+	visibility: visible;
+}
+
+#streamContainer,
+#menuClassIcn,
+#mapInfoHld,
+#policeButton,
+#mapVote {
+	display: none !important;
+}
+
+#uiBase.onMenu #spectateUI {
+	bottom: 7% !important;
+}
+
+/* fixes*/
+
+.greyInlineInner,
+.greyInlineInnerMid {
+	background-color: transparent;
+}
+
+.greyInlineInner {
+	display: none;
+}
+
+root {
+	--hpBarWidth: 320px;
+}
+#bottomLeftHealthBar {
+	background: 0px rgba(0, 0, 0, 0.2);
+	column-gap: 0px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	bottom: 25px;
+}
+
+.nHealthBarSeg {
+	height: 40px;
+	-webkit-box-shadow: unset;
+}
+
+.nHealthBarSeg:first-child .nHpBSeg {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.nHealthBarSeg:last-child .nHpBSeg {
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.nHpBSeg {
+	border-radius: 0px;
+}
+.nHealthBarSeg {
+	background: 0;
+	margin-left: -1px;
+}
+#bottomLeftPlayerMid {
+	position: fixed;
+	bottom: 25px;
+	left: 16px;
+}
+#bottomLeftChallIcon {
+	display: none;
+}
+#bottomLeftPlayerMid {
+	width: var(--hpBarWidth);
+}
+
+#bottomLeftChallIcon {
+	display: none;
+}
+
+#bottomLeftHealth {
+	background: transparent;
+	background-color: transparent;
+	position: fixed;
+	bottom: 32px;
+	left: 28px;
+	font-size: 28px;
+	color: white;
+}
+
+/* Removal V2 */
+
+.button,
+#mLevelCont,
+#bottomLeftPlayer,
+#bottomLeftPlayerLeft,
+#bottomLeftPlayerRight,
+#bottomLeftTeamType,
+#bottomLeftTeamName,
+#chatInputHolder,
+.greyInner,
+.greyInlineInner,
+.greyInlineInnerMid,
+#mLevelCont,
+.headerBarLeft,
+.headerBarRight,
+.weapItemInner,
+.weapItem,
+#leaderContainer,
+#bottomLeftHealtBar {
+	background-color: transparent;
+}
+
+#bottomLeftTeamType,
+#ammoIcon,
+#bottomLeftTeamName {
+	display: none !important;
+}
+
+/* Removal V3 */
+.button,
+.button:hover {
+	border: hidden !important;
+	transform: none;
+}
+
+/* Removal V4 */
+
+#matchInfo {
+	visibility: hidden !important;
+}
+
+/* Useless General Gray Shit */
+
+.greyInner,
+.greyInlineInner {
+	background-color: transparent !important;
+}
+
+#bottomLeftClassImg {
+	display: none;
+}
+
+#weapHolder {
+	display: none !important;
+}
+
+#ammoHolder {
+	text-align: right;
+	margin: unset;
+	letter-spacing: 2px;
+	line-height: 80px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.2);
+	transform: translateY(5px) translateX(10px);
+	border-radius: 5px;
+}
+
+#ammoIcon {
+	display: none;
+}
+
+#ammoVal {
+	text-align: right !important;
+	letter-spacing: 2px;
+	font-size: 50px !important;
+}
+#ammoMax {
+	text-align: right;
+	color: white !important;
+	letter-spacing: 2px;
+	font-size: 50px !important;
+	margin-right: 10px;
+}
+
+#windowHolder {
+	display: block !important;
+}
+
+#windowHolder {
+	display: block !important;
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+
+#windowHolder[style*='block'] {
+	opacity: 1;
+}
+
+#windowHolder[style*='none'] * {
+	pointer-events: none;
+}
+
+/* ranked fix*/
+.ranked-matchmaking-status {
+	display: none !important;
+}
+
+/* FIX 8.0.8 */
+/* ign */
+#menuUsernameContainer {
+	display: flex;
+	align-items: center;
+}
+#menuAccountUsername {
+	padding: 0;
+	border: 0;
+}
+#menuAccountUsername:hover {
+	transform: scale(1);
+}
+
+/* customization buttons */
+#classPreviewCanvas {
+	right: -120px;
+	bottom: 120px;
+}
+#menuClassName {
+	bottom: 120px;
+}
+#menuClassSubtext {
+	bottom: 150px;
+}
+#customizeButton {
+	height: auto;
+	padding: 5px;
+	margin: 0 !important;
+
+	line-height: 100%;
+}
+#customizeButton[onclick='playSelect(.1),showWindow(3)'] {
+	bottom: 60px;
+}
+#customizeButton[onclick='playSelect(.1),showWindow(53)'] {
+	bottom: 10px;
+}
+
+/* match info */
+#matchInfoHolder {
+	position: absolute;
+	top: 0;
+	left: 220px;
+
+	border: 0;
+}
+
+/* ad banner hide*/
+#topRightAdHolder {
+	display: none;
+}
