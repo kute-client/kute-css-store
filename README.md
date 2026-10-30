@@ -28,12 +28,39 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 ## Themes and sources
 
+<p align="center"><img src="39e/preview.png" alt="39e" width="100%"></p>
+<h3 align="center"><a href="39e/39e.css">39e</a></h3>
+
+<p align="center">By rei</p>
+
+<p align="center"><b>Source:</b> <a href="https://css.reizu.moe/">rei's website</a><br><b>License:</b> none stated</p>
+
+<hr>
+
 <p align="center"><img src="Arkham/preview.png" alt="Arkham preview" width="100%"></p>
 <h3 align="center"><a href="Arkham/Arkham.css">Arkham</a></h3>
 
 <p align="center">By -deusVult</p>
 
 <p align="center"><b>Source:</b> <a href="https://github.com/deusVult69/krunker-css-arkham">deusVult69/krunker-css-arkham</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Brutal/preview.png" alt="Brutal preview" width="100%"></p>
+<h3 align="center"><a href="Brutal/Brutal.css">Brutal</a></h3>
+
+<p align="center">By -deusVult</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/deusVult69/krunker-css-brutal">deusVult69/krunker-css-brutal</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="E91E4/preview.png" alt="E91E4 preview" width="100%"></p>
+<h3 align="center"><a href="E91E4/E91E4.css">E91E4</a></h3>
+
+<p align="center">By SatanicScripter</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/SatanicScripter/E91E4-krunker-css">SatanicScripter/E91E4-krunker-css</a><br><b>License:</b> none stated</p>
 
 <hr>
 
@@ -64,6 +91,60 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
+<p align="center"><img src="jcstani/preview.png" alt="jcstani preview" width="100%"></p>
+<h3 align="center"><a href="jcstani/jcstani.css">jcstani</a></h3>
+
+<p align="center">By rei & jcStani</p>
+
+<p align="center"><b>Source:</b> <a href="https://css-collection.github.io/">css-collection</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="jcstani_pink/preview.png" alt="jcstani pink preview" width="100%"></p>
+<h3 align="center"><a href="jcstani_pink/jcstani_pink.css">jcstani pink</a></h3>
+
+<p align="center">By jcStani & fi</p>
+
+<p align="center"><b>Source:</b> <a href="https://css-collection.github.io/">css-collection</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="JhonnyWickDoggo/preview.png" alt="JhonnyWickDoggo preview" width="100%"></p>
+<h3 align="center"><a href="JhonnyWickDoggo/JhonnyWickDoggo.css">JhonnyWickDoggo</a></h3>
+
+<p align="center">By JhonnyWickDoggo</p>
+
+<p align="center"><b>Source:</b> <a href="https://css-collection.github.io/">css-collection</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Kamtv/preview.png" alt="Kamtv preview" width="100%"></p>
+<h3 align="center"><a href="Kamtv/Kamtv.css">Kamtv</a></h3>
+
+<p align="center">By Unknown</p>
+
+<p align="center"><b>Source:</b> <a href="https://css-collection.github.io/">css-collection</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="kden/preview.png" alt="kden" width="100%"></p>
+<h3 align="center"><a href="kden/kden.css">kden</a></h3>
+
+<p align="center">By Unknown</p>
+
+<p align="center"><b>Source:</b> <a href="https://css-collection.github.io/">css-collection</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Laxzy_Edited/preview.png" alt="Laxzy Edited" width="100%"></p>
+<h3 align="center"><a href="Laxzy_Edited/Laxzy_Edited.css">Laxzy Edited</a></h3>
+
+<p align="center">By Laxzy & spiegle</p>
+
+<p align="center"><b>Source:</b> <a href="https://css-collection.github.io/">css-collection</a><br><b>License:</b> none stated</p>
+
+<hr>
+
 <p align="center"><img src="LEMONFISH-CSS/preview.png" alt="LEMONFISH CSS" width="100%"></p>
 <h3 align="center"><a href="LEMONFISH-CSS/LEMONFISH_CSS.css">LEMONFISH CSS</a></h3>
 
@@ -88,6 +169,24 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 <p align="center">By tae (<code>whuuayu</code>)</p>
 
 <p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/magical-girl-css">whuuayu/magical-girl-css</a><br><b>License:</b> <a href="Magical-Girl-CSS/LICENSE">GPL-3.0</a></p>
+
+<hr>
+
+<p align="center"><img src="MOF1_V2.2_ThieF_Edition/preview.png" alt="MOF1 V2.2 ThieF Edition preview" width="100%"></p>
+<h3 align="center"><a href="MOF1_V2.2_ThieF_Edition/MOF1_V2.2_ThieF_Edition.css">MOF1 V2.2 ThieF Edition</a></h3>
+
+<p align="center">By epicX67 (<code>Sourav Gain</code>)</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/MOF1/krunker_css">MOF1/krunker_css</a><br><b>License:</b> <a href="MOF1_V2.2_ThieF_Edition/LICENSE">GPL-3.0</a></p>
+
+<hr>
+
+<p align="center"><img src="mtz-client/preview.png" alt="mtz client preview" width="100%"></p>
+<h3 align="center"><a href="mtz-client/mtz-client.css">mtz client</a></h3>
+
+<p align="center">By inadvertently (<code>Ivan</code>)</p>
+
+<p align="center"><b>Source:</b> <a href="https://github.com/inadvertently/mtz-client-css">inadvertently/mtz-client-css</a><br><b>License:</b> none stated</p>
 
 <hr>
 
@@ -136,6 +235,24 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 
 <hr>
 
+<p align="center"><img src="quake/preview.png" alt="quake" width="100%"></p>
+<h3 align="center"><a href="quake/quake.css">quake</a></h3>
+
+<p align="center">By rei</p>
+
+<p align="center"><b>Source:</b> <a href="https://css.reizu.moe/">rei's website</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="reizu/preview.png" alt="reizu" width="100%"></p>
+<h3 align="center"><a href="reizu/reizu.css">reizu</a></h3>
+
+<p align="center">By rei</p>
+
+<p align="center"><b>Source:</b> <a href="https://css.reizu.moe/">rei's website</a><br><b>License:</b> none stated</p>
+
+<hr>
+
 <p align="center"><img src="Skals/preview.png" alt="Skals preview" width="100%"></p>
 <h3 align="center"><a href="Skals/Skals.css">Skals</a></h3>
 
@@ -151,6 +268,42 @@ Open a pull request that adds a folder with your `.css` file, an entry in `index
 <p align="center">By tae (<code>whuuayu</code>), 2026 fixes by Rinkishimo</p>
 
 <p align="center"><b>Source:</b> <a href="https://github.com/whuuayu/krunker-classic-css">whuuayu/krunker-classic-css</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="uwu/preview.png" alt="uwu" width="100%"></p>
+<h3 align="center"><a href="uwu/uwu.css">uwu</a></h3>
+
+<p align="center">By rei</p>
+
+<p align="center"><b>Source:</b> <a href="https://css.reizu.moe/">rei's website</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="uwu_quake/preview.png" alt="uwu quake" width="100%"></p>
+<h3 align="center"><a href="uwu_quake/uwu_quake.css">uwu quake</a></h3>
+
+<p align="center">By rei</p>
+
+<p align="center"><b>Source:</b> <a href="https://css.reizu.moe/">rei's website</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="Verb/preview.png" alt="Verb" width="100%"></p>
+<h3 align="center"><a href="Verb/Verb.css">Verb</a></h3>
+
+<p align="center">By tae (<code>whuuayu</code>)</p>
+
+<p align="center"><b>Source:</b> <a href="https://css-collection.github.io/">css-collection</a><br><b>License:</b> none stated</p>
+
+<hr>
+
+<p align="center"><img src="xCirno/preview.png" alt="xCirno" width="100%"></p>
+<h3 align="center"><a href="xCirno/xCirno.css">xCirno</a></h3>
+
+<p align="center">By rei</p>
+
+<p align="center"><b>Source:</b> <a href="https://css.reizu.moe/">rei's website</a><br><b>License:</b> none stated</p>
 
 <hr>
 

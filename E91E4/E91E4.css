@@ -1,0 +1,761 @@
+.iconProfile {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/746134468615471205/profile-white.png?width=96&height=96);
+}
+
+.iconShop {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/746134460231188520/shop-white.png?width=96&height=96);
+}
+
+.iconChall {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/746134462701764700/chall-white.png?width=96&height=96);
+}
+
+ .iconSocial {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/746134461564846111/social-white.png?width=96&height=96);
+}
+
+
+ .iconGames {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/746134465360691250/games-white.png?width=96&height=96);
+}
+
+.iconMods {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/746134466769977446/mods-white.png?width=96&height=96);
+}
+
+.iconSettings {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/746134458758856725/settings-white.png?width=96&height=96);
+}
+
+
+
+.menuItem:hover .iconProfile {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/755895020472762378/profile-white.png?width=96&height=96);
+}
+
+.menuItem:hover .iconShop {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/755895023182282894/shop-white.png?width=96&height=96);
+}
+
+.menuItem:hover .iconChall {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/755895015309574344/chall-white.png?width=96&height=96);
+}
+
+.menuItem:hover .iconSocial {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/755895024969056306/social-white.png?width=96&height=96);
+}
+
+
+.menuItem:hover .iconGames {
+    background-image: url(https://media.discordapp.net/attachments/709042064721182781/755895017595469894/games-white.png?width=96&height=96);
+}
+
+.menuItem:hover .iconMods {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/755895018979328041/mods-white.png?width=96&height=96);
+}
+
+.menuItem:hover .iconSettings {
+    background-image: url(https://cdn.discordapp.com/attachments/709042064721182781/755895021894631554/settings-white.png?width=96&height=96);
+}
+
+
+
+
+#newsHolder {
+    display: none!important;
+}
+
+#customizeButton {
+    bottom: 210px;
+    height: 300px;
+    color: transparent!important;
+    background-color: transparent!Important;
+    box-shadow: none!important;
+    top: -300px;
+    left: -27px;
+    transform: scale(1.3);
+    clip-path: polygon(43% 31%, 49% 24%, 69% 26%, 70% 48%, 80% 51%, 85% 59%, 73% 73%, 73% 94%, 40% 96%, 41% 86%, 29% 83%, 29% 73%, 17% 81%, 15% 73%, 20% 74%, 22% 69%, 26% 65%, 28% 51%, 42% 48%, 43% 42%);
+}
+
+
+#menuBtnHost{
+background-color: #FF033E!important;
+  border-radius: 50px;
+}
+
+#menuBtnBrowser{
+background-color: #FF033E!important;
+border-radius: 50px;
+}
+
+#menuBtnRanked{
+background-color: #FF033E!important;
+border-radius: 50px;
+}
+
+#menuBtnJoin{
+background-color: #FF033E!important;
+border-radius: 50px;
+}
+
+#inviteButton{
+background-color: #FF033E!important;
+border-radius: 50px;
+}
+
+.menuItem {
+   transition: 0.8s;
+}
+
+.menuItem:hover {
+   transform:scale(1.06)!important;
+   transition: 0.8s;
+}
+
+#menuLevelBar.progressBarInner{
+background-color: #032DFF!important;
+}
+
+#termsInfo{
+display: none;
+}
+
+.downloadClient {
+ background-image: url(https://media.discordapp.net/attachments/726223030753165373/756999714590949416/discord-normal.png?width=60&height=69)!important;
+}
+
+.discordSocial {
+ background-image: url(https://media.discordapp.net/attachments/726223030753165373/756999535154298991/discord-normal.png?width=60&height=69)!important;
+}
+
+
+.redditSocial {
+ background-image: url(https://media.discordapp.net/attachments/726223030753165373/756999872049184818/discord-normal.png?width=60&height=69)!important;
+}
+
+.twitterSocial {
+ background-image: url(https://media.discordapp.net/attachments/726223030753165373/757000092338094131/discord-normal.png?width=60&height=69)!important;
+}
+
+#streamContainer {
+    display: none;
+}
+
+#uiBase.onMenu #voiceDisplay {
+    display: none;
+}
+
+#merchImg {
+    display: none;
+}
+
+
+
+#aContainer {
+    display: none!important;
+}
+
+
+#androidDB {
+    display: none;
+}
+
+#androidDB:hover {
+    display: none;
+}
+
+#iosDB {
+  display:none;
+}
+
+#marketHolder {
+    top: 102px!important;
+    bottom: 100px!important
+}
+
+#steamDB {
+    display: none;
+}
+
+
+
+#ammoIcon {
+    display: none;
+}
+
+#timerIcon {
+    display: none;
+}
+
+
+#ammoIcon {
+    display: none;
+}
+#braveWarning {
+	display: none !important;
+}
+
+
+.weapKey {
+	display: none;
+}
+
+
+#streakCount {
+    position: fixed;
+    transform: translateX(-50%);
+    top: 85%;
+    left: 50%;
+    background-color: transparent;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+
+.weapItem {
+    margin-top: 0;
+}
+
+.weapKey {
+    display: none;
+}
+
+
+#killCardHolder {
+    bottom: 125px;
+}
+
+#reloadMsg {
+    bottom: 120px;
+    background: transparent !important;
+}
+
+#gameMessage {
+    top: 60px;
+    font-size: 27px;
+}
+
+#chatHolder {
+     transition: 0.4s ease-in-out
+}
+
+
+@font-face {
+  font-family: gamefont;
+  src: url(https://fonts.gstatic.com/s/aldrich/v11/MCoTzAn-1s3IGyJMVacY37H6D_A.woff2)
+}
+#uiBase.onMenu #voiceDisplay {
+    display: none;
+}
+#timerVal{
+color:#000000!important;	
+}	
+#timerDisplay {
+    text-align: center;
+    position: fixed;
+    transform: translateX(-50%);
+    top: 80%;
+    left: 50%;
+    padding: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: transparent;
+    will-change: unset;
+}
+
+#hudClassIcon {
+    display: none!important;
+}
+
+#mainLogo {
+    display: none;
+}
+
+.krSocial {
+    display: none;
+}
+
+.menuClassPlayerVirus {
+    display: none; 
+}
+
+#policeButton {
+    display:none!important;
+}
+
+@font-face {
+	font-family: hpammo;
+	src: url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_c5H3gnD_g.woff2);
+}
+
+.endCard{
+backdrop-filter: blur(5px)!important;
+}
+
+
+.skinList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  position: relative;
+}
+
+.skinList .classCard {
+  width: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: var(--mainFont);
+  text-shadow: unset;
+  height: 100px;
+  -webkit-transition: color 280ms 200ms;
+  transition: color 280ms 200ms;
+}
+
+.skinList .classCard .classWeap {
+  font-family: var(--mainFont);
+  text-shadow: unset;
+  -webkit-transition: opacity 280ms 200ms;
+  transition: opacity 280ms 200ms;
+}
+
+.skinList .classCard .classImgC {
+  position: absolute;
+  margin-top: unset;
+  width: 100px;
+  margin: unset;
+  right: 0;
+  border-radius: 0;
+  z-index: 12222 !important;
+  -webkit-transition: -webkit-transform 500ms 200ms ease-in-out;
+  transition: -webkit-transform 500ms 200ms ease-in-out;
+  transition: transform 500ms 200ms ease-in-out;
+  transition: transform 500ms 200ms ease-in-out, -webkit-transform 500ms 200ms ease-in-out;
+}
+
+.skinList .classCard .classXPBar {
+  BOX-SHADOW: unset;
+  position: absolute;
+  top: unset;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 0;
+  background-color: var(--primaryBg);
+  -webkit-transition: opacity 280ms 200ms;
+  transition: opacity 280ms 200ms;
+}
+
+.skinList .classCard .classXPBar .clsXPBarC {
+  background-color: var(--accentColor);
+  margin: unset;
+  height: 100%;
+}
+
+.skinList .classCard .classLvl {
+  font-family: var(--mainFont);
+  text-shadow: unset;
+  position: absolute;
+  top: unset;
+  bottom: 10%;
+  font-size: 20px;
+  -webkit-transition: opacity 280ms 200ms ease;
+  transition: opacity 280ms 200ms ease;
+  width: 100%;
+  text-align: left;
+  left: 10px;
+}
+
+.skinList .classCard .classHP {
+  font-family: var(--mainFont);
+  text-shadow: unset;
+  color: var(--c_white);
+  position: absolute;
+  top: unset;
+  left: 13px;
+  font-size: 20px;
+  bottom: 30%;
+  right: -25%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: opacity 280ms 200ms;
+  transition: opacity 280ms 200ms;
+}
+
+.skinList .classCard .classHP span {
+  font-family: var(--mainFont);
+  text-shadow: unset;
+  color: var(--accentColor);
+}
+
+.skinList .classCard:hover {
+  color: transparent;
+}
+
+.skinList .classCard:hover .classWeap {
+  opacity: 0%;
+}
+
+.skinList .classCard:hover .classImgC {
+  -webkit-transform: translateX(-115px) scale(2) translateY(10px);
+          transform: translateX(-115px) scale(2) translateY(10px);
+}
+
+.skinList .classCard:hover .classXPBar {
+  opacity: 0%;
+}
+
+.skinList .classCard:hover .classLvl {
+  opacity: 0%;
+}
+
+.skinList .classCard:hover .classHP {
+  opacity: 0%;
+}
+
+#skinList {
+  margin-top: 8px;
+  margin-bottom: -4px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#skinList .skinCard {
+  text-align: unset;
+  margin-bottom: unset;
+  margin-left: unset;
+  margin-right: unset;
+  padding: unset;
+  padding-top: unset;
+  width: auto;
+  vertical-align: unset;
+  background-color: transparent;
+  border-radius: 0px;
+  display: block;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-left: 0 !important;
+  padding-bottom: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: var(--mainFont);
+  text-shadow: unset !important;
+  height: 120px !important;
+}
+
+#skinList .skinCard .itemOwn {
+  display: none;
+}
+
+#skinList .skinCard .itemSea {
+  display: none;
+}
+
+#skinList .skinCard .skinImg {
+  margin-top: unset;
+  margin-bottom: unset;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  right: 40px;
+}
+
+#skinList .skinCard .skinImgC {
+  position: absolute;
+  z-index: -122;
+  left: 25%;
+}
+
+#skinList .skinCard .skinImgD {
+  position: absolute;
+  left: 65px;
+  bottom: -20px;
+}
+
+#skinList .skinCard .skinRandom {
+  display: none;
+}
+
+#skinList .skinCard .secImg {
+  position: absolute;
+  left: 60px;
+  top: 10px;
+  z-index: -1 !important;
+  width: 80px;
+  height: 80px;
+}
+
+#skinList .skinCard .selctInfoBtn {
+  padding: unset;
+  padding-bottom: unset;
+  padding-top: unser;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--accentColor);
+  font-family: var(--mainFont);
+  font-size: 20px;
+  background: var(--subBgST);
+  padding-left: 12px;
+  padding-right: 12px;
+  -webkit-transition: color 280ms, background 280ms;
+  transition: color 280ms, background 280ms;
+}
+
+#skinList .skinCard .selctInfoBtn:hover {
+  color: var(--subBg);
+  background: var(--accentColor);
+}
+
+#skinList .skinCard[style="color:#292929;border:5px solid#292929"] {
+  -webkit-animation: contraCard 500ms infinite;
+          animation: contraCard 500ms infinite;
+}
+
+#skinList .noBtnCard {
+  height: 120px;
+  width: auto;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  border-top: 0 !important;
+  margin-left: unset;
+  margin-right: unset;
+  margin-bottom: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: var(--mainFont);
+  text-shadow: unset !important;
+  height: 120px !important;
+}
+
+#skinList .noBtnCard .sprayImg, #skinList .noBtnCard .noBtnImgC {
+  position: absolute;
+  left: 60px;
+  top: 10px;
+  z-index: -1 !important;
+  width: 80px;
+  height: 80px;
+}
+#mapInfoHolder::after {
+    content: 'css by ComputerGeek';
+    visibility: visible;
+    font-size: 15px;
+  background: #868686;
+}
+
+#skinList .noBtnCard .noBtnImgR {
+  position: absolute;
+  left: 95px;
+  top: 40px;
+  z-index: -1 !important;
+  width: 30px;
+  height: 30px;
+}
+
+#skinList .noBtnCard .customReticle {
+  position: absolute;
+  top: 40px;
+  width: 182px;
+}
+
+#skinList .noBtnCard .itemOwn {
+  display: none;
+}
+
+#skinList .noBtnCard .skinRandom {
+  display: none;
+}
+
+#skinList .blackShad {
+  text-shadow: unset;
+}
+
+
+
+
+#onetrust-consent-sdk {
+    display: none!important
+}
+
+#ammoMax {
+   display:none!important;
+}
+
+
+
+#profileKR::before {
+    content: "You have ";
+}
+
+#profileKR {
+    font-size: 15px;
+    color: rgb(255 255 255);
+}
+
+#profileName::before {
+    visibility: visible;
+    content: "Welcome, ";
+}
+
+#hudClassIcon {
+    display: none;
+}
+
+#healthValueHolder {
+    background-color: transparent;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    left: 30%;
+    bottom: 25%;
+    padding: 0;
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    align-items: center;
+}
+
+#healthValue {
+    font-size: 48px;
+    text-align: center;
+    color:#000000!important;
+}
+
+#maxHP {
+    display: none;
+}
+
+#challIcon {
+    display: none !important;
+}
+
+#healthBar {
+    display: none;
+}
+
+#ammoDisplay {
+    background-color: transparent;
+    letter-spacing: 0;
+    width: 100px;
+    height: 65px;
+    border-radius: 0;
+    position: fixed;
+    right: 31%;
+    bottom: 25%;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    transform: none;
+}
+
+#ammoVal {
+    font-size: 48px;
+    margin-left: 12px;
+    color:#000000!important;
+
+}
+
+#ammoMax {
+    display: none;
+}
+
+#ammoIcon {
+    display: none;
+}
+
+#reloadMsg {
+    bottom: 100px;
+    background: transparent !important;
+}
+#weapDisplay {
+    
+    display:flex!important;
+    flex-direction: row !important;
+    bottom:20px!important;
+	right: 50%;
+    transform: translateX(50%);
+}
+
+#pingText {
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px black;
+    color: #b8b8b8;
+}
+
+#chatHolder {
+    display: absolute !important;
+    bottom: 20px !important;
+}
+
+#ingameFPS {
+    letter-spacing: 1px;
+     font-size: 25px;
+	text-shadow: 2px 2px black;
+    color: #ffffff !important;
+    visibility: visible!important;
+}
+
+#seasonLabel {
+    display: none;
+}
+
+#ammoDisplay {
+    width: 50px;
+    height: 5px;
+    
+}
+
+#pingDisplay .material-icons {
+    display: none!important;
+}
+
+#fpsDisplay {
+    visibility: hidden!important;
+}

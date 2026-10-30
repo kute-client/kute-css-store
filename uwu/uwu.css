@@ -1,0 +1,24 @@
+@import url(https://css.reizu.moe/uwu/uwu.css);
+
+:root {
+    --text-color: #3f3f3f;
+    --accent-color: #cfbfff;
+    --health-color: #fff;
+    --ammo-color: #fff;
+    --premium-color: #cfbfff;
+    --verified-color: #cfbfff;
+    --menu-bg-color: rgba(255, 255, 255, 1);
+    --menu-bg-color-secondary: rgba(230, 230, 230, 1);
+    --ingame-bg-color: rgba(15, 15, 15, .2);
+    --text-transform: none;
+}
+
+@font-face {
+    font-family: gamefont;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}
+
+@font-face {
+    font-family: hpammo;
+    src: url(https://raw.githubusercontent.com/South-Paw/typeface-vag-rounded/master/files/vag-rounded-400.woff2);
+}

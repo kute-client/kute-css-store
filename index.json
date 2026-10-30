@@ -1,12 +1,33 @@
 [
   {
+    "id": "39e",
+    "name": "39e",
+    "author": "rei",
+    "file": "39e/39e.css",
+    "preview": "39e/preview.png"
+  },
+  {
     "id": "arkham",
     "name": "Arkham",
     "author": "-deusVult",
     "file": "Arkham/Arkham.css",
     "preview": "Arkham/preview.png"
   },
-    {
+  {
+    "id": "brutal",
+    "name": "Brutal",
+    "author": "-deusVult",
+    "file": "Brutal/Brutal.css",
+    "preview": "Brutal/preview.png"
+  },
+  {
+    "id": "E91E4",
+    "name": "E91E4",
+    "author": "SatanicScripter",
+    "file": "E91E4/E91E4.css",
+    "preview": "E91E4/preview.png"
+  },
+  {
     "id": "ephemeral",
     "name": "ephemeral",
     "author": "ashevoy",
@@ -28,6 +49,48 @@
     "preview": "Glass_v1/preview.png"
   },
   {
+    "id": "jcstani",
+    "name": "jcstani",
+    "author": "rei & jcStani",
+    "file": "jcstani/jcstani.css",
+    "preview": "jcstani/preview.png"
+  },
+  {
+    "id": "jcstani_pink",
+    "name": "jcstani pink",
+    "author": "jcStani & fi",
+    "file": "jcstani_pink/jcstani_pink.css",
+    "preview": "jcstani_pink/preview.png"
+  },
+  {
+    "id": "JhonnyWickDoggo",
+    "name": "JhonnyWickDoggo",
+    "author": "JhonnyWickDoggo",
+    "file": "JhonnyWickDoggo/JhonnyWickDoggo.css",
+    "preview": "JhonnyWickDoggo/preview.png"
+  },
+  {
+    "id": "Kamtv",
+    "name": "Kamtv",
+    "author": "Unknown",
+    "file": "Kamtv/Kamtv.css",
+    "preview": "Kamtv/preview.png"
+  },
+  {
+    "id": "kden",
+    "name": "kden",
+    "author": "Unknown",
+    "file": "kden/kden.css",
+    "preview": "kden/preview.png"
+  },
+  {
+    "id": "Laxzy_Edited",
+    "name": "Laxzy Edited",
+    "author": "Laxzy & spiegle",
+    "file": "Laxzy_Edited/Laxzy_Edited.css",
+    "preview": "Laxzy_Edited/preview.png"
+  },
+  {
     "id": "LEMONFISH-CSS",
     "name": "LEMONFISH CSS",
     "author": "tae & ameer",
@@ -47,6 +110,20 @@
     "author": "tae",
     "file": "Magical-Girl-CSS/Magical-Girl-CSS.css",
     "preview": "Magical-Girl-CSS/preview.png"
+  },
+  {
+    "id": "MOF1_V2.2_ThieF_Edition",
+    "name": "MOF1 V2.2 ThieF Edition",
+    "author": "epicX67",
+    "file": "MOF1_V2.2_ThieF_Edition/MOF1_V2.2_ThieF_Edition.css",
+    "preview": "MOF1_V2.2_ThieF_Edition/preview.png"
+  },
+  {
+    "id": "mtz-client",
+    "name": "mtz client",
+    "author": "inadvertently",
+    "file": "mtz-client/mtz-client.css",
+    "preview": "mtz-client/preview.png"
   },
   {
     "id": "neonbar",
@@ -84,6 +161,20 @@
     "preview": "OMORI-CSS/preview.png"
   },
   {
+    "id": "quake",
+    "name": "Quake",
+    "author": "rei",
+    "file": "quake/quake.css",
+    "preview": "quake/preview.png"
+  },
+  {
+    "id": "reizu",
+    "name": "reizu",
+    "author": "rei",
+    "file": "reizu/reizu.css",
+    "preview": "reizu/preview.png"
+  },
+  {
     "id": "skals",
     "name": "Skals",
     "author": "Skal",
@@ -96,6 +187,34 @@
     "author": "Tae & Rinkishimo",
     "file": "tae_og_2018_css/tae_og_2018_css.css",
     "preview": "tae_og_2018_css/preview.png"
+  },
+  {
+    "id": "uwu",
+    "name": "uwu",
+    "author": "rei",
+    "file": "uwu/uwu.css",
+    "preview": "uwu/preview.png"
+  },
+  {
+    "id": "uwu_quake",
+    "name": "uwu quake",
+    "author": "rei",
+    "file": "uwu_quake/uwu_quake.css",
+    "preview": "uwu_quake/preview.png"
+  },
+  {
+    "id": "Verb",
+    "name": "Verb",
+    "author": "tae",
+    "file": "Verb/Verb.css",
+    "preview": "Verb/preview.png"
+  },
+  {
+    "id": "xCirno",
+    "name": "xCirno",
+    "author": "xCirno",
+    "file": "xCirno/xCirno.css",
+    "preview": "xCirno/preview.png"
   },
   {
     "id": "yuki_aim_css",
