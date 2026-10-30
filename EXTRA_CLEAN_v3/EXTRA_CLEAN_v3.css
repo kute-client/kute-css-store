@@ -1,375 +1,442 @@
 /* (extra clean v3) thaddeuz css by https://www.youtube.com/@thaddeuz_ */
 /* Please credit me if you want to redistribute this code as part of your code. */
 
-/* Updated 31 December 2023 */
+/* Updated: 27/09/2024 */
+/* Updated by Swuffy: 18/09/2026 */
 
 :root {
-    --div-grey: transparent;
-    --div-black: transparent;
-}
+      --div-grey: transparent;
+      --div-black: transparent;
+      --text-shadow: 2px 2px 3px rgba(30, 30, 30, .5)
+  }
+    
+     /* font */
   
-   /* font */
-
-@font-face {
-      font-family: gamefont;
-      src: url(https://dl.dropboxusercontent.com/scl/fi/msn19ofgvofwm12oqt182/Montserrat-Regular.ttf?rlkey=2q0iowy5xlg5db9v7pxyfcvqc&dl=0);
+  @font-face {
+        font-family: gamefont;
+        src: url(https://dl.dropboxusercontent.com/scl/fi/msn19ofgvofwm12oqt182/Montserrat-Regular.ttf?rlkey=2q0iowy5xlg5db9v7pxyfcvqc&dl=0)
+  }
+  
+  /* menu css */
+  
+  
+  .button, .button:hover { 
+        background-color: transparent !important;
+        border: hidden !important
+  }
+  
+     /* top left */
+  
+  #mLevelCont, .headerBarLeft, .headerBarRight {
+        background-color: transparent
+  }
+  
+  #menuAccountUsername {
+        font-size: 23px;
+        padding-top: 4px;
+        padding-left: 6px
+  }
+  
+  .verticalSeparator {
+        opacity: 0
+  }
+  
+  .progressBar {
+        height: 8px;
+        margin-top: -4px;
+        background-color: rgba(0, 0, 0, 0.15)
+  }
+  
+  .progressBarInner {
+        background-image: linear-gradient(to right,lightslategray, white)
+  }
+  
+  #mailContainer {  
+        padding-bottom: 3px
+  }
+  
+  #mLevelContV {
+        font-size: 60px
+  }
+  
+  .krInfo {
+        font-size: 20px !important;
+        position: fixed;
+        top: 89px;
+        left: 20px
+  }
+  
+  .junkInfo {
+        font-size: 20px !important;
+        position: fixed;
+        top: 94px;
+        left: 140px
+  }
+  
+     /* left */
+  
+  .material-icons-outlined, span.material-symbols-outlined {
+        color: white !important
+  }
+  
+  #menuItemContainer {
+    position: absolute !important;
+    left: 0px !important;
+    margin-left: 0px !important; 
+    padding-left: 15px; 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    display: flex;
+    flex-direction: column;
+    background: rgb(0 0 0 / 44%);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
 }
 
-/* menu css */
+     /* remove click to play animation */
+  
+  #instructions {
+        animation: none
+  }
+  
+     /* removal */
+     
+  #matchInfo.topLeftOld,
+  #timerIcon, 
+  #bottomLeftClassImg, #bottomLeftHealth, #bottomLeftTeamHolder, #bottomLeftChallIcon,
+  #voiceIcon, #recTimer, #chatSwitch,
+  #ammoMax, #ammoIcon, 
+  #aHolder, .endAHolder, #topRightAdHolder, #tlInfHold, .menuSocialB, 
+  #seasonLabel, #termsInfo, #streamContainer, #mapInfoHld,
+  #mainLogo, #mainLogoFace, #policeButton, #menuMiniProfilePic,
+  #menuClassSubtext, #menuClassName, #menuClassIcn, #customizeButton .material-icons,
+  .weapSkin, .weapStreakHolder, .weapStreakInner,.weapKey,
+  #editorBtnM {
+        display: none !important
+  }
+  
+     /* health bar */
+  
+  #bottomLeftHealthBar {
+        width: 200px;
+        position: fixed;
+        left: calc(50% - 110px);
+        bottom: 25px
+  }
+  
+  .nHealthBarSeg {
+        height: 21px;
+        margin: 0 -3.88px;
+        background:transparent
+  }
+  
+     /* ammo (inspo from jitchu and angel wings) */
+  
+  #ammoHolder {
+        position: fixed;
+        top: calc(50% + 35px);
+        left: calc(50% - 30px);
+        transform: unset;
+        height: 7px;
+        width: 60px;
+        background-image: linear-gradient(to right,rgb(255 255 255),rgb(255 255 255))
+  }
+  
+  #ammoVal {
+        font-size: 40px;
+        display: inline-block;
+        position: fixed;
+        left: calc(50% + 110px);
+        bottom: 22px;
+        text-shadow: var(--text-shadow)
+  }
+  
+     /* counters */
+  
+  #killsVal,#deathsVal,#streakVal,#myScoreVal,#kdVal {
+        color: white;
+        font-size: 30px;
+        text-shadow: var(--text-shadow)
+  }
+  
+  #killsIcon,#deathsIcon,#streakIcon,#kdIcon {
+        width: 25px;
+        height: 25px
+  }
 
-   /* bottom hover cred shotzz */
+  #leaderContainer {
+        text-shadow: var(--text-shadow)
+  }
+  
+     /* fps and ping */
 
-#subLogoButtons {
+  #fpsDisplay {
+        padding-top: 12px;
+  }
+
+  #menuFPSDisplay,#menuFPS,#ingameFPS,#fpsDisplay,
+  #menuPingText,#menuPingDisplay .material-icons,#pingDisplay,#pingText {
+        color: rgb(255, 255, 255) !important;
+        text-shadow: var(--text-shadow)
+  }
+  
+    /* chat */
+  
+  #chatInput {
+        background-color: transparent;
+        position:absolute;
+        left:0px;
+        border: 2px solid transparent;
+        text-shadow: var(--text-shadow)
+  }
+  
+  #chatList {
+        background-color: transparent
+  }
+  
+  .chatItem {
+        font-size: 18px;
+        max-width: 265px;
+        text-shadow: var(--text-shadow)
+  }
+    
+  .chatItem span[style="color:#fc03ec"] {
+        color: #eb8787 !important
+  }
+  
+  #uiBase.onGame #chatHolder {
+        bottom: 18px
+  }
+  
+    /* settings */
+  
+  .settName,.settNameSmall {
+        color: white !important
+  }
+  
+  #menuWindow.dark {
+    background-color: #000000b0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: -3px -2px 8px rgb(195 195 195 / 0%);
+    backdrop-filter: blur(8px);
+  }
+  
+  #menuItemContainer {
+      width: 360px !important;
+      min-width: 360px !important;
+      max-width: 360px !important;
+      box-sizing: border-box !important;
+      transform: translateX(-360px) !important; 
+      opacity: 0 !important;
+      transition: all 0.4s ease-in-out !important;
+      z-index: 9999 !important;
+  }
+  
+  #menuItemContainer .menuItem {
+      width: 100% !important;
+      box-sizing: border-box !important;
+  }
+  
+  #menuItemContainer:hover {
+      transform: translateX(0px) !important;
+      opacity: 1 !important;
+  }
+  
+  #menuItemContainer::after {
+      content: "" !important;
+      position: absolute !important;
+      top: -50vh !important;
+      bottom: -50vh !important;
+      left: -200px !important;
+      right: -400px !important;
+      width: calc(100% + 600px) !important;
+      pointer-events: auto !important;
+      background: transparent !important;
+      z-index: 1 !important;
+  }
+  
+  #menuItemContainer > * {
+      position: relative !important;
+      z-index: 10 !important;
+      pointer-events: auto !important;
+  }
+  
+  #subLogoButtons {
       position: absolute !important;
       display: flex !important;
       flex-direction: row !important;
-      transform: translateY(210px);
-      left: calc(50% - 250px) !important;
-      transition: 1.8s !important
-}
-
-#subLogoButtons::before {
-      content: '';
-      border-left: 1000px solid #ff000000 !important;
-      border-bottom: 240px solid #ff000000 !important;
-      border-right: 1000px solid #ff000000 !important;
-      position: absolute !important;
-      bottom: 60px !important;
-      right: -600px !important;
-      pointer-events: auto !important
-}
-
-#subLogoButtons:hover {
-      transform: translateY(0px);
-      transition: 0.5s !important
-}
-
-.button, .button:hover { 
-      background-color: transparent !important;
-      border: hidden ! important;
-}
-
-   /* top left */
-
-#mLevelCont,
-      .headerBarLeft,
-      .headerBarRight {
-      background-color: transparent;
-}
-
-#menuAccountUsername {
-      font-size  : 23px;
-      padding-top: 4px;
-      padding-left: 6px;
-}
-
-.verticalSeparator {
-      opacity:0
-}
-
-.progressBar {
-      height: 8px;
-      margin-top: -4px;
-      background-color: rgba(0, 0, 0, 0.15);
-}
-
-.progressBarInner {
-      background-image: linear-gradient(to right,#adadad, #ffffff);
-}
-
-#mailContainer {  
-      padding-bottom: 3px;
-}
-
-#mLevelContV {
-      font-size  : 60px;
-}
-
-.krInfo {
-      font-size: 20px !important;
-      position : fixed;
-      top      : 89px;
-      left     : 20px;
-}
-
-.junkInfo {
-      font-size: 20px !important;
-      position : fixed;
-      top      : 94px;
-      left     : 140px;
-}
-
-   /* left */
-
-.material-icons-outlined, span.material-symbols-outlined {
-      color: #fff !important
-}
-
-#menuItemContainer {
-      background: transparent
-}
-
-   /* hud class popup */
-
-#menuClassContainer:hover #classPreviewCanvas {
-      transform: unset !important;
-}
-
-#classPreviewCanvas {
-      transform: translateY(5000000px);
-      margin-bottom: -135px;
-      margin-right: -113px;
-}
-
-#customizeButton {
-      font-size: 700px!important;
-      opacity:0
-}
-
-   /* remove click to play animation */
-
-#instructions {
-      animation: none
-}
-
-   /* removal */
-#timerIcon, 
-#bottomLeftClassImg, 
-#bottomLeftHealth,
-#bottomLeftTeamHolder,
-#voiceIcon,
-#recTimer, 
-#bottomLeftChallIcon,
-#ammoMax,
-#ammoIcon,
-#weapHolder, 
-#matchInfo,
-#aHolder,
-.endAHolder,
-#topRightAdHolder, 
-#seasonLabel,
-#termsInfo,
-#streamContainer,
-#mapInfoHld,
-#mainLogo,
-#mainLogoFace,
-#tlInfHold,
-.menuSocialB,
-#policeButton,
-#menuMiniProfilePic,
-#menuClassSubtext,
-#menuClassName,
-#menuClassIcn,
-#customizeButton .material-icons,
-.menuItem .menuItemTitle,
-#chatSwitch,
-#editorBtnM,
-#matchInfo.topLeftOld {
-      display: none !important;
-}
-
-   /* health bar */
-
-#bottomLeftHealthBar {
-      width: 200px;
-      position: fixed;
-      left: calc(50% - 110px);
-      bottom: 25px;
-}
-
-.nHealthBarSeg {
-      height: 21px;
-      margin: 0 -3.88px;
-      background:transparent
-}
-
-   /* ammo - THANKS JITCHU */
-
-   #ammoHolder {
-      position: fixed;
-      top: calc(50% + 40px);
-      left: calc(50% - 40px);
-      transform: unset;
-      height: 8px;
-      margin: 0;
-      padding: 0;
-      width: 80px;
-      background-color: transparent!important;
-      background-image: linear-gradient(to right,rgb(255 255 255),rgb(255 255 255));
-}
-#ammoMax,
-#ammoIcon {
-      display: none !important;
-}
-  .greyInner {
-      background-color: #FFF0;
-}
-  #ammoVal {
-      -webkit-text-stroke: 4px #000;
-      text-shadow: 7px 7px black, 6px 6px black, 5px 5px black, 4px 4px black, 3px 3px black, 2px 2px black, 1px 1px #000;
-      font-size: 60px;
-      font-family: 'Montserrat', sans-serif!important;
-      font-weight: 700;
-      position: fixed;
-      bottom: 150px;
-      left: 520px;
-}
-  #ammoMax, #ammoIcon {
-      display: none;
-}
-  .greyInner {
-      background-color: #FFF0;
-}
-  #ammoVal {
-      -webkit-text-stroke: 4px #000;
-      text-shadow: 7px 7px black, 6px 6px black, 5px 5px black, 4px 4px black, 3px 3px black, 2px 2px black, 1px 1px #000;
-      font-size: 60px;
-      font-family: 'Montserrat', sans-serif!important;
-      font-weight: 700;
-      position: fixed;
-      bottom: 150px;
-      left: 520px;
-}
-#ammoVal {
-      font-size: 40px;
-      display: inline-block;
-      position: fixed;
-      left: calc(50% + 110px);
-      bottom: 22px;
-      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
-}
-
-   /* counters */
-
-#killsVal,#deathsVal,#streakVal,#myScoreVal,#kdVal {
-      color: white;
-      font-size: 30px;
-      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
-}
-
-#killsIcon,#deathsIcon,#streakIcon,#kdIcon {
-      width: 25px;
-      height: 25px;
-}
-
-   /* fps and ping */
-
-#menuFPSDisplay,#menuFPS,#ingameFPS,#fpsDisplay,
-#menuPingText,#menuPingDisplay .material-icons,#pingDisplay,#pingText {
-      color: rgb(255, 255, 255) !important;
-      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
-}
-
-  /* chat */
-
-#chatInput {
-      background-color: rgba(0, 0, 0, 0);
-      position:absolute;
-      left:0px;
-      border: 2px solid rgba(0,0,0,0);
-}
-
-#chatList {
-      background-color: rgba(0, 0, 0, 0);
-}
-
-.chatItem {
-      font-size: 18px;
-      max-width: 265px;
-      text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
-}
+      left: 50% !important;
+      transform: translate(-50%, 150px) !important;
+      opacity: 0;
+      transition: all 0.4s ease-out !important;
+      z-index: 9999 !important;
+  }
   
-.chatItem span[style="color:#fc03ec"] {
-      color: #eb8787 !important;
-}
-
-#uiBase.onGame #chatHolder {
-      bottom: 18px
-}
-
-  /* settings */
-
-.settName,.settNameSmall {
-      color: white !important;
-}
-
-#menuWindow.dark,
+  #subLogoButtons:hover {
+      transform: translate(-50%, 0px) !important;
+      opacity: 1;
+  }
+  
+  #subLogoButtons::before {
+      content: '';
+      position: absolute !important;
+      width: 300vw !important; 
+      height: 1000px !important;
+      bottom: -500px !important; 
+      left: -150vw !important; 
+      pointer-events: auto !important;
+      z-index: -1 !important;
+  }
 .settingsHeader,
-.settingsBtn{
-      background-color: black;
+.settingsBtn {
+    background-color: black;
+  }
+  
+  input[type=color],
+  .setHed {
+        border: 4px solid #d5bfff;
+        background-color: black
+  }
+  
+  input:checked+.slider {
+        background-color: #d5bfff
+  }
+
+.endTableN span[style="color:#fff"]::before {
+    font-family: 'Material Icons'; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    content: "check_circle";
+    color: #40C4FF;
+    margin-top: -3px;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: -4px;
 }
 
-input[type=color],
-.setHed {
-      border: 4px solid #c1a0ff;
-      background-color: black;
-}
-
-input:checked+.slider {
-      background-color: #c1a0ff
+.leaderNameM::before { 
+    font-family: 'Material Icons'; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    content: "check_circle";
+    color: #40C4FF;
+    margin-top: -3px;
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-left: -4px;
 }
 
 .leaderNameM span {
-      -webkit-animation: rainbow .5s linear infinite;
-      animation: rainbow .5s linear infinite
-}
-  
-  .endTableN span[style="color:#fff"]::after {
-      -webkit-animation: rainbow .5s linear infinite;
-      animation: rainbow .5s linear infinite
+    -webkit-animation: rainbow .5s linear infinite;
+    animation: rainbow .5s linear infinite
 }
 
-.endTableN[style="color:#fff"] {
-      visibility: visible;
-      font-size: 0 !important;
-}
-  
-  .endTableN[style="color:#fff"]::before { 
-      font-size: 20px !important;
-      visibility: visible;
-      content: "あかーあ" !important;
-      color: rgb(255, 255, 255);
-      text-transform: var(--text-transform);
-      font:italic
+.endTableN span[style="color:#fff"]::after {
+    -webkit-animation: rainbow .5s linear infinite;
+    animation: rainbow .5s linear infinite
 }
 
-#menuKRCount:before {
-      content:'$';
-      color: #69cd4d
+.weapItem {
+	filter: drop-shadow(2px 2px var( --black)) drop-shadow(-2px -2px var(--black)) drop-shadow(-2px 2px var(--black)) drop-shadow(2px -2px var(--black));
+    opacity: 0 !important;
+    transition-duration: 0.25s;
+    position: fixed;
+    right: 0%;
+    bottom: 1%;
 }
 
-#aHolder,
-.endAHolder,
-#topRightAdHolder, 
-#seasonLabel,
-#termsInfo,
-#streamContainer,
-#tlInfHold,
-.menuSocialB,
-#editorBtnM {
-      display: none !important;
+.weapItem[style*="1"] {
+    opacity: 1 !important; 
 }
 
-.leaderNameM {
-      visibility: hidden;
-      font-size: 0 !important;
-}
-  
-  .leaderNameM {
-      visibility: hidden;
-      font-size: 0 !important;
-}
-  
-  .leaderNameM::before { 
-      font-size: 20px !important;
-      visibility: visible;
-      content: "あかーあ";
-      color: rgb(255, 255, 255);
-      text-transform: var(--text-transform);
-      font:bolder
-      
+.weapIcon {
+	width: 220px;
+	height: 110px;
 }
 
-#instructions {
-      animation: none
+#subLogoButtons {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+#matchInfoHolder {
+    order: -1 !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4) !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 12px !important;
+}
+
+#matchInfoHolder .match-row {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+#matchInfo.topLeftOld {
+    font-size: 0px!important;
+}
+
+#matchInfo:after {
+    content: " ";
+    background: url(https://www.dropbox.com/scl/fi/kaxozdl7zwoz063ig9b63/logo.png?rlkey=z7kl0yjt3xhjc33z268620h8u&st=roxuxe5h&dl=0);  /*url */
+    background-size: 200px; /*size of image */
+    width: 200px; /*width of image */
+    height: 200px; /*height of image */
+    position: fixed;
+    top: 40px;
+}
+
+#subLogoButtons {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+#matchInfoHolder {
+    order: -1 !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4) !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 12px !important;
+}
+
+#matchInfoHolder .match-row {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
 }
